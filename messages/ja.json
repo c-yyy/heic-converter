@@ -1,0 +1,166 @@
+{
+  "metadata": {
+    "title": "HEIC から PNG への変換 — 無料、オンライン、登録不要",
+    "description": "HEIC を PNG や JPG に無料でオンライン変換。ブラウザー内で 100% ローカル処理 — アップロードなし、アカウント不要。iPhone・Windows・Mac に対応。",
+    "titleJpg": "HEIC から JPG への変換 — 無料、即時、アカウント不要",
+    "descriptionJpg": "HEIC を JPG に無料でオンライン変換。アップロードなし、アカウント不要 — 100% ローカルで元画質を維持。iPhone・Windows・Mac に対応。",
+    "titleWebp": "HEIC から WebP への変換 — 容量削減、無料・プライベート",
+    "descriptionWebp": "HEIC を WebP に変換し、最大 30% 容量を削減。アップロードもアカウントも不要な無料ブラウザー変換。"
+  },
+  "hero": {
+    "title": "無料 HEIC から PNG への変換",
+    "titleAccent": "100% プライベート・瞬時変換",
+    "subtitle": "iPhone の写真をブラウザ内でローカルに PNG/JPG に変換。登録不要、ファイル制限なし、データがデバイスから出ることはありません。",
+    "titleJpg": "無料 HEIC から JPG への変換",
+    "titleAccentJpg": "高品質・アップロードなし",
+    "subtitleJpg": "HEIC 写真をブラウザ内ですべて高品質の JPG 形式に変換。ファイルはデバイスに残ります。",
+    "titleWebp": "HEIC から WebP への変換",
+    "titleAccentWebp": "サイズ削減・画質そのまま",
+    "subtitleWebp": "HEIC を WebP に変換すると、画質を維持したままファイルサイズを最大 30% 削減できます。すべての処理はローカルで行われます。"
+  },
+  "dropzone": {
+    "title": "HEIC ファイルをここにドラッグ＆ドロップ",
+    "subtitle": "またはクリックして選択",
+    "hint": ".heic および .heif ファイルに対応",
+    "dragActive": "ここにドロップ…",
+    "privacy": "🔒 100% ローカル処理 · ファイルはデバイスから出ません"
+  },
+  "controls": {
+    "format": "出力形式",
+    "quality": "品質",
+    "convertAll": "すべて変換",
+    "downloadAll": "すべてダウンロード (ZIP)",
+    "clear": "すべてクリア",
+    "formatPdf": "PDF（すべて統合）",
+    "downloadPdf": "PDF としてダウンロード"
+  },
+  "fileItem": {
+    "pending": "待機中",
+    "converting": "変換中…",
+    "done": "完了",
+    "error": "失敗",
+    "download": "ダウンロード",
+    "retry": "再試行"
+  },
+  "errors": {
+    "empty": "このファイルは空（0 バイト）です。有効な HEIC 写真を選択してください。",
+    "unsupported": "これは有効な HEIC/HEIF ファイルではありません。ZIP アーカイブ、サムネイル、スクリーンショットをドラッグした場合は、原本の .heic 写真を展開してください。",
+    "corrupt": "どのデコーダーでもこの HEIC をデコードできませんでした。新しいカメラ形式の可能性があります — 写真アプリで JPEG コピーを書き出してアップロードしてください。",
+    "tooLarge": "このファイルは 200 MB の上限を超えています。より小さいファイルをお試しください。",
+    "unknown": "このファイルの変換中に問題が発生しました。もう一度お試しください。"
+  },
+  "toast": {
+    "rejected": "HEIC/HEIF ではない {count} 個のファイルをスキップしました（ZIP やサムネイルなどは非対応）。",
+    "savedSingle": "ダウンロードフォルダに保存されました（Ctrl/⌘+J で表示）。",
+    "savedZip": "ZIP をダウンロードフォルダに保存しました。",
+    "savedPdf": "PDF をダウンロードフォルダに保存しました。"
+  },
+  "features": {
+    "privacyTitle": "プライバシー最優先",
+    "privacyDesc": "WebAssembly を使用した 100% ローカル変換。ファイルがデバイスから出ることはありません – サーバーへのアップロードは一切なし。",
+    "noLimitsTitle": "制限なし",
+    "noLimitsDesc": "ファイルサイズ制限なく、一度に 100 枚以上の画像を一括変換。完全無料、登録不要。",
+    "qualityTitle": "高品質",
+    "qualityDesc": "EXIF データと元の解像度を維持。あらゆる変換でプロ品質の出力を実現。"
+  },
+  "howTo": {
+    "title": "Windows/Mac で HEIC を PNG に変換する方法",
+    "step1Title": "HEIC ファイルをアップロード",
+    "step1Desc": "上の変換ツールに .heic ファイルをドラッグ＆ドロップするか、アップロード領域をクリックしてファイルを選択します。複数のファイルを同時に選択できます。",
+    "step2Title": "形式を選択",
+    "step2Desc": "希望の出力形式（PNG、JPG、WebP）を選び、必要に応じて品質スライダーを調整します。PNG は可逆圧縮、JPG はファイルサイズが小さくなります。",
+    "step3Title": "変換した画像をダウンロード",
+    "step3Desc": "「すべて変換」をクリックし、画像を個別、または ZIP ファイルとしてダウンロードします。すべての処理はブラウザ内でローカルに行われます。"
+  },
+  "whyChoose": {
+    "title": "なぜ当社のローカル HEIC 変換ツールなのか？",
+    "point1Title": "真のプライバシー",
+    "point1Desc": "写真を遠隔サーバーにアップロードするクラウド型変換ツールと異なり、当社のツールは WebAssembly 技術を使ってすべてをローカルで処理します。プライベートな写真、個人ドキュメント、機密画像がデバイスから出ることはありません。",
+    "point2Title": "驚くほど高速",
+    "point2Desc": "アップロード/ダウンロードの待ち時間なし。すべてがブラウザ内で実行されるため、変換は即座に開始されます。一般的な iPhone 写真の変換は 2 秒未満です。",
+    "point3Title": "オフラインで動作",
+    "point3Desc": "一度読み込めば、インターネット接続なしで変換ツールが動作します。旅行中や電波の悪い場所での写真変換に最適です。"
+  },
+  "faq": {
+    "title": "よくある質問",
+    "q1": "オンラインで HEIC を変換しても安全ですか？",
+    "a1": "はい、もちろんです。当社の変換ツールは 100% ブラウザ内でローカルに実行されるため、完全に安全です。ファイルがサーバーにアップロードされることはありません。変換は WebAssembly 技術によって処理され、すべての処理はお使いのデバイス上で行われます。",
+    "q2": "iPhone の高効率写真に対応していますか？",
+    "a2": "はい！当社の変換ツールは、最新の iPhone 15/16 シリーズを含むすべての iPhone モデルで撮影された HEIC/HEIF 写真に対応しています。単一画像とライブフォトの静止画の両方を処理できます。",
+    "q3": "HEIC を PNG に一括変換できますか？",
+    "a3": "もちろんです。複数の HEIC ファイルを一度にドラッグ＆ドロップまたは選択できます。1 回のバッチで変換できるファイル数に制限はありません。変換後は、個別に、または便利な ZIP アーカイブとしてダウンロードできます。",
+    "q4": "HEIC 形式とは何ですか？",
+    "a4": "HEIC（High Efficiency Image Container）は Apple が開発した近代的な画像形式です。HEIF エンコードを使用して、JPEG よりも小さいファイルサイズで高い画質を維持します。iPhone は iOS 11 以降、デフォルトの写真形式として HEIC を採用しています。",
+    "q5": "なぜ Windows で HEIC ファイルを開けないのですか？",
+    "a5": "Windows は追加のコーデックなしでは HEIC 形式をネイティブにサポートしていません。Windows 10/11 は Microsoft Store から HEIF 拡張機能をインストールできますが、多くのアプリケーションは依然として HEIC ファイルを読み取れません。PNG や JPG に変換すれば、すべてのプラットフォームで互換性が確保されます。"
+  },
+  "footer": {
+    "tools": "変換ツール",
+    "heicToPng": "HEIC から PNG",
+    "heicToJpg": "HEIC から JPG",
+    "heicToWebp": "HEIC から WebP",
+    "about": "概要",
+    "privacy": "ファイルがデバイスから出ることはありません。",
+    "copyright": "© 2025 HEIC Converter. All rights reserved.",
+    "buyMeCoffee": "お役に立ちましたか？開発者にコーヒーをおごってください！"
+  },
+  "nav": {
+    "converter": "変換ツール",
+    "heicToJpg": "HEIC から JPG",
+    "heicToWebp": "HEIC から WebP"
+  },
+  "guides": {
+    "sectionTitle": "HEIC ガイドとよくある質問",
+    "whatIsHeic": {
+      "metaTitle": "HEIC 形式とは？ — 定義、JPEG との違い、変換方法",
+      "metaDescription": "HEIC（High Efficiency Image Container）は Apple の写真形式で、JPEG より最大 50% 省スペースです。HEIC とは何か、仕組み、そして HEIC を PNG や JPG に無料で変換する方法を学びましょう。",
+      "cardTitle": "HEIC 形式とは？",
+      "cardDesc": "Apple の写真形式を解説：ファイルサイズ、画質、そしてあらゆる端末で HEIC を開く方法。",
+      "h1": "HEIC 形式とは何ですか？",
+      "intro": "HEIC（High Efficiency Image Container）は iOS 11 以降、iPhone と iPad の標準の写真形式です。HEIF 規格と HEVC 圧縮を使用し、JPEG の約半分のファイルサイズでほぼ 2 倍の画質を保ちます。",
+      "s1Title": "Apple が HEIC に切り替えた理由",
+      "s1Body": "HEIC は見た目の画質を落とさずにファイルを小さくするため、iPhone により多くの写真を保存できます。また JPEG にはできない透明性、16 ビットカラー、ライブフォトや深度データの埋め込みといった現代的な機能にも対応しています。",
+      "s2Title": "HEIC と JPEG の主な違い",
+      "s2Body": "JPEG は互換性は高いがファイルが大きく、HEIC はその逆です。同等の画質で HEIC は通常 JPEG より 40〜50% 小さく、詳細もよく保たれます。欠点は、HEIC には互換デコーダーが必要で、ほとんどの非 Apple 端末には初期状態で備わっていないことです。",
+      "s3Title": "HEIC ファイルに出会う場面",
+      "s3Body": "iPhone や iPad で撮影した写真（カメラ形式を変えていない場合）、macOS 写真から書き出した画像、AirDrop や iCloud で共有された写真はたいてい HEIC です。Windows PC や多くの Android スマホでは初期状態で開けません。",
+      "s4Title": "HEIC を互換形式に変換する方法",
+      "s4Body": "最も簡単な方法は変換です。上の無料コンバーターを使えば、HEIC を PNG・JPG・WebP に変換できます。すべてブラウザー内で完結し、アップロードもソフトのインストールも不要。ファイルが端末から出ることはありません。",
+      "conclusion": "HEIC は Apple 端末では優れていますが、それ以外では限定的です。PNG や JPG に変換するのが、写真をどこでも使えるようにする最も簡単な方法です。"
+    },
+    "heicVsJpeg": {
+      "metaTitle": "HEIC と JPEG の比較 — どちらが良い？ ファイルサイズ・画質・互換性",
+      "metaDescription": "HEIC と JPEG はどちらを使うべき？ ファイルサイズ、画質、互換性を比較し、共有や印刷のために HEIC を JPEG に変換するタイミングを解説します。",
+      "cardTitle": "HEIC と JPEG の比較",
+      "cardDesc": "ファイルサイズ・画質・互換性を比較し、変換すべきタイミングを紹介。",
+      "h1": "HEIC と JPEG：どちらの形式が優れている？",
+      "intro": "どちらの形式も写真を保存しますが、仕組みは大きく異なります。どちらを選ぶか、そしていつ変換すべきかが分かる実用的な比較です。",
+      "s1Title": "ファイルサイズ：HEIC の勝利",
+      "s1Body": "見た目の画質が同じなら、HEIC ファイルは JPEG より約 40〜50% 小さくなります。数百枚撮影するなら、その差はスマホの空き容量に大きく響きます。",
+      "s2Title": "画質：HEIC の方が効率的",
+      "s2Body": "HEIC は現代的な圧縮を採用しており、JPEG の古いアルゴリズムよりも詳細とダイナミックレンジをよく保ちます。保存や編集には、HEIC の方が 1 バイトあたり多くの情報を維持します。",
+      "s3Title": "互換性：JPEG が依然トップ",
+      "s3Body": "JPEG はこの 25 年間のあらゆる端末・ブラウザー・アプリで開けます。一方 HEIC にはデコーダーが必要で、Windows・Android・多くの Web サイトには初期状態で備わっていません。",
+      "s4Title": "HEIC を JPEG に変換するタイミング",
+      "s4Body": "友達と共有したり、SNS に投稿したり、プリント店に送ったりする場合は JPEG に変換しましょう。上のコンバーターなら数秒で HEIC を JPG に変更でき、アップロードもなく完全にプライベートです。",
+      "conclusion": "iPhone 上では保存用に HEIC を維持し、共有が必要なときだけ JPEG に変換しましょう。これで両方の良さを活かせます。"
+    },
+    "openHeicWindows": {
+      "metaTitle": "Windows 10/11 で HEIC を開く方法 — 無料の HEIC ビューアーとコンバーター",
+      "metaDescription": "Windows で HEIC ファイルが開けない？ Microsoft Store の無料 HEIF 画像拡張機能で Windows 10/11 上の HEIC 写真を表示する方法や、ブラウザーで HEIC を JPG/PNG に変換する方法（ソフト不要）を解説します。",
+      "cardTitle": "Windows で HEIC を開く",
+      "cardDesc": "Windows 10/11 で HEIC 写真を表示する方法、またはブラウザーで変換する方法。",
+      "h1": "Windows で HEIC ファイルを開く方法",
+      "intro": "Windows は初期状態では HEIC 写真を開けないため、ダブルクリックすると空のアイコンになることがよくあります。表示または変換する 3 つの方法を紹介します。",
+      "s1Title": "方法 1：HEIF 画像拡張機能をインストール（Microsoft Store）",
+      "s1Body": "Microsoft は Microsoft Store で無料の「HEIF 画像拡張機能」を提供しています。インストールすると、Windows の「写真」アプリで HEIC ファイルがそのまま開きます。注意：地域によっては HEVC ビデオ拡張機能も別途必要で、少額の買い切りになる場合があります。",
+      "s2Title": "方法 2：ブラウザーで HEIC を JPG/PNG に変換",
+      "s2Body": "ソフトもストアもアカウントも不要です。上の無料コンバーターを使って HEIC ファイルをドロップし、JPG か PNG を選べば結果をダウンロードできます。すべてブラウザー内でローカルに実行されるため、プライベートな写真も外部に出ません。",
+      "s3Title": "方法 3：サードパーティのビューアーを使う",
+      "s3Body": "適切なコーデックがあれば、IrfanView や XnView などのデスクトップアプリでも HEIC を開けます。まとめて閲覧するのに便利ですが、インストールが必要です。",
+      "s4Title": "どれを選ぶべき？",
+      "s4Body": "ときどき 1〜2 枚見るだけなら HEIF 拡張機能で十分です。共有や印刷、大量のファイル処理には、上のツールで JPG/PNG に変換する方が速く、どこでも使えます。",
+      "conclusion": "コーデックを入れてもブラウザーで変換しても、Windows で HEIC を開くのは数分で済みます。変換すれば、どの端末でも開けるファイルが手に入ります。"
+    }
+  }
+}

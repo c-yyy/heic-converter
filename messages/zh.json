@@ -1,0 +1,166 @@
+{
+  "metadata": {
+    "title": "HEIC 转 PNG 转换器 — 免费、在线、无需注册",
+    "description": "免费在线将 HEIC 转为 PNG 或 JPG。浏览器本地转换，100% 私密——无需上传，无需账号。支持 iPhone、Windows 与 Mac。",
+    "titleJpg": "HEIC 转 JPG 转换器 — 免费、即时、无需账号",
+    "descriptionJpg": "免费在线将 HEIC 转为 JPG。无需上传，无需账号——100% 本地转换，保留原始画质。支持 iPhone、Windows 与 Mac。",
+    "titleWebp": "HEIC 转 WebP 转换器 — 更小体积，免费且私密",
+    "descriptionWebp": "将 HEIC 转为 WebP，体积最多减小 30%。免费浏览器端转换器，无需上传，无需账号。"
+  },
+  "hero": {
+    "title": "免费 HEIC 转 PNG 工具",
+    "titleAccent": "100% 隐私安全 · 即时转换",
+    "subtitle": "在浏览器中本地转换 iPhone 照片为 PNG/JPG 格式。无需注册、无文件限制，数据永不离开您的设备。",
+    "titleJpg": "免费 HEIC 转 JPG 工具",
+    "titleAccentJpg": "高质量 · 无需上传",
+    "subtitleJpg": "完全在浏览器中将 HEIC 照片转为高质量 JPG 格式。文件始终留在您的设备上。",
+    "titleWebp": "HEIC 转 WebP 工具",
+    "titleAccentWebp": "更小体积 · 同等画质",
+    "subtitleWebp": "将 HEIC 转为 WebP 可减小约 30% 的文件体积，同时保持视觉质量。所有处理均在本地完成。"
+  },
+  "dropzone": {
+    "title": "将 HEIC 文件拖放到此处",
+    "subtitle": "或点击浏览文件",
+    "hint": "支持 .heic 和 .heif 格式",
+    "dragActive": "松开以添加文件...",
+    "privacy": "🔒 100% 本地处理 · 文件不上传"
+  },
+  "controls": {
+    "format": "输出格式",
+    "quality": "画质",
+    "convertAll": "全部转换",
+    "downloadAll": "全部下载 (ZIP)",
+    "clear": "清空全部",
+    "formatPdf": "PDF（合并全部）",
+    "downloadPdf": "下载为 PDF"
+  },
+  "fileItem": {
+    "pending": "等待中",
+    "converting": "转换中...",
+    "done": "已完成",
+    "error": "转换失败",
+    "download": "下载",
+    "retry": "重试"
+  },
+  "errors": {
+    "empty": "该文件为空（0 字节），请选择有效的 HEIC 照片。",
+    "unsupported": "这不是有效的 HEIC/HEIF 文件。如果您拖入的是 ZIP 压缩包、缩略图或截图，请先提取出真正的 .heic 照片。",
+    "corrupt": "我们用所有可用的解码器都无法解码此 HEIC 文件。它可能采用了较新的相机格式 —— 请在照片应用中导出一份 JPEG 副本再上传。",
+    "tooLarge": "文件超过 200 MB 上限，请尝试更小的文件。",
+    "unknown": "转换此文件时出现问题，请重试。"
+  },
+  "toast": {
+    "rejected": "已跳过 {count} 个非 HEIC/HEIF 文件（ZIP、缩略图等不支持）。",
+    "savedSingle": "已保存到下载文件夹（按 Ctrl/⌘+J 查看）。",
+    "savedZip": "ZIP 已保存到下载文件夹。",
+    "savedPdf": "PDF 已保存到下载文件夹。"
+  },
+  "features": {
+    "privacyTitle": "隐私优先",
+    "privacyDesc": "使用 WebAssembly 技术 100% 本地转换。文件永不离开您的设备——零服务器上传。",
+    "noLimitsTitle": "无任何限制",
+    "noLimitsDesc": "一次批量转换 100+ 张图片，无文件大小限制。完全免费，无需注册。",
+    "qualityTitle": "高保真画质",
+    "qualityDesc": "保留 EXIF 数据和原始分辨率。每次转换都输出专业级品质。"
+  },
+  "howTo": {
+    "title": "如何在 Windows/Mac 上将 HEIC 转为 PNG",
+    "step1Title": "上传 HEIC 文件",
+    "step1Desc": "将 .heic 文件拖放到上方的转换器中，或点击上传区域浏览文件。支持一次选择多个文件。",
+    "step2Title": "选择输出格式",
+    "step2Desc": "选择所需的输出格式（PNG、JPG 或 WebP）并根据需要调整画质滑块。PNG 提供无损画质，JPG 则文件更小。",
+    "step3Title": "下载转换后的图片",
+    "step3Desc": "点击“全部转换”后，可逐个下载或打包为 ZIP 文件下载。整个过程在浏览器本地完成。"
+  },
+  "whyChoose": {
+    "title": "为什么选择我们的本地 HEIC 转换器？",
+    "point1Title": "真正的隐私保护",
+    "point1Desc": "与将照片上传到远程服务器的云端转换器不同，我们的工具使用 WebAssembly 技术在本地处理所有内容。您的私密照片、个人文件和敏感图片永远不会离开您的设备。",
+    "point2Title": "闪电般快速",
+    "point2Desc": "无需等待上传/下载。因为一切都在浏览器中运行，转换即刻开始。转换一张典型的 iPhone 照片不到 2 秒。",
+    "point3Title": "离线可用",
+    "point3Desc": "页面加载后，转换器无需网络连接即可工作。非常适合旅行中或网络信号不佳时转换照片。"
+  },
+  "faq": {
+    "title": "常见问题",
+    "q1": "在线转换 HEIC 安全吗？",
+    "a1": "完全安全。我们的转换器 100% 在您的浏览器中本地运行。文件永远不会上传到任何服务器。转换由 WebAssembly 技术驱动，所有处理都在您自己的设备上完成。",
+    "q2": "支持 iPhone 高效率格式照片吗？",
+    "a2": "当然支持！我们的转换器完全兼容所有 iPhone 型号拍摄的 HEIC/HEIF 照片，包括最新的 iPhone 15 和 16 系列。同时支持单张图片和实况照片的静态画面。",
+    "q3": "可以批量将 HEIC 转为 PNG 吗？",
+    "a3": "完全可以。您可以一次拖放或选择多个 HEIC 文件，没有数量限制。转换完成后，可以逐个下载或打包为 ZIP 压缩文件一键下载。",
+    "q4": "什么是 HEIC 格式？",
+    "a4": "HEIC（高效率图像容器）是苹果开发的现代图像格式。它使用 HEIF 编码，在保持更高图像质量的同时产生比 JPEG 更小的文件。自 iOS 11 起，iPhone 默认使用 HEIC 作为照片格式。",
+    "q5": "为什么在 Windows 上无法打开 HEIC 文件？",
+    "a5": "Windows 不支持原生打开 HEIC 格式，需要安装额外的编解码器。虽然 Windows 10/11 可以从 Microsoft Store 安装 HEIF 扩展，但许多应用程序仍然无法读取 HEIC 文件。将其转为 PNG 或 JPG 可确保在所有平台和应用中通用兼容。"
+  },
+  "footer": {
+    "tools": "转换工具",
+    "heicToPng": "HEIC 转 PNG",
+    "heicToJpg": "HEIC 转 JPG",
+    "heicToWebp": "HEIC 转 WebP",
+    "about": "关于",
+    "privacy": "您的文件永远不会离开您的设备。",
+    "copyright": "© 2025 HEIC Converter. 保留所有权利。",
+    "buyMeCoffee": "节省了你的时间？请开发者喝杯咖啡！"
+  },
+  "nav": {
+    "converter": "转换器",
+    "heicToJpg": "HEIC 转 JPG",
+    "heicToWebp": "HEIC 转 WebP"
+  },
+  "guides": {
+    "sectionTitle": "HEIC 使用指南与解答",
+    "whatIsHeic": {
+      "metaTitle": "HEIC 是什么格式？— 定义、与 JPEG 对比及转换方法",
+      "metaDescription": "HEIC（高效图像容器）是苹果采用的照片格式，比 JPEG 节省最多 50% 空间。了解 HEIC 是什么、工作原理，以及如何免费将 HEIC 转换为 PNG 或 JPG。",
+      "cardTitle": "HEIC 是什么格式？",
+      "cardDesc": "一文读懂苹果的照片格式：文件大小、画质，以及如何在任意设备打开 HEIC。",
+      "h1": "HEIC 格式是什么？",
+      "intro": "HEIC（High Efficiency Image Container，高效图像容器）是自 iOS 11 起 iPhone 和 iPad 的默认照片格式。它基于 HEIF 标准并使用 HEVC 压缩，能在约为 JPEG 一半的文件体积中保留近两倍的画质。",
+      "s1Title": "苹果为何改用 HEIC",
+      "s1Body": "HEIC 在不损失可见画质的前提下大幅缩小体积，让 iPhone 能存下更多照片。它还支持 JPEG 不具备的现代特性：透明通道、16 位色彩，以及内嵌的实况照片或景深数据。",
+      "s2Title": "HEIC 与 JPEG 的核心区别",
+      "s2Body": "JPEG 兼容性极佳但文件更大；HEIC 恰好相反。同等画质下，HEIC 通常比 JPEG 小 40%–50%，同时保留更多细节。代价是 HEIC 需要兼容的解码器，而多数非苹果设备默认并不具备。",
+      "s3Title": "你会在哪里遇到 HEIC 文件",
+      "s3Body": "任何用 iPhone 或 iPad 拍摄的照片（除非你改过相机格式）、从 macOS 照片导出的图像，以及通过 AirDrop 和 iCloud 分享的图片，通常都是 HEIC。Windows 电脑和多数 Android 手机默认无法打开。",
+      "s4Title": "如何将 HEIC 转换为兼容格式",
+      "s4Body": "最简单的办法就是转换。使用上方的免费转换器，把 HEIC 变成 PNG、JPG 或 WebP——全程在浏览器内完成，无需上传，也无需安装软件。你的文件绝不会离开设备。",
+      "conclusion": "HEIC 在苹果设备上表现出色，但在别处受限。转换为 PNG 或 JPG 是让照片在任何地方都能使用的最简单方式。"
+    },
+    "heicVsJpeg": {
+      "metaTitle": "HEIC 与 JPEG 对比 — 哪个更好？文件大小、画质与兼容性",
+      "metaDescription": "HEIC 与 JPEG 该怎么选？对比文件大小、图像画质与兼容性，并了解何时该把 HEIC 转换为 JPEG 以便分享和打印。",
+      "cardTitle": "HEIC 与 JPEG 对比",
+      "cardDesc": "对比文件大小、图像画质与兼容性——以及何时需要转换。",
+      "h1": "HEIC 与 JPEG：哪种格式更好？",
+      "intro": "两种格式都用来存储照片，但工作方式截然不同。下面这份实用对比帮你做出选择，也告诉你何时该转换。",
+      "s1Title": "文件大小：HEIC 胜出",
+      "s1Body": "在同等可见画质下，HEIC 文件比 JPEG 大约小 40%–50%。如果你一次拍几百张照片，这点差异意味着手机能多出大量存储空间。",
+      "s2Title": "图像画质：HEIC 更高效",
+      "s2Body": "HEIC 采用现代压缩算法，比老旧的 JPEG 更好地保留细节与动态范围。用于归档或后期编辑时，HEIC 在每字节中保留更多信息。",
+      "s3Title": "兼容性：JPEG 仍占主导",
+      "s3Body": "JPEG 能被过去 25 年里几乎所有的设备、浏览器和应用打开。而 HEIC 需要解码器，Windows、Android 以及许多网站默认并不具备。",
+      "s4Title": "何时该把 HEIC 转为 JPEG",
+      "s4Body": "与朋友分享、上传社交平台或送往冲印店时，转为 JPEG。用上方的转换器，几秒就能把 HEIC 变成 JPG——无需上传，完全私密。",
+      "conclusion": "在 iPhone 上保留 HEIC 以节省空间，需要分享时再转为 JPEG。这样两全其美。"
+    },
+    "openHeicWindows": {
+      "metaTitle": "如何在 Windows 10/11 打开 HEIC — 免费 HEIC 查看器与转换器",
+      "metaDescription": "在 Windows 上打不开 HEIC 文件？了解如何通过 Microsoft Store 免费的 HEIF 图像扩展在 Windows 10/11 上查看 HEIC 照片，或在浏览器中将 HEIC 转为 JPG/PNG——无需安装软件。",
+      "cardTitle": "在 Windows 打开 HEIC",
+      "cardDesc": "如何在 Windows 10/11 上查看 HEIC 照片，或在浏览器中转换。",
+      "h1": "如何在 Windows 上打开 HEIC 文件",
+      "intro": "Windows 默认无法打开 HEIC 照片，所以双击时往往只看到一个空白图标。下面三种方式可以查看或转换它们。",
+      "s1Title": "方式一：安装 HEIF 图像扩展（Microsoft Store）",
+      "s1Body": "微软在 Microsoft Store 提供免费的「HEIF 图像扩展」。安装后，Windows 照片应用即可原生打开 HEIC 文件。注意：部分地区还需安装 HEVC 视频扩展，可能收取少量一次性费用。",
+      "s2Title": "方式二：在浏览器中将 HEIC 转为 JPG/PNG",
+      "s2Body": "无需软件、无需商店、无需账号。使用上方的免费转换器：把 HEIC 文件拖入，选择 JPG 或 PNG，即可下载结果。一切都在浏览器本地运行，私密照片也不会外泄。",
+      "s3Title": "方式三：使用第三方查看器",
+      "s3Body": "安装好相应编解码器后，IrfanView、XnView 等桌面应用也能打开 HEIC。它们适合批量浏览，但需要安装。",
+      "s4Title": "该选哪种？",
+      "s4Body": "只是偶尔查看一两张照片？HEIF 扩展就够用。需要分享、冲印或处理大量文件？用上方的工具转为 JPG/PNG 更快，且处处可用。",
+      "conclusion": "无论安装编解码器还是在浏览器中转换，在 Windows 上打开 HEIC 只需几分钟——而转换让你得到的是能在任意设备打开的文件。"
+    }
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "metadata": {
+    "title": "HEIC to PNG Converter — Free, Online, No Sign-Up",
+    "description": "Convert HEIC to PNG or JPG online for free. 100% private local conversion in your browser — no upload, no account. Works on iPhone, Windows & Mac.",
+    "titleJpg": "HEIC to JPG Converter — Free, Instant, No Account",
+    "descriptionJpg": "Convert HEIC to JPG online for free. No upload, no account — 100% local conversion that keeps original quality. Works on iPhone, Windows & Mac.",
+    "titleWebp": "HEIC to WebP Converter — Smaller Files, Free & Private",
+    "descriptionWebp": "Convert HEIC to WebP for up to 30% smaller files. Free browser-based converter with no upload and no account required."
+  },
+  "hero": {
+    "title": "Free HEIC to PNG Converter",
+    "titleAccent": "100% Private & Instant",
+    "subtitle": "Convert your iPhone photos to PNG/JPG locally in your browser. No sign-up, no file limits, and your data never leaves your device.",
+    "titleJpg": "Free HEIC to JPG Converter",
+    "titleAccentJpg": "High Quality & No Upload",
+    "subtitleJpg": "Convert HEIC photos to high-quality JPG format entirely in your browser. Your files stay on your device.",
+    "titleWebp": "HEIC to WebP Converter",
+    "titleAccentWebp": "Smaller Size, Same Quality",
+    "subtitleWebp": "Convert HEIC to WebP for up to 30% smaller file sizes while maintaining visual quality. All processing happens locally."
+  },
+  "dropzone": {
+    "title": "Drag & Drop HEIC files here",
+    "subtitle": "or click to browse",
+    "hint": "Supports .heic and .heif files",
+    "dragActive": "Drop your files here...",
+    "privacy": "🔒 100% local processing — files never leave your device"
+  },
+  "controls": {
+    "format": "Output Format",
+    "quality": "Quality",
+    "convertAll": "Convert All",
+    "downloadAll": "Download All (ZIP)",
+    "clear": "Clear All",
+    "formatPdf": "PDF (merge all)",
+    "downloadPdf": "Download as PDF"
+  },
+  "fileItem": {
+    "pending": "Waiting",
+    "converting": "Converting...",
+    "done": "Completed",
+    "error": "Failed",
+    "download": "Download",
+    "retry": "Retry"
+  },
+  "errors": {
+    "empty": "This file is empty (0 bytes) — please choose a valid HEIC photo.",
+    "unsupported": "This isn't a valid HEIC/HEIF file. If you dragged a ZIP archive, thumbnail, or screenshot, extract the actual .heic photo first.",
+    "corrupt": "We couldn't decode this HEIC with any available decoder. It may use a newer camera format — try exporting a JPEG copy in the Photos app and uploading that.",
+    "tooLarge": "This file is larger than the 200 MB limit. Try a smaller file.",
+    "unknown": "Something went wrong while converting this file. Please try again."
+  },
+  "toast": {
+    "rejected": "Skipped {count} file(s) that aren't HEIC/HEIF (ZIP, thumbnails, etc. aren't supported).",
+    "savedSingle": "Saved to your Downloads folder (press Ctrl/⌘+J to view).",
+    "savedZip": "ZIP saved to your Downloads folder.",
+    "savedPdf": "PDF saved to your Downloads folder."
+  },
+  "features": {
+    "privacyTitle": "Privacy First",
+    "privacyDesc": "100% local conversion using WebAssembly. Your files never leave your device — zero server uploads.",
+    "noLimitsTitle": "No Limits",
+    "noLimitsDesc": "Batch convert 100+ images at once with no file size restrictions. Completely free, no sign-up required.",
+    "qualityTitle": "High Quality",
+    "qualityDesc": "Preserve EXIF data and original resolution. Professional-grade output for every conversion."
+  },
+  "howTo": {
+    "title": "How to Convert HEIC to PNG on Windows/Mac",
+    "step1Title": "Upload Your HEIC Files",
+    "step1Desc": "Drag and drop your .heic files into the converter above, or click the upload area to browse your files. You can select multiple files at once.",
+    "step2Title": "Choose Your Format",
+    "step2Desc": "Select your desired output format (PNG, JPG, or WebP) and adjust the quality slider if needed. PNG provides lossless quality, while JPG offers smaller file sizes.",
+    "step3Title": "Download Converted Images",
+    "step3Desc": "Click 'Convert All' and download your converted images individually or as a ZIP file. The entire process happens locally in your browser."
+  },
+  "whyChoose": {
+    "title": "Why Choose Our Local HEIC Converter?",
+    "point1Title": "True Privacy",
+    "point1Desc": "Unlike cloud-based converters that upload your photos to remote servers, our tool processes everything locally using WebAssembly technology. Your intimate photos, personal documents, and sensitive images never leave your device.",
+    "point2Title": "Lightning Fast",
+    "point2Desc": "No upload/download wait times. Conversion starts instantly because everything runs in your browser. Converting a typical iPhone photo takes less than 2 seconds.",
+    "point3Title": "Works Offline",
+    "point3Desc": "Once loaded, the converter works without an internet connection. Perfect for converting photos while traveling or in areas with poor connectivity."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "Is it safe to convert HEIC online?",
+    "a1": "Yes, absolutely. Our converter is completely safe because it runs 100% locally in your web browser. Your files are never uploaded to any server. The conversion is powered by WebAssembly technology, meaning all processing happens on your own device.",
+    "q2": "Does it support iPhone high-efficiency photos?",
+    "a2": "Yes! Our converter fully supports HEIC/HEIF photos taken with any iPhone model, including the latest iPhone 15 and 16 series. It handles both single images and Live Photo still captures.",
+    "q3": "Can I batch convert HEIC to PNG?",
+    "a3": "Absolutely. You can drag and drop or select multiple HEIC files at once. There's no limit on the number of files you can convert in a single batch. After conversion, you can download all files individually or as a convenient ZIP archive.",
+    "q4": "What is HEIC format?",
+    "a4": "HEIC (High Efficiency Image Container) is a modern image format developed by Apple. It uses HEIF encoding to produce smaller file sizes than JPEG while maintaining higher image quality. iPhones use HEIC as the default photo format since iOS 11.",
+    "q5": "Why can't I open HEIC files on Windows?",
+    "a5": "Windows doesn't natively support HEIC format without additional codecs. While Windows 10/11 can install HEIF extensions from the Microsoft Store, many applications still can't read HEIC files. Converting to PNG or JPG ensures universal compatibility across all platforms."
+  },
+  "footer": {
+    "tools": "Convert Tools",
+    "heicToPng": "HEIC to PNG",
+    "heicToJpg": "HEIC to JPG",
+    "heicToWebp": "HEIC to WebP",
+    "about": "About",
+    "privacy": "Your files never leave your device.",
+    "copyright": "© 2025 HEIC Converter. All rights reserved.",
+    "buyMeCoffee": "Saved your time? Buy the dev a coffee!"
+  },
+  "nav": {
+    "converter": "Converter",
+    "heicToJpg": "HEIC to JPG",
+    "heicToWebp": "HEIC to WebP"
+  },
+  "guides": {
+    "sectionTitle": "HEIC Guides & Answers",
+    "whatIsHeic": {
+      "metaTitle": "What Is HEIC Format? — Definition, vs JPEG & How to Convert",
+      "metaDescription": "HEIC (High Efficiency Image Container) is Apple’s photo format that saves up to 50% space vs JPEG. Learn what HEIC is, how it works, and how to convert HEIC to PNG or JPG for free.",
+      "cardTitle": "What Is HEIC Format?",
+      "cardDesc": "Apple’s photo format explained: file size, quality, and how to open HEIC anywhere.",
+      "h1": "What Is the HEIC Format?",
+      "intro": "HEIC (High Efficiency Image Container) is the default photo format on iPhones and iPads since iOS 11. It stores images using the HEIF standard and HEVC compression, packing roughly twice the quality into about half the file size of a JPEG.",
+      "s1Title": "Why Apple Switched to HEIC",
+      "s1Body": "HEIC shrinks file sizes without visible quality loss, so your iPhone can store more photos. It also supports modern features JPEG can’t: transparency, 16-bit color, and embedded Live Photo or depth data.",
+      "s2Title": "HEIC vs JPEG: The Key Differences",
+      "s2Body": "JPEG is smaller in compatibility but larger in file size; HEIC is the opposite. A HEIC photo is typically 40–50% smaller than an equivalent JPEG, yet holds more detail. The trade-off is that HEIC needs a compatible decoder, which most non-Apple devices lack by default.",
+      "s3Title": "Where You’ll Encounter HEIC Files",
+      "s3Body": "Any photo shot on an iPhone or iPad (unless you changed the camera format), images exported from macOS Photos, or pictures shared via AirDrop and iCloud are usually HEIC. Windows PCs and most Android phones can’t open them without help.",
+      "s4Title": "How to Convert HEIC to a Compatible Format",
+      "s4Body": "The easiest fix is to convert. Use the free converter above to turn HEIC into PNG, JPG, or WebP — entirely in your browser, with no upload and no software to install. Your files never leave your device.",
+      "conclusion": "HEIC is excellent on Apple devices but limited elsewhere. Converting to PNG or JPG is the simplest way to make your photos usable everywhere."
+    },
+    "heicVsJpeg": {
+      "metaTitle": "HEIC vs JPEG — Which Is Better? File Size, Quality & Compatibility",
+      "metaDescription": "HEIC vs JPEG: which should you use? Compare file size, image quality, and compatibility, and learn when to convert HEIC to JPEG for sharing and printing.",
+      "cardTitle": "HEIC vs JPEG",
+      "cardDesc": "File size, image quality, and compatibility compared — and when to convert.",
+      "h1": "HEIC vs JPEG: Which Format Is Better?",
+      "intro": "Both formats store your photos, but they work in very different ways. Here’s the practical comparison to help you choose — and know when to convert.",
+      "s1Title": "File Size: HEIC Wins",
+      "s1Body": "At the same visual quality, a HEIC file is roughly 40–50% smaller than JPEG. If you shoot hundreds of photos, that difference means far more storage left on your phone.",
+      "s2Title": "Image Quality: HEIC Is More Efficient",
+      "s2Body": "HEIC uses modern compression that preserves detail and dynamic range better than JPEG’s older algorithm. For archiving or editing, HEIC keeps more information per byte.",
+      "s3Title": "Compatibility: JPEG Still Rules",
+      "s3Body": "JPEG opens on every device, browser, and app made in the last 25 years. HEIC needs a decoder that Windows, Android, and many websites don’t have by default.",
+      "s4Title": "When to Convert HEIC to JPEG",
+      "s4Body": "Convert to JPEG when sharing with friends, uploading to social media, or sending to print labs. Use the converter above to change HEIC to JPG in seconds — no upload, fully private.",
+      "conclusion": "Keep HEIC on your iPhone for storage, but convert to JPEG whenever a file needs to travel. It’s the best of both worlds."
+    },
+    "openHeicWindows": {
+      "metaTitle": "How to Open HEIC on Windows 10/11 — Free HEIC Viewer & Converter",
+      "metaDescription": "Can’t open HEIC files on Windows? Learn how to view HEIC photos on Windows 10/11 with the free HEIF Image Extensions, or convert HEIC to JPG/PNG in your browser — no software needed.",
+      "cardTitle": "Open HEIC on Windows",
+      "cardDesc": "How to view HEIC photos on Windows 10/11, or convert them in your browser.",
+      "h1": "How to Open HEIC Files on Windows",
+      "intro": "Windows doesn’t open HEIC photos by default, which is why double-clicking one often shows a blank icon. Here are the three ways to view or convert them.",
+      "s1Title": "Option 1: Install HEIF Image Extensions (Microsoft Store)",
+      "s1Body": "Microsoft offers a free HEIF Image Extensions pack in the Microsoft Store. Install it, and Windows Photos will open HEIC files natively. Note: some variants also need the HEVC Video Extensions — a small one-time fee in some regions.",
+      "s2Title": "Option 2: Convert HEIC to JPG/PNG in Your Browser",
+      "s2Body": "No software, no store, no account. Use the free converter above: drop your HEIC files in, pick JPG or PNG, and download the results. Everything runs locally in your browser, so even sensitive photos stay private.",
+      "s3Title": "Option 3: Use a Third-Party Viewer",
+      "s3Body": "Desktop apps like IrfanView or XnView can open HEIC once the proper codecs are present. They’re handy for bulk browsing but require installation.",
+      "s4Title": "Which Should You Choose?",
+      "s4Body": "Need to view one or two photos occasionally? The HEIF extension is fine. Need to share, print, or process many files? Converting to JPG/PNG with the tool above is faster and works everywhere.",
+      "conclusion": "Whether you install a codec or convert in your browser, opening HEIC on Windows takes minutes — and converting gives you files that work on any device."
+    }
+  }
+}
