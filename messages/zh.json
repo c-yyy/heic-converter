@@ -27,6 +27,7 @@
   },
   "controls": {
     "format": "输出格式",
+    "formatHint": "PNG 为无损格式，但照片体积会大很多；用 JPG 或 WebP 能在肉眼无差别的前提下大幅减小文件。",
     "quality": "画质",
     "convertAll": "全部转换",
     "downloadAll": "全部下载 (ZIP)",

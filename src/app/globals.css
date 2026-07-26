@@ -556,6 +556,20 @@ body {
   box-shadow: 0 0 0 3px var(--accent-light);
 }
 
+.control-hint {
+  flex-basis: 100%;
+  width: 100%;
+  margin: 2px 0 0;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--text-tertiary);
+  max-width: 460px;
+}
+
+.control-hint::before {
+  content: "\1F4A1 ";
+}
+
 /* Quality Slider */
 .quality-slider {
   -webkit-appearance: none;

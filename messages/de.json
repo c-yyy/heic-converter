@@ -27,6 +27,7 @@
   },
   "controls": {
     "format": "Ausgabeformat",
+    "formatHint": "PNG ist verlustfrei, aber bei Fotos viel größer — JPG oder WebP halten die Datei klein, ohne sichtbaren Unterschied.",
     "quality": "Qualität",
     "convertAll": "Alle konvertieren",
     "downloadAll": "Alle herunterladen (ZIP)",

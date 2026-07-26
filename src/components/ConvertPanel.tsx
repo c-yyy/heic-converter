@@ -161,6 +161,7 @@ const ConvertPanel = forwardRef<ConvertPanelRef, ConvertPanelProps>(function Con
                 <option value="image/webp">WebP</option>
                 <option value="application/pdf">{t('formatPdf')}</option>
               </select>
+              <p className="control-hint">{t('formatHint')}</p>
             </div>
             {showQuality && (
               <div className="control-group">

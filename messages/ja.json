@@ -27,6 +27,7 @@
   },
   "controls": {
     "format": "出力形式",
+    "formatHint": "PNG は劣化なしですが写真では容量が大きくなります。JPG や WebP なら見た目の差がなく小さく保てます。",
     "quality": "品質",
     "convertAll": "すべて変換",
     "downloadAll": "すべてダウンロード (ZIP)",

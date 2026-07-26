@@ -27,6 +27,7 @@
   },
   "controls": {
     "format": "Output Format",
+    "formatHint": "PNG is lossless but much larger for photos — JPG or WebP keeps files small with no visible difference.",
     "quality": "Quality",
     "convertAll": "Convert All",
     "downloadAll": "Download All (ZIP)",
