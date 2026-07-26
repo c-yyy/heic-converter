@@ -102,7 +102,7 @@
     "heicToWebp": "HEIC から WebP",
     "about": "概要",
     "privacy": "ファイルがデバイスから出ることはありません。",
-    "copyright": "© 2025 HEIC Converter. All rights reserved.",
+    "copyright": "© {year} HEIC Converter. All rights reserved.",
     "buyMeCoffee": "お役に立ちましたか？開発者にコーヒーをおごってください！"
   },
   "nav": {

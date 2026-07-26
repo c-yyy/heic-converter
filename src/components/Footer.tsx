@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <span className="footer-copyright">{t('copyright')}</span>
+          <span className="footer-copyright">{t('copyright', { year: new Date().getFullYear() })}</span>
           <a href="https://buymeacoffee.com" target="_blank" rel="noopener noreferrer" className="coffee-btn">
             ☕ {t('buyMeCoffee')}
           </a>

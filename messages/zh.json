@@ -102,7 +102,7 @@
     "heicToWebp": "HEIC 转 WebP",
     "about": "关于",
     "privacy": "您的文件永远不会离开您的设备。",
-    "copyright": "© 2025 HEIC Converter. 保留所有权利。",
+    "copyright": "© {year} HEIC Converter. 保留所有权利。",
     "buyMeCoffee": "节省了你的时间？请开发者喝杯咖啡！"
   },
   "nav": {

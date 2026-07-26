@@ -102,7 +102,7 @@
     "heicToWebp": "HEIC zu WebP",
     "about": "Über",
     "privacy": "Ihre Dateien verlassen niemals Ihr Gerät.",
-    "copyright": "© 2025 HEIC Converter. Alle Rechte vorbehalten.",
+    "copyright": "© {year} HEIC Converter. Alle Rechte vorbehalten.",
     "buyMeCoffee": "Zeit gespart? Spendieren Sie dem Entwickler einen Kaffee!"
   },
   "nav": {
