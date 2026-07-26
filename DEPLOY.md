@@ -16,12 +16,39 @@ Error: ENOENT: no such file or directory, open
 > 网上常见“把 `output` 改成 `standalone`”的建议是针对**服务端部署**的，与本项目刻意的静态导出架构冲突，**请勿采用**——这会导致整个静态导出/客户端解码架构需要返工。
 
 ## Cloudflare Pages 控制台设置（GitHub 自动部署）
-1. Dashboard → 你的 Pages 项目 → **Settings → Build & deployments → Build configuration**（或在首次创建项目时）。
-2. **Framework preset（框架预设）：选 `None`（或 “Other”）**。这一步最关键，它会阻止 Cloudflare 注入 opennext 构建流程。
-3. **Build command（构建命令）：`npm run build`**
-4. **Output directory（输出目录）：`out`**（注意不是默认的 `.next`）
-5. **Node.js version：22**（与本地一致；`package.json` 的 engines 要求 `>=20.9.0`）
-6. 保存，然后到 **Deployments**，对最近一次失败构建点击 **Retry deployment**，并在弹窗中选择 **Clear cache and retry（清除缓存并重试）**。
+
+> 关键陷阱：把 Framework preset 改成 `None` 后，**Build command 输入框会变成可编辑，但不会自动清空**——
+> 它往往仍残留 `npx opennextjs-cloudflare build`。必须**手动把 Build command 改成 `npm run build`**，否则还会报
+> `pages-manifest.json` 的 ENOENT。Output directory 同理要改成 `out`。
+
+1. Dashboard → 你的 Pages 项目 → **Settings → Build & deployments → Build configuration**。
+2. **Framework preset：选 `None`（或 “Other”）**。这一步阻止 Cloudflare 注入 opennext 流程。
+3. **Build command：手动清空并填入 `npm run build`**（务必确认不是 `npx opennextjs-cloudflare build`）。
+4. **Output directory：改成 `out`**（不是默认的 `.next`）。
+5. **Node.js version：22**（与本地一致；`package.json` 的 engines 要求 `>=20.9.0`）。
+6. 保存 → **Deployments** → 对失败构建点 **Retry deployment** → 选 **Clear cache and retry**。
+
+### 如果改完上述设置仍然报同一个 ENOENT
+说明该项目最初是用 “Next.js” 预设创建的，opennext 构建流水线已被固化、仅靠改设置无法取消。二选一：
+
+**A. 重建 Pages 项目（推荐，仍走 GitHub 自动部署）**
+- 删除当前 Pages 项目（Settings → Delete project）。
+- 重新 **Create a project → 连接 Git 仓库**，在 “Set up builds” 这步**直接选 `None` 框架预设**（不要选 Next.js），
+  并填 `npm run build` + 输出目录 `out`。新项目不会带 opennext 流水线，构建即纯静态导出。
+
+**B. 改用 Wrangler 直接上传（绕过 GitHub 构建流水线，100% 静态）**
+- 在 Cloudflare 控制台断开/忽略 GitHub 自动部署，本地构建后直接上传 `out/`：
+  ```bash
+  npm run build
+  npx wrangler pages deploy out
+  ```
+- 这种方式完全不经过 opennext，最稳妥，适合 CI / 手动发布。
+
+## Sitemap / robots 说明
+- `npm run build` 在 `next build` 之后会执行 `scripts/generate-sitemap.mjs`，自动生成 `out/sitemap.xml` 与 `out/robots.txt`。
+- sitemap 的站点域名来自环境变量 **`SITE_URL`**（默认 `https://heic-converter.pages.dev`）。
+  在 Cloudflare **Settings → Build & deployments → Environment variables** 中加入 `SITE_URL=https://你的真实域名`，
+  让 sitemap 里的链接指向正式域名。
 
 ## 构建产物校验
 `npm run build` 后，`out/` 应包含：
