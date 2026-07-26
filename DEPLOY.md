@@ -28,21 +28,35 @@ Error: ENOENT: no such file or directory, open
 5. **Node.js version：22**（与本地一致；`package.json` 的 engines 要求 `>=20.9.0`）。
 6. 保存 → **Deployments** → 对失败构建点 **Retry deployment** → 选 **Clear cache and retry**。
 
-### 如果改完上述设置仍然报同一个 ENOENT
-说明该项目最初是用 “Next.js” 预设创建的，opennext 构建流水线已被固化、仅靠改设置无法取消。二选一：
+> ✅ **线上安全提示**：Cloudflare Pages 只有**成功的构建**才会成为新的生产部署；失败的构建**不会**替换线上版本。
+> 所以你改设置、点 retry、甚至多次失败，线上站点都始终由旧的可用部署在服务，不会下线。只有新构建成功那一刻才会切换。
+> 改设置本身也不需要删除/重建项目。
 
-**A. 重建 Pages 项目（推荐，仍走 GitHub 自动部署）**
-- 删除当前 Pages 项目（Settings → Delete project）。
-- 重新 **Create a project → 连接 Git 仓库**，在 “Set up builds” 这步**直接选 `None` 框架预设**（不要选 Next.js），
-  并填 `npm run build` + 输出目录 `out`。新项目不会带 opennext 流水线，构建即纯静态导出。
+### 如果改完上述设置仍然报同一个 ENOENT
+说明该项目最初是用 “Next.js” 预设创建的，opennext 构建流水线被固化、仅靠改设置可能无法取消。按“对线上影响从低到高”选：
+
+**首选：在现有项目里直接改设置（零影响线上，推荐）**
+- 直接走上面 6 步：把 Framework preset 改成 `None`、Build command 手动改成 `npm run build`、Output directory 改成 `out`，再 Clear cache & retry。
+- 如上「线上安全提示」所述，失败的构建不会下线线上，可放心反复 retry 直到成功。
+- 多数情况下，把 Build command 残留的 `npx opennextjs-cloudflare build` 手动改成 `npm run build` 即可解决。
+
+**零停机：新建第二个 Pages 项目并行切换（适合已绑定自定义域名）**
+- 保留当前线上项目**不动**。新建一个 Pages 项目 → 连接同一 Git 仓库 → “Set up builds” 直接选 `None` → `npm run build` + 输出 `out`。
+- 新项目部署成功后用它的 `*.pages.dev` 临时地址自行验证。
+- 确认无误后，把自定义域名从旧项目切到新项目（Cloudflare 自定义域名可在项目间迁移；切换瞬间短暂停顿，旧项目一直在线直到切换完成）。
+- 完全确认新项目 OK，再删除旧项目。全程线上零中断。
+
+**最后兜底：重建 Pages 项目（⚠️ 会影响线上，谨慎）**
+- 仅当上述都不行、且你能接受短暂停机时：删除当前项目（Settings → Delete project）后重新创建并选 `None` 预设。
+- ⚠️ 这会删除线上项目与部署历史，删除期间站点不可用；若绑定了自定义域名需重新接入。**非必要不采用**。
 
 **B. 改用 Wrangler 直接上传（绕过 GitHub 构建流水线，100% 静态）**
-- 在 Cloudflare 控制台断开/忽略 GitHub 自动部署，本地构建后直接上传 `out/`：
+- 保留现有项目，本地构建后直接上传 `out/` 到该项目（产物内容一致，线上页面不变，不影响项目本身存在）：
   ```bash
   npm run build
   npx wrangler pages deploy out
   ```
-- 这种方式完全不经过 opennext，最稳妥，适合 CI / 手动发布。
+- 完全不经过 opennext，最稳妥，适合 CI / 手动发布。
 
 ## Sitemap / robots 说明
 - `npm run build` 在 `next build` 之后会执行 `scripts/generate-sitemap.mjs`，自动生成 `out/sitemap.xml` 与 `out/robots.txt`。
