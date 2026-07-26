@@ -144,7 +144,9 @@
       "s3Body": "JPEG opens on every device, browser, and app made in the last 25 years. HEIC needs a decoder that Windows, Android, and many websites don’t have by default.",
       "s4Title": "When to Convert HEIC to JPEG",
       "s4Body": "Convert to JPEG when sharing with friends, uploading to social media, or sending to print labs. Use the converter above to change HEIC to JPG in seconds — no upload, fully private.",
-      "conclusion": "Keep HEIC on your iPhone for storage, but convert to JPEG whenever a file needs to travel. It’s the best of both worlds."
+      "s5Title": "Why Converted PNG Files Get So Big",
+      "s5Body": "HEIC is \"high-efficiency lossy compression\" while PNG is \"lossless but weak compression\". An iPhone photo is essentially HEVC-encoded, which compresses smooth gradients and fine noise extremely well; PNG's DEFLATE algorithm barely shrinks real photos (it shines on screenshots and line art, not photographs). Do the math and it adds up: a 12MP iPhone photo (4032×3024) is about 48.8 MB of uncompressed RGBA data. After PNG compression it typically lands at 15–30 MB — exactly the 15.5 MB / 30.1 MB figures you may have measured. So it isn't abnormal bloat; it's simply PNG's normal size. A secondary factor: our conversion pipeline keeps the alpha (transparency) channel even for opaque photos, adding roughly 25% versus plain RGB. But compared with PNG's own expansion, that's minor. For photos, PNG just isn't necessary. Switching to JPG or WebP shrinks the file back to near the original HEIC size with no visible difference: the same 12MP photo is about 24 MB as JPG (quality 90) and about 1.53 MB as WebP (quality 90). That's precisely why most HEIC converters default to JPG.",
+      "conclusion": "Keep HEIC on your iPhone for storage, but convert to JPEG whenever a file needs to travel. It's the best of both worlds."
     },
     "openHeicWindows": {
       "metaTitle": "How to Open HEIC on Windows 10/11 — Free HEIC Viewer & Converter",

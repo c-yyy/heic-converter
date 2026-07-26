@@ -20,7 +20,7 @@ export default async function GuideView({
   const messages = (await import(`../../messages/${locale}.json`)).default;
   const g = messages.guides[guide.key];
 
-  const sections = [1, 2, 3, 4]
+  const sections = [1, 2, 3, 4, 5, 6, 7, 8]
     .map((n) => ({ title: g[`s${n}Title`], body: g[`s${n}Body`] }))
     .filter((s) => s.title && s.body);
 
