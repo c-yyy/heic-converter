@@ -1,5 +1,21 @@
 # 部署到 Cloudflare Pages（静态导出）
 
+> ⚠️ **先看项目类型：必须是 Cloudflare Pages，不是 Cloudflare Workers**
+> 
+> 本仓库是 **Next.js 静态导出站点**，必须部署到 **Cloudflare Pages**（静态托管服务）。
+> 
+> 如果你在 Cloudflare 控制台看到以下字段，说明创建成了 **Workers 项目**：
+> - 构建命令
+> - 部署命令
+> - 版本命令
+> - 根目录
+> 
+> Workers 是给服务端 Worker 脚本用的，它的 `npx wrangler deploy` 流水线不会读取 `out/` 静态目录，
+> 因此会永远报 `ENOENT ... pages-manifest.json` 等错误。**请删除该 Workers 项目，重新在 Cloudflare Pages 里创建项目。**
+> 
+> 正确入口：**Dashboard → 左侧菜单 → Workers & Pages → 顶部选择 Pages → Create a project → Connect to Git**。
+> 不要选 Workers / "Create a Worker"。
+
 ## 构建模式
 本项目使用 Next.js **静态导出**（`next.config.ts` 中 `output: 'export'`）。所有页面在构建时预渲染为 `out/` 目录下的纯静态 HTML / JS / CSS。HEIC 解码完全在浏览器端（WASM）完成，**不需要任何服务端或边缘函数**。
 
