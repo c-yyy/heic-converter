@@ -1,7 +1,7 @@
 import { setRequestLocale } from 'next-intl/server';
 import ConverterApp from './ConverterApp';
 import { Link } from '@/i18n/navigation';
-import { GUIDES } from '@/lib/guides';
+import { GUIDES, buildGuideAlternates } from '@/lib/guides';
 
 // Renders a long-tail SEO guide page: keyword-rich h1, a short intro, the
 // converter kept above the fold (function-as-content + strong user signals),
@@ -26,8 +26,45 @@ export default async function GuideView({
 
   const others = GUIDES.filter((x) => x.slug !== slug);
 
+  // Structured data: BreadcrumbList (Home -> guide) + FAQPage (if FAQs exist).
+  const faq: { q: string; a: string }[] = Array.isArray(g.faq) ? g.faq : [];
+  const siteUrl = process.env.SITE_URL ?? 'https://heic2any.online';
+  const { canonical } = buildGuideAlternates(locale, slug);
+  const homePath = locale === 'en' ? '/' : `/${locale}/`;
+
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}${homePath}` },
+      { '@type': 'ListItem', position: 2, name: g.h1, item: `${siteUrl}${canonical}` },
+    ],
+  };
+  const faqLd =
+    faq.length > 0
+      ? {
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: faq.map((f) => ({
+            '@type': 'Question',
+            name: f.q,
+            acceptedAnswer: { '@type': 'Answer', text: f.a },
+          })),
+        }
+      : null;
+
   return (
     <article className="guide">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
+      {faqLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        />
+      )}
       <h1 className="guide-h1">{g.h1}</h1>
       <p className="guide-intro">{g.intro}</p>
 

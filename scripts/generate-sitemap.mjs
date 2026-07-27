@@ -4,7 +4,7 @@
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 
-const SITE_URL = (process.env.SITE_URL || 'https://heic-converter.pages.dev').replace(/\/+$/, '');
+const SITE_URL = (process.env.SITE_URL || 'https://heic2any.online').replace(/\/+$/, '');
 
 // English (default locale) is served at the root — no locale prefix.
 const EN_ROUTES = [

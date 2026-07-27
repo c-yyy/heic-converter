@@ -7,7 +7,7 @@ export function getSoftwareApplicationSchema() {
       'Free online HEIC to PNG/JPG converter. 100% private local conversion in your browser.',
     applicationCategory: 'MultimediaApplication',
     operatingSystem: 'Web Browser',
-    url: 'https://heic-converter.vercel.app',
+    url: process.env.SITE_URL ?? 'https://heic2any.online',
     offers: {
       '@type': 'Offer',
       price: '0',

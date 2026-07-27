@@ -127,7 +127,21 @@
       "s3Body": "Any photo shot on an iPhone or iPad (unless you changed the camera format), images exported from macOS Photos, or pictures shared via AirDrop and iCloud are usually HEIC. Windows PCs and most Android phones can’t open them without help.",
       "s4Title": "How to Convert HEIC to a Compatible Format",
       "s4Body": "The easiest fix is to convert. Use the free converter above to turn HEIC into PNG, JPG, or WebP — entirely in your browser, with no upload and no software to install. Your files never leave your device.",
-      "conclusion": "HEIC is excellent on Apple devices but limited elsewhere. Converting to PNG or JPG is the simplest way to make your photos usable everywhere."
+      "conclusion": "HEIC is excellent on Apple devices but limited elsewhere. Converting to PNG or JPG is the simplest way to make your photos usable everywhere.",
+      "faq": [
+        {
+          "q": "What is the HEIC format?",
+          "a": "HEIC (High Efficiency Image Format) is the photo format Apple adopted starting with iOS 11. It uses HEVC video compression, producing files roughly half the size of JPEG at the same perceived quality."
+        },
+        {
+          "q": "Why does the iPhone shoot HEIC instead of JPEG by default?",
+          "a": "HEICs newer compression keeps photo quality visually identical while shrinking files to about half of JPEG, saving storage and letting you keep more photos on your device."
+        },
+        {
+          "q": "Can HEIC be converted to JPEG or PNG?",
+          "a": "Yes. This tool converts entirely in your browser via WASM — your files are never uploaded to any server, and you can download them immediately after conversion."
+        }
+      ]
     },
     "heicVsJpeg": {
       "metaTitle": "HEIC vs JPEG — Which Is Better? File Size, Quality & Compatibility",
@@ -146,7 +160,21 @@
       "s4Body": "Convert to JPEG when sharing with friends, uploading to social media, or sending to print labs. Use the converter above to change HEIC to JPG in seconds — no upload, fully private.",
       "s5Title": "Why Converted PNG Files Get So Big",
       "s5Body": "HEIC is \"high-efficiency lossy compression\" while PNG is \"lossless but weak compression\". An iPhone photo is essentially HEVC-encoded, which compresses smooth gradients and fine noise extremely well; PNG's DEFLATE algorithm barely shrinks real photos (it shines on screenshots and line art, not photographs). Do the math and it adds up: a 12MP iPhone photo (4032×3024) is about 48.8 MB of uncompressed RGBA data. After PNG compression it typically lands at 15–30 MB — exactly the 15.5 MB / 30.1 MB figures you may have measured. So it isn't abnormal bloat; it's simply PNG's normal size. A secondary factor: our conversion pipeline keeps the alpha (transparency) channel even for opaque photos, adding roughly 25% versus plain RGB. But compared with PNG's own expansion, that's minor. For photos, PNG just isn't necessary. Switching to JPG or WebP shrinks the file back to near the original HEIC size with no visible difference: the same 12MP photo is about 24 MB as JPG (quality 90) and about 1.53 MB as WebP (quality 90). That's precisely why most HEIC converters default to JPG.",
-      "conclusion": "Keep HEIC on your iPhone for storage, but convert to JPEG whenever a file needs to travel. It's the best of both worlds."
+      "conclusion": "Keep HEIC on your iPhone for storage, but convert to JPEG whenever a file needs to travel. It's the best of both worlds.",
+      "faq": [
+        {
+          "q": "Which is better, HEIC or JPEG?",
+          "a": "It depends on the use. HEIC is smaller and higher quality, ideal for storage on your iPhone. JPEG has the widest compatibility — nearly every device, app, and social platform opens it directly — making it best for sharing."
+        },
+        {
+          "q": "Why does converting HEIC to PNG make the file much bigger?",
+          "a": "HEIC is efficient lossy compression; PNG is lossless but compresses photos poorly. A 12MP iPhone photo is about 48.8MB of raw data, and after PNG compression its typically still 15 to 30MB — a 7 to 12x size increase. For photos, use JPG or WebP instead."
+        },
+        {
+          "q": "What format should I convert photos to for sharing?",
+          "a": "Choose JPEG for maximum compatibility, or WebP when you want smaller files and the platform supports it. Both are visually near-identical and far better than PNG for photos."
+        }
+      ]
     },
     "openHeicWindows": {
       "metaTitle": "How to Open HEIC on Windows 10/11 — Free HEIC Viewer & Converter",
@@ -163,7 +191,21 @@
       "s3Body": "Desktop apps like IrfanView or XnView can open HEIC once the proper codecs are present. They’re handy for bulk browsing but require installation.",
       "s4Title": "Which Should You Choose?",
       "s4Body": "Need to view one or two photos occasionally? The HEIF extension is fine. Need to share, print, or process many files? Converting to JPG/PNG with the tool above is faster and works everywhere.",
-      "conclusion": "Whether you install a codec or convert in your browser, opening HEIC on Windows takes minutes — and converting gives you files that work on any device."
+      "conclusion": "Whether you install a codec or convert in your browser, opening HEIC on Windows takes minutes — and converting gives you files that work on any device.",
+      "faq": [
+        {
+          "q": "Can the Windows Photos app open HEIC directly?",
+          "a": "Most Windows 10/11 PCs cannot by default. You need to install the \"HEIF Image Extensions\" (and optionally the HEVC Video Extensions) from the Microsoft Store; then the Photos app can preview HEIC files."
+        },
+        {
+          "q": "How can I view HEIC on Windows without installing software?",
+          "a": "Use this tool: open the page in your browser, drop in your HEIC files, and preview or convert them to JPG/WebP locally — no install required."
+        },
+        {
+          "q": "Is it safe to convert HEIC with this tool?",
+          "a": "Yes. Conversion runs entirely in your browser via WebAssembly; your files are never uploaded to any server, making it safe for private photos."
+        }
+      ]
     }
   }
 }

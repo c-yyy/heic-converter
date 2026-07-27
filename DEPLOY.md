@@ -74,11 +74,14 @@ Error: ENOENT: no such file or directory, open
   ```
 - 完全不经过 opennext，最稳妥，适合 CI / 手动发布。
 
-## Sitemap / robots 说明
+## 自定义域名 + Sitemap / robots 说明
+- 本项目的正式域名是 **`https://heic2any.online`**。
+- **绑定自定义域名**：Pages 项目 → **自定义域** → 输入 `heic2any.online`，按提示添加/修改 DNS 记录（Cloudflare 会自动分配 CNAME 或代理）。绑定后 `https://heic2any.online` 即指向本站点。
 - `npm run build` 在 `next build` 之后会执行 `scripts/generate-sitemap.mjs`，自动生成 `out/sitemap.xml` 与 `out/robots.txt`。
-- sitemap 的站点域名来自环境变量 **`SITE_URL`**（默认 `https://heic-converter.pages.dev`）。
-  在 Cloudflare **Settings → Build & deployments → Environment variables** 中加入 `SITE_URL=https://你的真实域名`，
-  让 sitemap 里的链接指向正式域名。
+- sitemap 与指南页结构化数据（BreadcrumbList / FAQPage）的站点域名都来自环境变量 **`SITE_URL`**。
+  在 Cloudflare **Settings → Build & deployments → Environment variables** 中加入 `SITE_URL=https://heic2any.online`，
+  让 sitemap 与 JSON-LD 里的链接指向正式域名（未设置时默认 `https://heic2any.online`）。
+- **提交 sitemap**：在 Google Search Console / Bing Webmaster 里提交 `https://heic2any.online/sitemap.xml` 加速收录。
 
 ## 构建产物校验
 `npm run build` 后，`out/` 应包含：

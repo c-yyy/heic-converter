@@ -127,7 +127,21 @@
       "s3Body": "Jedes mit iPhone oder iPad aufgenommene Foto (sofern Sie das Kameraformat nicht geändert haben), Bilder aus macOS Fotos oder per AirDrop und iCloud geteilte Aufnahmen sind meist HEIC. Windows-PCs und die meisten Android-Handys können sie ohne Hilfe nicht öffnen.",
       "s4Title": "So konvertieren Sie HEIC in ein kompatibles Format",
       "s4Body": "Der einfachste Weg ist die Konvertierung. Nutzen Sie den kostenlosen Konverter oben, um HEIC in PNG, JPG oder WebP zu verwandeln — vollständig im Browser, ohne Upload und ohne Software-Installation. Ihre Dateien verlassen das Gerät nie.",
-      "conclusion": "HEIC ist auf Apple-Geräten hervorragend, aber sonst eingeschränkt. Die Umwandlung in PNG oder JPG ist der einfachste Weg, Ihre Fotos überall nutzbar zu machen."
+      "conclusion": "HEIC ist auf Apple-Geräten hervorragend, aber sonst eingeschränkt. Die Umwandlung in PNG oder JPG ist der einfachste Weg, Ihre Fotos überall nutzbar zu machen.",
+      "faq": [
+        {
+          "q": "Was ist das HEIC-Format?",
+          "a": "HEIC (High Efficiency Image Format) ist das Fotoformat, das Apple ab iOS 11 verwendet. Es nutzt HEVC-Videokompression und erzeugt Dateien von etwa halber JPEG-Größe bei gleicher wahrgenommener Qualität."
+        },
+        {
+          "q": "Warum nimmt das iPhone standardmäßig HEIC statt JPEG auf?",
+          "a": "HEICs modernere Kompression hält die Bildqualität sichtbar gleich, während die Dateien auf etwa die Hälfte von JPEG schrumpfen — so sparen Sie Speicher und behalten mehr Fotos."
+        },
+        {
+          "q": "Kann HEIC in JPEG oder PNG umgewandelt werden?",
+          "a": "Ja. Dieses Werkzeug konvertiert vollständig im Browser per WASM — Ihre Dateien werden niemals auf einen Server hochgeladen und stehen nach der Konvertierung sofort zum Download bereit."
+        }
+      ]
     },
     "heicVsJpeg": {
       "metaTitle": "HEIC vs. JPEG — Was ist besser? Dateigröße, Qualität & Kompatibilität",
@@ -146,7 +160,21 @@
       "s4Body": "Konvertieren Sie in JPEG, wenn Sie Fotos teilen, in soziale Medien laden oder an ein Fotolabor senden. Nutzen Sie den Konverter oben, um HEIC in wenigen Sekunden in JPG zu ändern — ohne Upload, vollständig privat.",
       "s5Title": "Warum konvertierte PNG-Dateien so groß werden",
       "s5Body": "HEIC ist \"hocheffiziente verlustbehaftete Kompression\", während PNG \"verlustfrei, aber schwach komprimiert\" ist. Ein iPhone-Foto ist im Grunde HEVC-kodiert, was sanfte Verläufe und feines Rauschen extrem gut komprimiert; PNGs DEFLATE-Algorithmus bringt bei echten Fotos kaum etwas (er glänzt bei Screenshots und Grafiken, nicht bei Fotos). Die Rechnung macht es deutlich: Ein 12-MP-iPhone-Foto (4032×3024) entspricht etwa 48,8 MB unkomprimierten RGBA-Daten. Nach der PNG-Kompression landet es meist bei 15–30 MB — exakt bei den gemessenen 15,5 MB / 30,1 MB. Das ist also keine abnorme Aufblähung, sondern PNGs normale Größe. Ein Nebenfaktor: Unsere Konvertierungs-Pipeline behält den Alpha-(Transparenz-)Kanal auch bei undurchsichtigen Fotos, was etwa 25 % mehr Volumen bedeutet als reines RGB. Im Vergleich zu PNGs eigener Expansion ist das aber gering. Für Fotos ist PNG schlicht nicht nötig. Mit JPG oder WebP schrumpft die Datei auf fast die Original-HEIC-Größe zurück, ohne sichtbaren Unterschied: Das gleiche 12-MP-Foto ist als JPG (Qualität 90) etwa 24 MB und als WebP (Qualität 90) etwa 1,53 MB groß. Genau deshalb stellen die meisten HEIC-Konverter JPG als Standard ein.",
-      "conclusion": "Behalten Sie HEIC auf dem iPhone für den Speicher, konvertieren Sie aber in JPEG, sobald eine Datei unterwegs sein muss. So haben Sie das Beste aus beiden Welten."
+      "conclusion": "Behalten Sie HEIC auf dem iPhone für den Speicher, konvertieren Sie aber in JPEG, sobald eine Datei unterwegs sein muss. So haben Sie das Beste aus beiden Welten.",
+      "faq": [
+        {
+          "q": "Was ist besser, HEIC oder JPEG?",
+          "a": "Das hängt vom Zweck ab. HEIC ist kleiner und hochwertiger und eignet sich zur Speicherung auf dem iPhone. JPEG bietet die breiteste Kompatibilität — fast jedes Gerät, jede App und jedes soziale Netzwerk öffnet es direkt — und ist daher am besten zum Teilen."
+        },
+        {
+          "q": "Warum wird die Datei beim Konvertieren von HEIC in PNG viel größer?",
+          "a": "HEIC ist effiziente verlustbehaftete Kompression; PNG ist verlustfrei, komprimiert Fotos aber schlecht. Ein 12-MP-iPhone-Foto hat etwa 48,8MB Rohdaten, nach der PNG-Kompression sind es meist noch 15 bis 30MB — also eine 7- bis 12-fache Vergrößerung. Verwenden Sie für Fotos lieber JPG oder WebP."
+        },
+        {
+          "q": "In welches Format soll ich Fotos zum Teilen konvertieren?",
+          "a": "Wählen Sie JPEG für maximale Kompatibilität oder WebP, wenn Sie kleinere Dateien wollen und die Plattform es unterstützt. Beide sind optisch nahezu identisch und für Fotos viel besser als PNG."
+        }
+      ]
     },
     "openHeicWindows": {
       "metaTitle": "HEIC unter Windows 10/11 öffnen — Kostenloser HEIC-Betrachter & Konverter",
@@ -163,7 +191,21 @@
       "s3Body": "Desktop-Apps wie IrfanView oder XnView können HEIC öffnen, sobald die passenden Codecs vorhanden sind. Sie eignen sich zum Stöbern in großen Mengen, erfordern aber eine Installation.",
       "s4Title": "Was sollten Sie wählen?",
       "s4Body": "Nur gelegentlich ein oder zwei Fotos ansehen? Die HEIF-Erweiterung genügt. Teilen, Drucken oder viele Dateien verarbeiten? Die Umwandlung in JPG/PNG mit dem obigen Werkzeug ist schneller and funktioniert überall.",
-      "conclusion": "Ob Sie einen Codec installieren oder im Browser konvertieren — HEIC unter Windows zu öffnen dauert nur Minuten, and beim Konvertieren erhalten Sie Dateien, die auf jedem Gerät funktionieren."
+      "conclusion": "Ob Sie einen Codec installieren oder im Browser konvertieren — HEIC unter Windows zu öffnen dauert nur Minuten, and beim Konvertieren erhalten Sie Dateien, die auf jedem Gerät funktionieren.",
+      "faq": [
+        {
+          "q": "Kann die Windows Fotos-App HEIC direkt öffnen?",
+          "a": "Die meisten Windows-10/11-PCs können das standardmäßig nicht. Sie müssen die \"HEIF-Bilderweiterungen\" (und optional die HEVC-Videoerweiterungen) aus dem Microsoft Store installieren; danach kann die Fotos-App HEIC-Vorschauen anzeigen."
+        },
+        {
+          "q": "Wie kann ich HEIC unter Windows ohne Software-Installation ansehen?",
+          "a": "Nutzen Sie dieses Werkzeug: Öffnen Sie die Seite im Browser, ziehen Sie Ihre HEIC-Dateien hinein und sehen Sie sie lokal vor oder konvertieren Sie sie in JPG/WebP — ganz ohne Installation."
+        },
+        {
+          "q": "Ist die HEIC-Konvertierung mit diesem Werkzeug sicher?",
+          "a": "Ja. Die Konvertierung läuft vollständig im Browser per WebAssembly; Ihre Dateien werden niemals auf einen Server hochgeladen und eignen sich daher für private Fotos."
+        }
+      ]
     }
   }
 }
