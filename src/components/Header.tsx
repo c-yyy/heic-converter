@@ -8,6 +8,7 @@ import LocaleSwitcher from './LocaleSwitcher';
 export default function Header() {
   const t = useTranslations('nav');
   const pathname = usePathname();
+  const isHome = pathname === '/';
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -37,54 +38,60 @@ export default function Header() {
           HEIC Converter
         </Link>
 
-        <nav className="header-nav" aria-label="Primary">
-          <ul className="header-nav-list">
-            {navItems.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className={pathname === item.href ? 'active' : ''}
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        {!isHome && (
+          <nav className="header-nav" aria-label="Primary">
+            <ul className="header-nav-list">
+              {navItems.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className={pathname === item.href ? 'active' : ''}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
 
         <div className="header-actions">
           <LocaleSwitcher />
-          <button
-            type="button"
-            className={`header-menu-toggle${menuOpen ? ' open' : ''}`}
-            aria-label="Toggle menu"
-            aria-expanded={menuOpen}
-            aria-controls="mobile-menu"
-            onClick={() => setMenuOpen((v) => !v)}
-          >
-            <span />
-            <span />
-            <span />
-          </button>
+          {!isHome && (
+            <button
+              type="button"
+              className={`header-menu-toggle${menuOpen ? ' open' : ''}`}
+              aria-label="Toggle menu"
+              aria-expanded={menuOpen}
+              aria-controls="mobile-menu"
+              onClick={() => setMenuOpen((v) => !v)}
+            >
+              <span />
+              <span />
+              <span />
+            </button>
+          )}
         </div>
       </div>
 
-      <div
-        id="mobile-menu"
-        className={`header-mobile-menu${menuOpen ? ' open' : ''}`}
-        hidden={!menuOpen}
-      >
+      {!isHome && (
+        <div
+          id="mobile-menu"
+          className={`header-mobile-menu${menuOpen ? ' open' : ''}`}
+          hidden={!menuOpen}
+        >
           {navItems.map((item) => (
-          <Link
-            key={item.href}
-            href={item.href}
-            className={pathname === item.href ? 'active' : ''}
-            onClick={() => setMenuOpen(false)}
-          >
-            {item.label}
-          </Link>
-        ))}
-      </div>
+            <Link
+              key={item.href}
+              href={item.href}
+              className={pathname === item.href ? 'active' : ''}
+              onClick={() => setMenuOpen(false)}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
+      )}
     </header>
   );
 }

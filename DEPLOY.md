@@ -105,3 +105,13 @@ npx serve out
 npm run build
 npx wrangler pages deploy out
 ```
+
+## 部署后检查清单（需在 Cloudflare 控制台 / 搜索引擎后台手动完成）
+代码侧已就绪，以下为上线后需在外部控制台手动操作的项：
+
+1. **绑定自定义域名 `heic2any.online`**：Pages 项目 → **自定义域** → 输入 `heic2any.online`，按提示改 DNS（Cloudflare 自动分配 CNAME / 代理）。未绑定前站点走 `*.pages.dev`，绑定后即 `https://heic2any.online`。
+2. **（可选）设置 `SITE_URL` 环境变量**：Pages → **Settings → Build & deployments → Environment variables** 加 `SITE_URL=https://heic2any.online`。**不设置也行**——`generate-sitemap.mjs` 与 `schemas.ts` 默认已用 `https://heic2any.online`，sitemap / JSON-LD 链接已指向正式域名。
+3. **提交 sitemap 加速收录**：Google Search Console / Bing Webmaster 里提交 `https://heic2any.online/sitemap.xml`（绑定域名后）。`robots.txt` 已自动指向该 sitemap。
+4. **校验 AdSense Auto Ads**：上线后 Google 会自动投放广告，过几分钟到几小时刷新页面查看广告位是否出现（新站审核期）。
+5. **删除误建的 Workers 项目**（如还在）：之前报错那个 Workers 项目没用，留在那里易混淆，建议删除（Settings → Delete project）。
+
