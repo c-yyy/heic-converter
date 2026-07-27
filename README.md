@@ -1,39 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HEIC Converter
 
-# Online Website
-https://heic2any.online/
+A free, private, fully client-side tool to convert Apple HEIC photos to PNG, JPG, WebP, or PDF — right in your browser. No upload, no account, no software to install.
 
-## Getting Started
+**Live site:** https://heic2any.online/
 
-First, run the development server:
+![HEIC Converter](public/favicon.svg)
+
+## What it is
+
+HEIC (High Efficiency Image Container) is the photo format Apple uses on iPhone and iPad. It saves roughly half the space of JPEG at the same quality, but most non-Apple devices, Windows PCs, Android phones, and many websites can't open it without help.
+
+HEIC Converter solves that in seconds:
+
+- Drop one HEIC — or a whole batch — into the page.
+- Pick the output format you need.
+- Download the result immediately.
+
+Everything runs locally in your browser via WebAssembly, so your photos never leave your device.
+
+## Features
+
+- **Private by design** — decoding and encoding happen entirely on your device. Files are never uploaded to any server.
+- **Multiple output formats** — convert HEIC to PNG, JPG, WebP, or a single multi-page PDF.
+- **Batch conversion** — add many HEIC files at once; download them individually or as a single ZIP.
+- **PDF export** — merge one or more photos into one portable PDF, in the order you added them.
+- **Four languages** — English, German, Japanese, and Chinese, with locale-aware URLs.
+- **No sign-up, no limits** — free to use, no account required.
+
+## Why use it
+
+| Need | Use HEIC Converter to |
+| --- | --- |
+| Share with friends | Convert to JPG or WebP |
+| Upload to a website | Convert to JPG or WebP |
+| Print or email as one file | Convert to PDF |
+| Keep maximum quality | Convert to PNG |
+
+> Tip: PNG is lossless but expands photo files several-fold (a 12 MP iPhone photo can grow from ~2 MB to 15–30 MB). For most photos, JPG or WebP gives near-identical quality at a fraction of the size.
+
+## How it works
+
+The app loads a WebAssembly HEIC decoder in your browser and re-encodes the image with the Canvas API. Because nothing is sent over the network, even sensitive or private photos stay on your device.
+
+## Supported formats
+
+- **Input:** HEIC / HEIF
+- **Output:** PNG, JPEG, WebP, PDF
+
+## Tech stack
+
+- [Next.js](https://nextjs.org) (App Router) with `output: 'export'` for a fully static build
+- [next-intl](https://next-intl-docs.vercel.app) for internationalization
+- `heic2any` + a modern `libheif` fallback decoder for robust HEIC decoding
+- `jspdf` for PDF export
+- Deploys as static files to Cloudflare Pages
+
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 with your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To build the static site (includes `sitemap.xml` and `robots.txt` generation):
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+The output is written to the `out/` directory.
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is a static export. On Cloudflare Pages:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Framework preset: **None**
+- Build command: `npm run build`
+- Output directory: `out`
+- Node.js version: `22`
 
-## Deploy on Vercel
+Set the `SITE_URL` environment variable (defaults to `https://heic2any.online`) so the generated `sitemap.xml` and structured-data canonical URLs point at your domain.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Links
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Website: https://heic2any.online/
+- Guides: [What is HEIC?](https://heic2any.online/doc/what-is-heic) · [HEIC vs JPEG](https://heic2any.online/doc/heic-vs-jpeg) · [Open HEIC on Windows](https://heic2any.online/doc/open-heic-on-windows) · [Open HEIC on Mac](https://heic2any.online/doc/open-heic-on-mac) · [HEIC to PDF](https://heic2any.online/doc/heic-to-pdf)
+
+## License
+
+Released under the MIT License.

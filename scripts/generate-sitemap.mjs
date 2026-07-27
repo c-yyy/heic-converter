@@ -1,19 +1,24 @@
 // Generates out/sitemap.xml and out/robots.txt after `next build` (static export).
 // Set SITE_URL env (e.g. https://your-domain.com) to control the base URL.
 // Defaults to the Cloudflare Pages dev domain; override in Cloudflare build env.
-import { writeFileSync, mkdirSync } from 'node:fs';
-import { join } from 'node:path';
+import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
+const __dirname = dirname(fileURLToPath(import.meta.url));
 const SITE_URL = (process.env.SITE_URL || 'https://heic2any.online').replace(/\/+$/, '');
+
+// Derive doc routes from the single source of truth (src/lib/guides.ts) so the
+// sitemap stays in sync when guides are added/removed.
+const guidesSrc = readFileSync(join(__dirname, '..', 'src', 'lib', 'guides.ts'), 'utf8');
+const DOC_SLUGS = [...guidesSrc.matchAll(/slug:\s*'([^']+)'/g)].map((m) => m[1]);
 
 // English (default locale) is served at the root — no locale prefix.
 const EN_ROUTES = [
   '',
   'heic-to-jpg',
   'heic-to-webp',
-  'doc/what-is-heic',
-  'doc/heic-vs-jpeg',
-  'doc/open-heic-on-windows',
+  ...DOC_SLUGS.map((s) => `doc/${s}`),
 ];
 const LOCALES = ['de', 'ja', 'zh'];
 

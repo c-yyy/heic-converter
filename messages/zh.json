@@ -206,6 +206,46 @@
           "a": "安全。转换完全在浏览器本地（WebAssembly）完成，文件不会上传到任何服务器，适合处理私人照片。"
         }
       ]
+    },
+    "openHeicMac": {
+      "metaTitle": "如何在 Mac 上打开 HEIC — 预览、照片与免费浏览器转换",
+      "metaDescription": "Mac 可原生打开 HEIC 文件。了解如何在预览和照片中查看 HEIC，以及在需要分享时用浏览器把它转成 JPG/PNG/PDF。",
+      "cardTitle": "在 Mac 上打开 HEIC",
+      "cardDesc": "macOS 原生支持 HEIC — 以及如何转为可分享的格式。",
+      "h1": "如何在 Mac 上打开 HEIC 文件",
+      "intro": "对 Mac 用户来说是个好消息：与 Windows 不同，macOS 多年来一直原生支持 HEIC 照片。下面介绍如何查看，以及何时需要转换。",
+      "s1Title": "用预览打开 HEIC（系统自带）",
+      "s1Body": "在 Finder 中选中 HEIC 文件按空格即可快速预览，或从右键菜单用「预览」打开。macOS 无需额外软件就能解码 HEIC，你还可以在「文件 → 导出」里把它存成 JPG 或 PNG。",
+      "s2Title": "用「照片」App 打开 HEIC",
+      "s2Body": "「照片」会自动导入 HEIC 并显示在图库里。如需可分享的副本，选中照片后选择「文件 → 导出 → 导出 N 张照片」，再挑选 JPG 或 PNG 及所需尺寸。",
+      "s3Title": "要分享到 Apple 生态之外时转换",
+      "s3Body": "预览和照片在 Mac 上很好用，但你要发给 Windows 用户、安卓手机或多数网站的文件，仍然需要 JPG、PNG 或 PDF。用上方的免费转换器在浏览器里直接转成这些格式 — 无需上传，完全私密。",
+      "conclusion": "在 Mac 上查看 HEIC 不需要任何专用软件。只有当文件要离开 Apple 生态时才需要转换，上方的浏览器转换器几秒就能搞定。",
+      "faq": [
+        { "q": "Mac 能原生打开 HEIC 吗？", "a": "可以。从 macOS High Sierra 起，预览和照片无需任何插件就能打开 HEIC。在 Finder 按空格可快速预览，也可以在预览中打开文件。" },
+        { "q": "在 Mac 上怎么把 HEIC 转成 JPG？", "a": "用预览打开 HEIC，选择「文件 → 导出」并选 JPEG 即可。或用上方的免费浏览器转换器，不装任何软件就把 HEIC 改成 JPG、PNG 或 PDF。" },
+        { "q": "Mac 都能打开了，为什么还要转 HEIC？", "a": "macOS 打开 HEIC 没问题，但 Windows 电脑、安卓手机和很多网站打不开。转成 JPG/PNG/PDF 后，任何收到文件的人都能正常使用。" }
+      ]
+    },
+    "heicToPdf": {
+      "metaTitle": "HEIC 转 PDF — 免费把 iPhone 照片转成 PDF（无需上传）",
+      "metaDescription": "需要把 HEIC 变成 PDF？了解如何在浏览器里把一张或多张 HEIC 照片合成一个 PDF — 私密、无需软件、无需上传。",
+      "cardTitle": "HEIC 转 PDF",
+      "cardDesc": "把一张或多张 HEIC 照片在浏览器里合成一个 PDF。",
+      "h1": "如何把 HEIC 转换成 PDF",
+      "intro": "有时你需要的不是 JPG，而是一个整齐的 PDF — 用于文档、附件或打印。下面介绍如何不离开浏览器，用 HEIC 照片生成 PDF。",
+      "s1Title": "为什么把 HEIC 转成 PDF",
+      "s1Body": "PDF 把多张照片收进一个便携、随处可打开的文件里。无论是把几张图作为单个附件发邮件、提交材料，还是避免排版走样地打印，都很合适。",
+      "s2Title": "单张或多张 HEIC 都能转换",
+      "s2Body": "把单张 HEIC 或一整批拖进上方转换器，选择 PDF 即可。多张照片会按你添加的顺序合并成一个多页 PDF — 做报告或共享相册时很方便。",
+      "s3Title": "浏览器内的私密转换",
+      "s3Body": "整个过程通过 WebAssembly 在本地运行。你的照片从不上传到任何服务器，所以即便是私人或敏感图片也始终留在设备上。下载完成后的 PDF 即可，大功告成。",
+      "conclusion": "把 HEIC 转成 PDF 只需几秒，且不需要软件。要把照片作为单个文件分享或打印时，PDF 往往比一堆 JPG 文件夹更整洁。",
+      "faq": [
+        { "q": "能免费把 HEIC 转成 PDF 吗？", "a": "可以。上方的转换器完全在浏览器里把一张或多张 HEIC 照片合成 PDF，免费、无需账号、无需上传。" },
+        { "q": "多张 HEIC 照片能合成一个 PDF 吗？", "a": "可以。添加多张 HEIC 并选择 PDF，它们会按你选择的顺序合并成一个多页 PDF。" },
+        { "q": "HEIC 转 PDF 安全吗？", "a": "安全。转换通过 WebAssembly 在本地运行，文件不会被发送到服务器，所以私人照片始终留在你的设备上。" }
+      ]
     }
   }
 }

@@ -206,6 +206,46 @@
           "a": "Yes. Conversion runs entirely in your browser via WebAssembly; your files are never uploaded to any server, making it safe for private photos."
         }
       ]
+    },
+    "openHeicMac": {
+      "metaTitle": "How to Open HEIC on Mac — Preview, Photos & Free Browser Converter",
+      "metaDescription": "HEIC files open natively on Mac. Learn how to view HEIC in Preview and Photos, and how to convert HEIC to JPG/PNG/PDF in your browser when you need a shareable file.",
+      "cardTitle": "Open HEIC on Mac",
+      "cardDesc": "macOS opens HEIC natively — and how to convert it for sharing.",
+      "h1": "How to Open HEIC Files on Mac",
+      "intro": "Good news for Mac users: unlike Windows, macOS has opened HEIC photos natively for years. Here is how to view them and when to convert.",
+      "s1Title": "Open HEIC in Preview (Built-In)",
+      "s1Body": "Select a HEIC file in Finder and press Space for Quick Look, or open it in Preview from the right-click menu. macOS decodes HEIC without any extra software, and you can export to JPG or PNG from Preview’s File → Export menu.",
+      "s2Title": "Open HEIC in the Photos App",
+      "s2Body": "Photos imports HEIC automatically and shows it in your library. If you want a shareable copy, select the photo, choose File → Export → Export N Photos, and pick JPG or PNG with your preferred size.",
+      "s3Title": "Convert HEIC When Sharing Outside Apple",
+      "s3Body": "Preview and Photos work great on a Mac, but files you send to Windows users, Android phones, or most websites still need JPG, PNG, or PDF. Use the free converter above to turn HEIC into those formats right in your browser — no upload, fully private.",
+      "conclusion": "On a Mac, HEIC needs no special app to view. Convert only when a file has to leave the Apple ecosystem, and the browser converter above handles it in seconds.",
+      "faq": [
+        { "q": "Can Mac open HEIC files natively?", "a": "Yes. macOS Preview and Photos open HEIC without any add-on since macOS High Sierra. Press Space in Finder for a Quick Look preview, or open the file in Preview." },
+        { "q": "How do I convert HEIC to JPG on Mac?", "a": "Open the HEIC in Preview, then File → Export and choose JPEG. Or use the free browser converter above to change HEIC to JPG, PNG, or PDF without installing anything." },
+        { "q": "Why convert HEIC if Mac already opens it?", "a": "macOS opens HEIC fine, but Windows PCs, Android phones, and many websites cannot. Converting to JPG/PNG/PDF makes the file usable for anyone you share it with." }
+      ]
+    },
+    "heicToPdf": {
+      "metaTitle": "HEIC to PDF — Convert iPhone Photos to PDF for Free (No Upload)",
+      "metaDescription": "Need a HEIC file as a PDF? Learn how to convert one or more HEIC photos into a single PDF entirely in your browser — private, no software, no upload.",
+      "cardTitle": "HEIC to PDF",
+      "cardDesc": "Turn one or many HEIC photos into a single PDF, right in your browser.",
+      "h1": "How to Convert HEIC to PDF",
+      "intro": "Sometimes you don’t want a JPG — you want a tidy PDF, whether for a document, an attachment, or printing. Here is how to build one from HEIC photos without leaving your browser.",
+      "s1Title": "Why Convert HEIC to PDF",
+      "s1Body": "PDF keeps your photos in one portable, universally openable file. It is ideal for emailing several pictures as a single attachment, submitting documents, or printing without layout surprises.",
+      "s2Title": "Convert One or Many HEIC Files",
+      "s2Body": "Drop a single HEIC or a whole batch into the converter above and choose PDF. Multiple photos are merged into one multi-page PDF in the order you added them — handy for reports or shared albums.",
+      "s3Title": "Private, In-Browser Conversion",
+      "s3Body": "The whole process runs locally via WebAssembly. Your photos are never uploaded to any server, so even personal or sensitive images stay on your device. Download the finished PDF and you are done.",
+      "conclusion": "Turning HEIC into PDF takes seconds and needs no software. For sharing or printing photos as a single file, PDF is often the cleaner choice than a folder of JPGs.",
+      "faq": [
+        { "q": "Can I convert HEIC to PDF for free?", "a": "Yes. The converter above turns one or more HEIC photos into a PDF entirely in your browser, with no cost, account, or upload." },
+        { "q": "Can multiple HEIC photos become one PDF?", "a": "Yes. Add several HEIC files and choose PDF; they are combined into a single multi-page PDF in the order you selected." },
+        { "q": "Is converting HEIC to PDF safe?", "a": "Yes. Conversion runs locally via WebAssembly and your files are never sent to a server, so private photos stay on your device." }
+      ]
     }
   }
 }

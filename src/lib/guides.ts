@@ -5,6 +5,8 @@ export const GUIDES = [
   { slug: 'what-is-heic', key: 'whatIsHeic' },
   { slug: 'heic-vs-jpeg', key: 'heicVsJpeg' },
   { slug: 'open-heic-on-windows', key: 'openHeicWindows' },
+  { slug: 'open-heic-on-mac', key: 'openHeicMac' },
+  { slug: 'heic-to-pdf', key: 'heicToPdf' },
 ] as const;
 
 export type GuideSlug = (typeof GUIDES)[number]['slug'];
