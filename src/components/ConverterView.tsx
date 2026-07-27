@@ -5,18 +5,22 @@ import IconRow from './IconRow';
 import GuideLinks from './GuideLinks';
 import FAQ from './FAQ';
 
-type Page = 'home' | 'jpg' | 'webp';
+type Page = 'home' | 'jpg' | 'webp' | 'png' | 'pdf';
 
 const HERO_KEYS: Record<Page, {title: string; accent: string; subtitle: string}> = {
   home: {title: 'title', accent: 'titleAccent', subtitle: 'subtitle'},
   jpg: {title: 'titleJpg', accent: 'titleAccentJpg', subtitle: 'subtitleJpg'},
+  png: {title: 'titlePng', accent: 'titleAccentPng', subtitle: 'subtitlePng'},
   webp: {title: 'titleWebp', accent: 'titleAccentWebp', subtitle: 'subtitleWebp'},
+  pdf: {title: 'titlePdf', accent: 'titleAccentPdf', subtitle: 'subtitlePdf'},
 };
 
-const FORMAT: Record<Page, 'image/png' | 'image/jpeg' | 'image/webp'> = {
+const FORMAT: Record<Page, 'image/png' | 'image/jpeg' | 'image/webp' | 'application/pdf'> = {
   home: 'image/png',
   jpg: 'image/jpeg',
+  png: 'image/png',
   webp: 'image/webp',
+  pdf: 'application/pdf',
 };
 
 // Shared converter page body for every locale + every format variant.
@@ -32,7 +36,7 @@ export default async function ConverterView({
   const k = HERO_KEYS[page];
 
   let faqSchema: object | null = null;
-  if (page === 'home') {
+  {
     const faqT = await getTranslations({locale, namespace: 'faq'});
     faqSchema = getFAQSchema([
       {question: faqT('q1'), answer: faqT('a1')},

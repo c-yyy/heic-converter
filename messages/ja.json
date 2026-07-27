@@ -1,22 +1,32 @@
 {
   "metadata": {
-    "title": "HEIC から PNG への変換 — 無料、オンライン、登録不要",
-    "description": "HEIC を PNG や JPG に無料でオンライン変換。ブラウザー内で 100% ローカル処理 — アップロードなし、アカウント不要。iPhone・Windows・Mac に対応。",
+    "title": "HEIC コンバーター — HEIC を JPG・PNG・WebP・PDF に無料変換",
+    "description": "HEIC をブラウザーで無料で JPG・PNG・WebP・PDF に変換。アップロードなし、アカウント不要の 100% ローカル処理 — iPhone・Windows・Mac に対応。HEIC をどんな形式にも変換できる万能ツール。",
     "titleJpg": "HEIC から JPG への変換 — 無料、即時、アカウント不要",
     "descriptionJpg": "HEIC を JPG に無料でオンライン変換。アップロードなし、アカウント不要 — 100% ローカルで元画質を維持。iPhone・Windows・Mac に対応。",
+    "titlePng": "HEIC から PNG への変換 — 無料・ロスレス・プライベート",
+    "descriptionPng": "HEIC を PNG に無料でオンライン変換。アップロードなし、アカウント不要の 100% ローカルでロスレスな変換。透明度や画素の正確さが必要なときに最適。iPhone・Windows・Mac に対応。",
     "titleWebp": "HEIC から WebP への変換 — 容量削減、無料・プライベート",
-    "descriptionWebp": "HEIC を WebP に変換し、最大 30% 容量を削減。アップロードもアカウントも不要な無料ブラウザー変換。"
+    "descriptionWebp": "HEIC を WebP に変換し、最大 30% 容量を削減。アップロードもアカウントも不要な無料ブラウザー変換。",
+    "titlePdf": "HEIC から PDF への変換 — 無料・プライベート・アップロードなし",
+    "descriptionPdf": "1 枚または複数の HEIC 写真をブラウザーだけで 1 つの PDF に無料変換。ソフト不要、アップロードなし、アカウント不要 — ファイルはデバイスから出ません。"
   },
   "hero": {
-    "title": "無料 HEIC から PNG への変換",
-    "titleAccent": "100% プライベート・瞬時変換",
-    "subtitle": "iPhone の写真をブラウザ内でローカルに PNG/JPG に変換。登録不要、ファイル制限なし、データがデバイスから出ることはありません。",
+    "title": "無料 HEIC コンバーター",
+    "titleAccent": "JPG・PNG・WebP・PDF に変換",
+    "subtitle": "iPhone の写真をブラウザ内でローカルに JPG・PNG・WebP・PDF に変換。登録不要、ファイル制限なし、データがデバイスから出ることはありません。",
     "titleJpg": "無料 HEIC から JPG への変換",
     "titleAccentJpg": "高品質・アップロードなし",
     "subtitleJpg": "HEIC 写真をブラウザ内ですべて高品質の JPG 形式に変換。ファイルはデバイスに残ります。",
+    "titlePng": "無料 HEIC から PNG への変換",
+    "titleAccentPng": "ロスレス・アップロードなし",
+    "subtitlePng": "HEIC 写真をブラウザ内で完全にロスレスな PNG に変換 — 透明度や画素の正確さに最適。ファイルはデバイスに残ります。",
     "titleWebp": "HEIC から WebP への変換",
     "titleAccentWebp": "サイズ削減・画質そのまま",
-    "subtitleWebp": "HEIC を WebP に変換すると、画質を維持したままファイルサイズを最大 30% 削減できます。すべての処理はローカルで行われます。"
+    "subtitleWebp": "HEIC を WebP に変換すると、画質を維持したままファイルサイズを最大 30% 削減できます。すべての処理はローカルで行われます。",
+    "titlePdf": "無料 HEIC から PDF への変換",
+    "titleAccentPdf": "写真を 1 つの PDF に",
+    "subtitlePdf": "1 枚または複数の HEIC 写真をブラウザーだけで 1 つの PDF に無料変換。ソフト不要、アップロードなし — ファイルはデバイスから出ません。"
   },
   "dropzone": {
     "title": "HEIC ファイルをここにドラッグ＆ドロップ",
@@ -97,9 +107,11 @@
   },
   "footer": {
     "tools": "変換ツール",
-    "heicToPng": "HEIC から PNG",
+    "home": "HEIC コンバーター",
     "heicToJpg": "HEIC から JPG",
+    "heicToPng": "HEIC から PNG",
     "heicToWebp": "HEIC から WebP",
+    "heicToPdf": "HEIC から PDF",
     "about": "概要",
     "privacy": "ファイルがデバイスから出ることはありません。",
     "copyright": "© {year} HEIC Converter. All rights reserved.",
@@ -228,7 +240,7 @@
       ]
     },
     "heicToPdf": {
-      "metaTitle": "HEICをPDFに変換 — iPhone写真を無料でPDF化（アップロードなし）",
+      "metaTitle": "HEICをPDFに変換する方法 — 無料ツール＆手順ガイド",
       "metaDescription": "HEICをPDFにしたいですか？1枚または複数のHEIC写真をブラウザだけで1つのPDFに変換する方法を解説 — プライベート、ソフト不要、アップロードなし。",
       "cardTitle": "HEICをPDFに",
       "cardDesc": "1枚または複数のHEIC写真を、ブラウザで1つのPDFに。",

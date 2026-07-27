@@ -1,22 +1,32 @@
 {
   "metadata": {
-    "title": "HEIC 转 PNG 转换器 — 免费、在线、无需注册",
-    "description": "免费在线将 HEIC 转为 PNG 或 JPG。浏览器本地转换，100% 私密——无需上传，无需账号。支持 iPhone、Windows 与 Mac。",
+    "title": "HEIC 转换器 — 免费将 HEIC 转为 JPG、PNG、WebP 与 PDF",
+    "description": "在浏览器中免费将 HEIC 转为 JPG、PNG、WebP 或 PDF。100% 本地私密转换，无需上传、无需账号——支持 iPhone、Windows 与 Mac。一个工具搞定 HEIC 转任意格式。",
     "titleJpg": "HEIC 转 JPG 转换器 — 免费、即时、无需账号",
     "descriptionJpg": "免费在线将 HEIC 转为 JPG。无需上传，无需账号——100% 本地转换，保留原始画质。支持 iPhone、Windows 与 Mac。",
+    "titlePng": "HEIC 转 PNG 转换器 — 免费、无损且私密",
+    "descriptionPng": "免费在线将 HEIC 转为 PNG。100% 本地无损转换，无需上传、无需账号。需要透明通道或精确像素时的首选。支持 iPhone、Windows 与 Mac。",
     "titleWebp": "HEIC 转 WebP 转换器 — 更小体积，免费且私密",
-    "descriptionWebp": "将 HEIC 转为 WebP，体积最多减小 30%。免费浏览器端转换器，无需上传，无需账号。"
+    "descriptionWebp": "将 HEIC 转为 WebP，体积最多减小 30%。免费浏览器端转换器，无需上传，无需账号。",
+    "titlePdf": "HEIC 转 PDF 转换器 — 免费、私密、无需上传",
+    "descriptionPdf": "在浏览器中免费将一张或多张 HEIC 照片合并为一个 PDF。无需软件、无需上传、无需账号——文件始终留在您的设备上。"
   },
   "hero": {
-    "title": "免费 HEIC 转 PNG 工具",
-    "titleAccent": "100% 隐私安全 · 即时转换",
-    "subtitle": "在浏览器中本地转换 iPhone 照片为 PNG/JPG 格式。无需注册、无文件限制，数据永不离开您的设备。",
+    "title": "免费 HEIC 转换器",
+    "titleAccent": "转为 JPG、PNG、WebP 与 PDF",
+    "subtitle": "在浏览器中本地将 iPhone 照片转为 JPG、PNG、WebP 或 PDF。无需注册、无文件限制，数据永不离开您的设备。",
     "titleJpg": "免费 HEIC 转 JPG 工具",
     "titleAccentJpg": "高质量 · 无需上传",
     "subtitleJpg": "完全在浏览器中将 HEIC 照片转为高质量 JPG 格式。文件始终留在您的设备上。",
+    "titlePng": "免费 HEIC 转 PNG 工具",
+    "titleAccentPng": "无损 · 无需上传",
+    "subtitlePng": "完全在浏览器中将 HEIC 照片转为无损 PNG——透明通道与精确像素的最佳选择。文件始终留在您的设备上。",
     "titleWebp": "HEIC 转 WebP 工具",
     "titleAccentWebp": "更小体积 · 同等画质",
-    "subtitleWebp": "将 HEIC 转为 WebP 可减小约 30% 的文件体积，同时保持视觉质量。所有处理均在本地完成。"
+    "subtitleWebp": "将 HEIC 转为 WebP 可减小约 30% 的文件体积，同时保持视觉质量。所有处理均在本地完成。",
+    "titlePdf": "免费 HEIC 转 PDF 工具",
+    "titleAccentPdf": "多张照片合成一个 PDF",
+    "subtitlePdf": "在浏览器中免费将一张或多张 HEIC 照片合并为一个 PDF。无需软件、无需上传——文件始终留在您的设备上。"
   },
   "dropzone": {
     "title": "将 HEIC 文件拖放到此处",
@@ -97,9 +107,11 @@
   },
   "footer": {
     "tools": "转换工具",
-    "heicToPng": "HEIC 转 PNG",
+    "home": "HEIC 转换器",
     "heicToJpg": "HEIC 转 JPG",
+    "heicToPng": "HEIC 转 PNG",
     "heicToWebp": "HEIC 转 WebP",
+    "heicToPdf": "HEIC 转 PDF",
     "about": "关于",
     "privacy": "您的文件永远不会离开您的设备。",
     "copyright": "© {year} HEIC Converter. 保留所有权利。",
@@ -228,7 +240,7 @@
       ]
     },
     "heicToPdf": {
-      "metaTitle": "HEIC 转 PDF — 免费把 iPhone 照片转成 PDF（无需上传）",
+      "metaTitle": "如何将 HEIC 转为 PDF — 免费工具与分步指南",
       "metaDescription": "需要把 HEIC 变成 PDF？了解如何在浏览器里把一张或多张 HEIC 照片合成一个 PDF — 私密、无需软件、无需上传。",
       "cardTitle": "HEIC 转 PDF",
       "cardDesc": "把一张或多张 HEIC 照片在浏览器里合成一个 PDF。",

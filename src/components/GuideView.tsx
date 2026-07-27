@@ -69,7 +69,7 @@ export default async function GuideView({
       <p className="guide-intro">{g.intro}</p>
 
       {/* Core converter above the fold */}
-      <ConverterApp defaultFormat="image/png" />
+      <ConverterApp defaultFormat={guide.key === 'heicToPdf' ? 'application/pdf' : 'image/png'} />
 
       <div className="guide-body">
         {sections.map((s, i) => (
@@ -85,13 +85,16 @@ export default async function GuideView({
         <h2 className="guide-related-title">{messages.guides.sectionTitle}</h2>
         <ul className="guide-related-list">
           <li>
-            <Link href="/">{messages.footer.heicToPng}</Link>
+            <Link href="/heic-to-png">{messages.footer.heicToPng}</Link>
           </li>
           <li>
             <Link href="/heic-to-jpg">{messages.footer.heicToJpg}</Link>
           </li>
           <li>
             <Link href="/heic-to-webp">{messages.footer.heicToWebp}</Link>
+          </li>
+          <li>
+            <Link href="/heic-to-pdf">{messages.footer.heicToPdf}</Link>
           </li>
           {others.map((o) => (
             <li key={o.slug}>

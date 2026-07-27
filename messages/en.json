@@ -1,22 +1,32 @@
 {
   "metadata": {
-    "title": "HEIC to PNG Converter — Free, Online, No Sign-Up",
-    "description": "Convert HEIC to PNG or JPG online for free. 100% private local conversion in your browser — no upload, no account. Works on iPhone, Windows & Mac.",
+    "title": "HEIC Converter — Convert HEIC to JPG, PNG, WebP & PDF Free",
+    "description": "Convert HEIC to JPG, PNG, WebP or PDF free in your browser. 100% private local conversion with no upload and no account — works on iPhone, Windows & Mac. The all-in-one HEIC to any format tool.",
     "titleJpg": "HEIC to JPG Converter — Free, Instant, No Account",
     "descriptionJpg": "Convert HEIC to JPG online for free. No upload, no account — 100% local conversion that keeps original quality. Works on iPhone, Windows & Mac.",
+    "titlePng": "HEIC to PNG Converter — Free, Lossless & Private",
+    "descriptionPng": "Convert HEIC to PNG online for free. 100% local, lossless conversion with no upload and no account. Perfect when you need transparency or exact pixels. Works on iPhone, Windows & Mac.",
     "titleWebp": "HEIC to WebP Converter — Smaller Files, Free & Private",
-    "descriptionWebp": "Convert HEIC to WebP for up to 30% smaller files. Free browser-based converter with no upload and no account required."
+    "descriptionWebp": "Convert HEIC to WebP for up to 30% smaller files. Free browser-based converter with no upload and no account required.",
+    "titlePdf": "HEIC to PDF Converter — Free, Private, No Upload",
+    "descriptionPdf": "Convert one or many HEIC photos into a single PDF for free, entirely in your browser. No software, no upload, no account — your files stay on your device."
   },
   "hero": {
-    "title": "Free HEIC to PNG Converter",
-    "titleAccent": "100% Private & Instant",
-    "subtitle": "Convert your iPhone photos to PNG/JPG locally in your browser. No sign-up, no file limits, and your data never leaves your device.",
+    "title": "Free HEIC Converter",
+    "titleAccent": "Convert to JPG, PNG, WebP & PDF",
+    "subtitle": "Convert your iPhone photos to JPG, PNG, WebP or PDF locally in your browser. No sign-up, no file limits, and your data never leaves your device.",
     "titleJpg": "Free HEIC to JPG Converter",
     "titleAccentJpg": "High Quality & No Upload",
     "subtitleJpg": "Convert HEIC photos to high-quality JPG format entirely in your browser. Your files stay on your device.",
+    "titlePng": "Free HEIC to PNG Converter",
+    "titleAccentPng": "Lossless & No Upload",
+    "subtitlePng": "Convert HEIC photos to lossless PNG entirely in your browser — ideal for transparency and exact pixels. Your files stay on your device.",
     "titleWebp": "HEIC to WebP Converter",
     "titleAccentWebp": "Smaller Size, Same Quality",
-    "subtitleWebp": "Convert HEIC to WebP for up to 30% smaller file sizes while maintaining visual quality. All processing happens locally."
+    "subtitleWebp": "Convert HEIC to WebP for up to 30% smaller file sizes while maintaining visual quality. All processing happens locally.",
+    "titlePdf": "Free HEIC to PDF Converter",
+    "titleAccentPdf": "Photos to One PDF",
+    "subtitlePdf": "Turn one or many HEIC photos into a single PDF entirely in your browser. No software, no upload — your files stay on your device."
   },
   "dropzone": {
     "title": "Drag & Drop HEIC files here",
@@ -97,9 +107,11 @@
   },
   "footer": {
     "tools": "Convert Tools",
-    "heicToPng": "HEIC to PNG",
+    "home": "HEIC Converter",
     "heicToJpg": "HEIC to JPG",
+    "heicToPng": "HEIC to PNG",
     "heicToWebp": "HEIC to WebP",
+    "heicToPdf": "HEIC to PDF",
     "about": "About",
     "privacy": "Your files never leave your device.",
     "copyright": "© {year} HEIC Converter. All rights reserved.",
@@ -228,7 +240,7 @@
       ]
     },
     "heicToPdf": {
-      "metaTitle": "HEIC to PDF — Convert iPhone Photos to PDF for Free (No Upload)",
+      "metaTitle": "How to Convert HEIC to PDF — Free Tool & Step-by-Step",
       "metaDescription": "Need a HEIC file as a PDF? Learn how to convert one or more HEIC photos into a single PDF entirely in your browser — private, no software, no upload.",
       "cardTitle": "HEIC to PDF",
       "cardDesc": "Turn one or many HEIC photos into a single PDF, right in your browser.",

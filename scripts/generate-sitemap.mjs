@@ -17,7 +17,9 @@ const DOC_SLUGS = [...guidesSrc.matchAll(/slug:\s*'([^']+)'/g)].map((m) => m[1])
 const EN_ROUTES = [
   '',
   'heic-to-jpg',
+  'heic-to-png',
   'heic-to-webp',
+  'heic-to-pdf',
   ...DOC_SLUGS.map((s) => `doc/${s}`),
 ];
 const LOCALES = ['de', 'ja', 'zh'];
