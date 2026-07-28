@@ -3,6 +3,7 @@ import {getFAQSchema} from '@/lib/schemas';
 import ConverterApp from './ConverterApp';
 import IconRow from './IconRow';
 import GuideLinks from './GuideLinks';
+import FormatLinks from './FormatLinks';
 import FAQ from './FAQ';
 
 type Page = 'home' | 'jpg' | 'webp' | 'png' | 'pdf';
@@ -47,6 +48,9 @@ export default async function ConverterView({
     ]);
   }
 
+  // The href of THIS page, used by FormatLinks to exclude self-links.
+  const currentHref = page === 'home' ? '/' : `/heic-to-${page}`;
+
   return (
     <>
       {faqSchema && (
@@ -74,6 +78,9 @@ export default async function ConverterView({
 
       {/* SEO Content — links to long-tail guide pages */}
       <GuideLinks />
+
+      {/* Internal links to the other format pages (cluster) */}
+      <FormatLinks current={currentHref} />
 
       {/* FAQ */}
       <FAQ />

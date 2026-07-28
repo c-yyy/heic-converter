@@ -107,6 +107,7 @@
   },
   "footer": {
     "tools": "转换工具",
+    "otherFormats": "转换为其他格式",
     "home": "HEIC 转换器",
     "heicToJpg": "HEIC 转 JPG",
     "heicToPng": "HEIC 转 PNG",
@@ -116,11 +117,6 @@
     "privacy": "您的文件永远不会离开您的设备。",
     "copyright": "© {year} HEIC Converter. 保留所有权利。",
     "buyMeCoffee": "节省了你的时间？请开发者喝杯咖啡！"
-  },
-  "nav": {
-    "converter": "转换器",
-    "heicToJpg": "HEIC 转 JPG",
-    "heicToWebp": "HEIC 转 WebP"
   },
   "guides": {
     "sectionTitle": "HEIC 使用指南与解答",

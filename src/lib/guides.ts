@@ -2,11 +2,11 @@
 // client components like GuideLinks without pulling `fs` into the bundle).
 
 export const GUIDES = [
-  { slug: 'what-is-heic', key: 'whatIsHeic' },
-  { slug: 'heic-vs-jpeg', key: 'heicVsJpeg' },
-  { slug: 'open-heic-on-windows', key: 'openHeicWindows' },
-  { slug: 'open-heic-on-mac', key: 'openHeicMac' },
-  { slug: 'heic-to-pdf', key: 'heicToPdf' },
+  { slug: 'what-is-heic', key: 'whatIsHeic', cta: '/heic-to-jpg' },
+  { slug: 'heic-vs-jpeg', key: 'heicVsJpeg', cta: '/heic-to-jpg' },
+  { slug: 'open-heic-on-windows', key: 'openHeicWindows', cta: '/heic-to-jpg' },
+  { slug: 'open-heic-on-mac', key: 'openHeicMac', cta: '/heic-to-jpg' },
+  { slug: 'heic-to-pdf', key: 'heicToPdf', cta: '/heic-to-pdf' },
 ] as const;
 
 export type GuideSlug = (typeof GUIDES)[number]['slug'];

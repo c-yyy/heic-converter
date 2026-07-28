@@ -107,6 +107,7 @@
   },
   "footer": {
     "tools": "Konvertierungswerkzeuge",
+    "otherFormats": "In andere Formate konvertieren",
     "home": "HEIC-Konverter",
     "heicToJpg": "HEIC zu JPG",
     "heicToPng": "HEIC zu PNG",
@@ -116,11 +117,6 @@
     "privacy": "Ihre Dateien verlassen niemals Ihr Gerät.",
     "copyright": "© {year} HEIC Converter. Alle Rechte vorbehalten.",
     "buyMeCoffee": "Zeit gespart? Spendieren Sie dem Entwickler einen Kaffee!"
-  },
-  "nav": {
-    "converter": "Konverter",
-    "heicToJpg": "HEIC zu JPG",
-    "heicToWebp": "HEIC zu WebP"
   },
   "guides": {
     "sectionTitle": "HEIC-Leitfäden & Antworten",

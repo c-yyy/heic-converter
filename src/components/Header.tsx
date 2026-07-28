@@ -4,9 +4,12 @@ import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { usePathname, Link } from '@/i18n/navigation';
 import LocaleSwitcher from './LocaleSwitcher';
+import { TOOL_LINKS } from '@/lib/nav';
 
 export default function Header() {
-  const t = useTranslations('nav');
+  // Tool labels live in the `footer` namespace so the header and footer
+  // always show identical wording (single source of truth: src/lib/nav.ts).
+  const t = useTranslations('footer');
   const pathname = usePathname();
   const isHome = pathname === '/';
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,11 +23,7 @@ export default function Header() {
     return () => document.removeEventListener('keydown', handleKey);
   }, [menuOpen]);
 
-  const navItems = [
-    { href: '/', label: t('converter') },
-    { href: '/heic-to-jpg', label: t('heicToJpg') },
-    { href: '/heic-to-webp', label: t('heicToWebp') },
-  ];
+  const navItems = TOOL_LINKS.map((l) => ({ href: l.href, label: t(l.key) }));
 
   return (
     <header className="header">

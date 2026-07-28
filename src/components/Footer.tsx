@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { GUIDES } from '@/lib/guides';
+import { TOOL_LINKS } from '@/lib/nav';
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -20,10 +21,11 @@ export default function Footer() {
             <h4>{t('tools')}</h4>
             <ul className="footer-links">
               <li><Link href="/">{t('home')}</Link></li>
-              <li><Link href="/heic-to-jpg">{t('heicToJpg')}</Link></li>
-              <li><Link href="/heic-to-png">{t('heicToPng')}</Link></li>
-              <li><Link href="/heic-to-webp">{t('heicToWebp')}</Link></li>
-              <li><Link href="/heic-to-pdf">{t('heicToPdf')}</Link></li>
+              {TOOL_LINKS.map((l) => (
+                <li key={l.href}>
+                  <Link href={l.href}>{t(l.key)}</Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="footer-links-section">

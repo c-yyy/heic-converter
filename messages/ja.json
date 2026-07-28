@@ -107,6 +107,7 @@
   },
   "footer": {
     "tools": "変換ツール",
+    "otherFormats": "他の形式に変換",
     "home": "HEIC コンバーター",
     "heicToJpg": "HEIC から JPG",
     "heicToPng": "HEIC から PNG",
@@ -116,11 +117,6 @@
     "privacy": "ファイルがデバイスから出ることはありません。",
     "copyright": "© {year} HEIC Converter. All rights reserved.",
     "buyMeCoffee": "お役に立ちましたか？開発者にコーヒーをおごってください！"
-  },
-  "nav": {
-    "converter": "変換ツール",
-    "heicToJpg": "HEIC から JPG",
-    "heicToWebp": "HEIC から WebP"
   },
   "guides": {
     "sectionTitle": "HEIC ガイドとよくある質問",

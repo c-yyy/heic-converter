@@ -1488,6 +1488,86 @@ html {
   transform: translateY(-1px);
 }
 
+/* ── Format cross-links (on converter/tool pages) ── */
+.format-links {
+  margin-top: var(--space-xl, 40px);
+}
+
+.format-links-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm, 12px) var(--space-lg, 24px);
+}
+
+.format-links-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 16px;
+  background: var(--bg-primary, #fff);
+  border: 1px solid var(--border-color-strong, #e3e3e8);
+  border-radius: 999px;
+  color: var(--text-primary, #1a1a2e);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: border-color var(--duration-fast, 0.18s) var(--ease-smooth, ease),
+    background var(--duration-fast, 0.18s) var(--ease-smooth, ease),
+    color var(--duration-fast, 0.18s) var(--ease-smooth, ease),
+    transform var(--duration-fast, 0.18s) var(--ease-smooth, ease);
+}
+
+.format-links-list a::before {
+  content: '\2192';
+  color: var(--accent, #6d5efc);
+  font-weight: 700;
+}
+
+.format-links-list a:hover {
+  border-color: var(--accent, #6d5efc);
+  background: var(--accent-soft, #f0eeff);
+  color: var(--accent, #6d5efc);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+/* ── Single contextual convert CTA on blog articles ── */
+.guide-cta {
+  margin-top: var(--space-xl, 40px);
+  padding: var(--space-lg, 24px);
+  background: var(--accent-light, rgba(0, 113, 227, 0.08));
+  border: 1px solid var(--border-color, rgba(0, 0, 0, 0.06));
+  border-radius: var(--radius-lg, 16px);
+  text-align: center;
+}
+
+.guide-cta a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 12px 22px;
+  background: var(--accent, #0071e3);
+  color: var(--text-inverse, #fff);
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background var(--duration-fast, 0.18s) var(--ease-smooth, ease);
+}
+
+.guide-cta a::after {
+  content: '\2192';
+  font-weight: 700;
+}
+
+.guide-cta a:hover {
+  background: var(--accent-hover, #0077ed);
+  color: var(--text-inverse, #fff);
+  text-decoration: none;
+}
+
 /* ── Guide link cards (homepage / tool pages) ── */
 .guide-links {
   margin-top: var(--space-xl, 40px);

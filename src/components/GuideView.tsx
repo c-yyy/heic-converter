@@ -1,6 +1,7 @@
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { GUIDES, buildGuideAlternates } from '@/lib/guides';
+import { TOOL_LINKS } from '@/lib/nav';
 
 // Renders a blog article page: keyword-rich h1, a short intro, the article
 // body (text + images), and internal links to sibling articles. No converter
@@ -24,6 +25,13 @@ export default async function GuideView({
     .filter((s) => s.title && s.body);
 
   const others = GUIDES.filter((x) => x.slug !== slug);
+
+  // A single contextual "convert" CTA linking the article to its most
+  // relevant format page. This is editorial internal linking, not a
+  // converter widget — it keeps blog pages converter-free while still
+  // passing link equity to the tool pages.
+  const ctaLink = TOOL_LINKS.find((l) => l.href === guide.cta) ?? null;
+  const tf = await getTranslations({ locale, namespace: 'footer' });
 
   // Structured data: BreadcrumbList (Home -> guide) + FAQPage (if FAQs exist).
   const faq: { q: string; a: string }[] = Array.isArray(g.faq) ? g.faq : [];
@@ -76,6 +84,12 @@ export default async function GuideView({
         ))}
         {g.conclusion && <p className="guide-conclusion">{g.conclusion}</p>}
       </div>
+
+      {ctaLink && (
+        <div className="guide-cta">
+          <Link href={ctaLink.href}>{tf(ctaLink.key)}</Link>
+        </div>
+      )}
 
       <nav className="guide-related" aria-label="Related articles">
         <h2 className="guide-related-title">{messages.guides.sectionTitle}</h2>
