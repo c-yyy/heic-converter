@@ -1,11 +1,10 @@
 import { setRequestLocale } from 'next-intl/server';
-import ConverterApp from './ConverterApp';
 import { Link } from '@/i18n/navigation';
 import { GUIDES, buildGuideAlternates } from '@/lib/guides';
 
-// Renders a long-tail SEO guide page: keyword-rich h1, a short intro, the
-// converter kept above the fold (function-as-content + strong user signals),
-// the article body, and internal links back to tools + sibling guides.
+// Renders a blog article page: keyword-rich h1, a short intro, the article
+// body (text + images), and internal links to sibling articles. No converter
+// or other interactive widgets — pure editorial content.
 export default async function GuideView({
   locale,
   slug,
@@ -68,9 +67,6 @@ export default async function GuideView({
       <h1 className="guide-h1">{g.h1}</h1>
       <p className="guide-intro">{g.intro}</p>
 
-      {/* Core converter above the fold */}
-      <ConverterApp defaultFormat={guide.key === 'heicToPdf' ? 'application/pdf' : 'image/png'} />
-
       <div className="guide-body">
         {sections.map((s, i) => (
           <section key={i} className="guide-section">
@@ -81,24 +77,12 @@ export default async function GuideView({
         {g.conclusion && <p className="guide-conclusion">{g.conclusion}</p>}
       </div>
 
-      <nav className="guide-related" aria-label="Related guides">
+      <nav className="guide-related" aria-label="Related articles">
         <h2 className="guide-related-title">{messages.guides.sectionTitle}</h2>
         <ul className="guide-related-list">
-          <li>
-            <Link href="/heic-to-png">{messages.footer.heicToPng}</Link>
-          </li>
-          <li>
-            <Link href="/heic-to-jpg">{messages.footer.heicToJpg}</Link>
-          </li>
-          <li>
-            <Link href="/heic-to-webp">{messages.footer.heicToWebp}</Link>
-          </li>
-          <li>
-            <Link href="/heic-to-pdf">{messages.footer.heicToPdf}</Link>
-          </li>
           {others.map((o) => (
             <li key={o.slug}>
-              <Link href={`/doc/${o.slug}`}>{messages.guides[o.key].cardTitle}</Link>
+              <Link href={`/blog/${o.slug}`}>{messages.guides[o.key].cardTitle}</Link>
             </li>
           ))}
         </ul>

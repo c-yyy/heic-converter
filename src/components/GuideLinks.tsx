@@ -14,7 +14,7 @@ export default function GuideLinks() {
       <h2 className="section-title">{t('sectionTitle')}</h2>
       <div className="guide-links-grid">
         {GUIDES.map((g) => (
-          <Link key={g.slug} href={`/doc/${g.slug}`} className="guide-link-card">
+          <Link key={g.slug} href={`/blog/${g.slug}`} className="guide-link-card">
             <h3 className="guide-link-title">{t(`${g.key}.cardTitle`)}</h3>
             <p className="guide-link-desc">{t(`${g.key}.cardDesc`)}</p>
             <span className="guide-link-arrow" aria-hidden="true">

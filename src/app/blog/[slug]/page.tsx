@@ -4,7 +4,7 @@ import GuideView from '@/components/GuideView';
 import {getGuideMeta} from '@/lib/guide-meta';
 import {GUIDES, buildGuideAlternates, getGuideBySlug} from '@/lib/guides';
 
-// English (default locale) guide pages live at `/doc/<slug>/`.
+// English (default locale) blog articles live at `/blog/<slug>/`.
 export function generateStaticParams() {
   return GUIDES.map((g) => ({slug: g.slug}));
 }

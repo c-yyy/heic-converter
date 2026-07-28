@@ -86,7 +86,7 @@ Set the `SITE_URL` environment variable (defaults to `https://heic2any.online`) 
 ## Links
 
 - Website: https://heic2any.online/
-- Guides: [What is HEIC?](https://heic2any.online/doc/what-is-heic) · [HEIC vs JPEG](https://heic2any.online/doc/heic-vs-jpeg) · [Open HEIC on Windows](https://heic2any.online/doc/open-heic-on-windows) · [Open HEIC on Mac](https://heic2any.online/doc/open-heic-on-mac) · [HEIC to PDF](https://heic2any.online/doc/heic-to-pdf)
+- Guides: [What is HEIC?](https://heic2any.online/blog/what-is-heic) · [HEIC vs JPEG](https://heic2any.online/blog/heic-vs-jpeg) · [Open HEIC on Windows](https://heic2any.online/blog/open-heic-on-windows) · [Open HEIC on Mac](https://heic2any.online/blog/open-heic-on-mac) · [HEIC to PDF](https://heic2any.online/blog/heic-to-pdf)
 
 ## License
 

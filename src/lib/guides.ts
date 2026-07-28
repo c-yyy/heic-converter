@@ -19,22 +19,22 @@ export function getGuideBySlug(slug: string) {
 // All locale variants of a given guide slug (for hreflang alternates).
 export const GUIDE_LOCALES = ['en', 'de', 'ja', 'zh'] as const;
 
-// Public path of a guide (English lives at the root `/doc/...`). Client
+// Public path of a guide (English lives at the root `/blog/...`). Client
 // components use this so links stay DRY and consistent with the route.
 export function guidePath(slug: string) {
-  return `/doc/${slug}`;
+  return `/blog/${slug}`;
 }
 
 // Build canonical + hreflang alternates for a guide page. With
 // `localePrefix: 'as-needed'`, English is the unprefixed default and every
-// other locale adds its `/xx/` prefix — which also applies to the `/doc/` path.
+// other locale adds its `/xx/` prefix — which also applies to the `/blog/` path.
 export function buildGuideAlternates(locale: string, slug: string) {
   const languages: Record<string, string> = {};
   for (const loc of GUIDE_LOCALES) {
-    languages[loc] = loc === 'en' ? `/doc/${slug}/` : `/${loc}/doc/${slug}/`;
+    languages[loc] = loc === 'en' ? `/blog/${slug}/` : `/${loc}/blog/${slug}/`;
   }
   return {
-    canonical: locale === 'en' ? `/doc/${slug}/` : `/${locale}/doc/${slug}/`,
+    canonical: locale === 'en' ? `/blog/${slug}/` : `/${locale}/blog/${slug}/`,
     languages,
   };
 }

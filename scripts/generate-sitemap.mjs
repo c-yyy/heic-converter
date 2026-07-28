@@ -8,10 +8,10 @@ import { fileURLToPath } from 'node:url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SITE_URL = (process.env.SITE_URL || 'https://heic2any.online').replace(/\/+$/, '');
 
-// Derive doc routes from the single source of truth (src/lib/guides.ts) so the
-// sitemap stays in sync when guides are added/removed.
+// Derive blog (article) routes from the single source of truth (src/lib/guides.ts)
+// so the sitemap stays in sync when articles are added/removed.
 const guidesSrc = readFileSync(join(__dirname, '..', 'src', 'lib', 'guides.ts'), 'utf8');
-const DOC_SLUGS = [...guidesSrc.matchAll(/slug:\s*'([^']+)'/g)].map((m) => m[1]);
+const BLOG_SLUGS = [...guidesSrc.matchAll(/slug:\s*'([^']+)'/g)].map((m) => m[1]);
 
 // English (default locale) is served at the root — no locale prefix.
 const EN_ROUTES = [
@@ -20,7 +20,7 @@ const EN_ROUTES = [
   'heic-to-png',
   'heic-to-webp',
   'heic-to-pdf',
-  ...DOC_SLUGS.map((s) => `doc/${s}`),
+  ...BLOG_SLUGS.map((s) => `blog/${s}`),
 ];
 const LOCALES = ['de', 'ja', 'zh'];
 

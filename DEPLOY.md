@@ -88,7 +88,7 @@ Error: ENOENT: no such file or directory, open
 
 - 根目录：`index.html`、`404.html`、`favicon.ico`、`_next/`
 - 语言目录：`de/`、`ja/`、`zh/`，各含 `index.html`
-- 指南目录：`doc/what-is-heic/`、`doc/heic-vs-jpeg/`、`doc/open-heic-on-windows/`，各含 `index.html`
+- 指南目录：`blog/what-is-heic/`、`blog/heic-vs-jpeg/`、`blog/open-heic-on-windows/`，各含 `index.html`
 
 这些就是 Cloudflare Pages 要托管的全部静态文件，没有额外运行时依赖。
 

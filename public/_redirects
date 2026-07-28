@@ -1,0 +1,5 @@
+# Preserve SEO equity after renaming /doc/* -> /blog/*
+/doc/* /blog/:splat 301
+/de/doc/* /de/blog/:splat 301
+/ja/doc/* /ja/blog/:splat 301
+/zh/doc/* /zh/blog/:splat 301

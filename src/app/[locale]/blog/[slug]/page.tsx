@@ -4,7 +4,7 @@ import GuideView from '@/components/GuideView';
 import {getGuideMeta} from '@/lib/guide-meta';
 import {GUIDES, buildGuideAlternates, getGuideBySlug} from '@/lib/guides';
 
-// Localized guide pages live at `/<locale>/doc/<slug>/` (English is the
+// Localized blog articles live at `/<locale>/blog/<slug>/` (English is the
 // unprefixed root, so it is excluded here).
 export function generateStaticParams() {
   return routing.locales

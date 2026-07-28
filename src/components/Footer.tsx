@@ -31,7 +31,7 @@ export default function Footer() {
             <ul className="footer-links">
               {GUIDES.map((g) => (
                 <li key={g.slug}>
-                  <Link href={`/doc/${g.slug}`}>{tg(`${g.key}.cardTitle`)}</Link>
+                  <Link href={`/blog/${g.slug}`}>{tg(`${g.key}.cardTitle`)}</Link>
                 </li>
               ))}
             </ul>
