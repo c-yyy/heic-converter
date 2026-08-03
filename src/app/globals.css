@@ -1488,6 +1488,23 @@ html {
   transform: translateY(-1px);
 }
 
+/* ── Unique per-format SEO paragraph (on converter/tool pages) ── */
+.format-seo {
+  max-width: 760px;
+  margin: var(--space-xl, 40px) auto 0;
+  padding: var(--space-lg, 24px);
+  background: var(--bg-secondary, #f5f5f8);
+  border: 1px solid var(--border-color-strong, #e3e3e8);
+  border-radius: var(--radius-lg, 16px);
+}
+
+.format-seo p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-secondary, #4b5563);
+}
+
 /* ── Comparison table (inside guide articles) ── */
 .guide-table-wrap {
   margin: var(--space-lg, 24px) 0;

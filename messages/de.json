@@ -26,7 +26,12 @@
     "subtitleWebp": "Konvertieren Sie HEIC in WebP für bis zu 30% kleinere Dateigrößen bei gleichbleibender Bildqualität. Alle Vorgänge erfolgen lokal.",
     "titlePdf": "Kostenloser HEIC-zu-PDF-Konverter",
     "titleAccentPdf": "Fotos in ein PDF",
-    "subtitlePdf": "Verwandeln Sie ein oder mehrere HEIC-Fotos kostenlos in ein einziges PDF, direkt im Browser. Keine Software, kein Upload — Ihre Dateien bleiben auf Ihrem Gerät."
+    "subtitlePdf": "Verwandeln Sie ein oder mehrere HEIC-Fotos kostenlos in ein einziges PDF, direkt im Browser. Keine Software, kein Upload — Ihre Dateien bleiben auf Ihrem Gerät.",
+    "seoHome": "HEIC (High Efficiency Image Container) ist das Standard-Fotoformat von Apple, lässt sich aber nicht überall öffnen. Dieser kostenlose Konverter wandelt HEIC im Browser in JPG, PNG, WebP oder PDF um — ohne Upload, ohne Konto und ohne sichtbaren Qualitätsverlust. Alles läuft lokal auf Ihrem Gerät, sodass private Fotos es nie verlassen.",
+    "seoJpg": "JPG ist die sicherste Wahl, wenn ein Foto unterwegs sein muss. Es öffnet auf jedem Handy, Computer, Browser und im Fotolabor — weshalb die Umwandlung von HEIC zu JPG der gängigste Schritt vor dem Teilen oder Hochladen ist. Der Konverter behält Auflösung und Farbton, sodass die Datei identisch aussieht und überall nutzbar wird.",
+    "seoPng": "Greifen Sie zu PNG, wenn Sie pixelgenaue oder transparente Ausgaben brauchen. Da PNG verlustfrei ist, bleiben alle Details erhalten — ideal für Grafiken, Screenshots und Bilder, die Sie erneut bearbeiten. Fotos als PNG sind viel größer als HEIC, aber wenn eine App oder ein Workflow eine verlustfreie Datei verlangt, ist PNG der verlässliche Standard.",
+    "seoWebp": "WebP ist das moderne, für das Web entwickelte Format. Es verkleinert Fotos bei gleicher Qualität 25–35 % stärker als JPEG und wird von jedem aktuellen Browser nativ angezeigt. Die Umwandlung von HEIC zu WebP ist der richtige Schritt für Websites, Blogs und Online-Shops, wo schnelleres Laden und weniger Datenvolumen zählen.",
+    "seoPdf": "Ein PDF verwandelt ein oder mehrere HEIC-Fotos in ein einziges, portables Dokument, das jeder öffnen kann — perfekt, um mehrere Bilder als einen Anhang zu mailen, Unterlagen einzureichen oder ohne Layout-Überraschungen zu drucken. Der Konverter fügt Ihre Fotos in der Reihenfolge des Hinzufügens zusammen und lädt sie nie hoch."
   },
   "dropzone": {
     "title": "HEIC-Dateien hierher ziehen",

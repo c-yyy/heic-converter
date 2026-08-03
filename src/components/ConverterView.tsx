@@ -24,6 +24,17 @@ const FORMAT: Record<Page, 'image/png' | 'image/jpeg' | 'image/webp' | 'applicat
   pdf: 'application/pdf',
 };
 
+// Unique per-format editorial paragraph (keys live in the `hero` namespace).
+// Rendered as a distinct block on each format landing page so the four pages
+// don't read as near-duplicate doorways.
+const SEO_KEYS: Record<Page, string> = {
+  home: 'seoHome',
+  jpg: 'seoJpg',
+  png: 'seoPng',
+  webp: 'seoWebp',
+  pdf: 'seoPdf',
+};
+
 // Shared converter page body for every locale + every format variant.
 export default async function ConverterView({
   locale,
@@ -78,6 +89,13 @@ export default async function ConverterView({
 
       {/* SEO Content — links to long-tail guide pages */}
       <GuideLinks />
+
+      {/* Unique per-format editorial paragraph (distinct copy per page) */}
+      {t.has(SEO_KEYS[page]) && (
+        <section className="format-seo">
+          <p>{t(SEO_KEYS[page])}</p>
+        </section>
+      )}
 
       {/* Internal links to the other format pages (cluster) */}
       <FormatLinks current={currentHref} />
