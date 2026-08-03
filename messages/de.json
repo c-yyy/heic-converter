@@ -148,6 +148,26 @@
       "s3Body": "Jedes mit iPhone oder iPad aufgenommene Foto (sofern Sie das Kameraformat nicht geändert haben), Bilder aus macOS Fotos oder per AirDrop und iCloud geteilte Aufnahmen sind meist HEIC. Windows-PCs und die meisten Android-Handys können sie ohne Hilfe nicht öffnen.",
       "s4Title": "So konvertieren Sie HEIC in ein kompatibles Format",
       "s4Body": "Der einfachste Weg ist die Konvertierung. Nutzen Sie den kostenlosen Konverter oben, um HEIC in PNG, JPG oder WebP zu verwandeln — vollständig im Browser, ohne Upload und ohne Software-Installation. Ihre Dateien verlassen das Gerät nie.",
+      "s5Title": "Warum HEIC Fotos so klein komprimiert",
+      "s5Body": "HEIC verpackt Fotos im HEIF-Container und komprimiert sie mit dem HEVC (H.265)-Videocodec. Während JPEG jeden 8×8-Pixelblock separat komprimiert, sagt HEVC Muster über das ganze Bild voraus, sodass glatte Himmel und feine Details viel weniger Bytes brauchen. Das Ergebnis: bei gleicher wahrgenommener Schärfe etwa halbe Dateigröße.",
+      "s6Title": "HEIC gegen die anderen modernen Formate",
+      "s6Body": "JPEG ist der alte Standard — überall kompatibel, aber sperrig. PNG ist verlustfrei und unterstützt Transparenz, lässt Fotos aber aufgehen. WebP ist Googles web-fokussiertes Format, etwa so klein wie HEIC und von Browsern nativ unterstützt. HEIC ist Apples Antwort: kleiner als JPEG, schlauer als PNG, aber standardmäßig im Apple-Ökosystem eingesperrt.",
+      "comparison": {
+        "caption": "HEIC im Vergleich mit den Formaten, denen Sie begegnen",
+        "headers": ["", "HEIC", "JPEG", "PNG", "WebP"],
+        "rows": [
+          ["Entwickelt von", "Apple", "Gremium", "W3C", "Google"],
+          ["Typische Größe (12 MP)", "1–3 MB", "2–5 MB", "15–30 MB", "1–3 MB"],
+          ["Transparenz", "Ja*", "Nein", "Ja", "Ja"],
+          ["Öffnet auf iPhone", "Nativer", "Nativer", "Nativer", "Nativer"],
+          ["Öffnet auf Windows/Android", "Codec nötig", "Nativer", "Nativer", "Nativer"],
+          ["Am besten für", "iPhone-Speicher", "Universelles Teilen", "Bearbeitung / Transparenz", "Websites"]
+        ]
+      },
+      "s7Title": "Geht beim Konvertieren Qualität verloren?",
+      "s7Body": "HEIC zu JPG ist verlustbehaftet, aber bei hoher Qualität ist der Unterschied fürs Auge unsichtbar — man müsste auf 400 % reinzoomen, um ihn zu sehen. PNG und WebP sind beim Betrachten praktisch verlustfrei. Eine Konvertierung zum Teilen oder Drucken kostet also real kaum Qualität, bringt aber überall Kompatibilität.",
+      "s8Title": "Was iPhone-Nutzer merken sollten",
+      "s8Body": "Filmen Sie weiter in HEIC, um Platz zu sparen — es ist das bessere Speicherformat. Konvertieren Sie zu JPG oder WebP nur, wenn ein Foto Ihre Apple-Geräte verlässt. Und falls Sie statt eines Bildes ein Dokument brauchen, bündelt die PDF-Option oben mehrere Fotos in einer sauberen Datei. Ein schneller Klick genügt.",
       "conclusion": "HEIC ist auf Apple-Geräten hervorragend, aber sonst eingeschränkt. Die Umwandlung in PNG oder JPG ist der einfachste Weg, Ihre Fotos überall nutzbar zu machen.",
       "faq": [
         {
@@ -181,6 +201,24 @@
       "s4Body": "Konvertieren Sie in JPEG, wenn Sie Fotos teilen, in soziale Medien laden oder an ein Fotolabor senden. Nutzen Sie den Konverter oben, um HEIC in wenigen Sekunden in JPG zu ändern — ohne Upload, vollständig privat.",
       "s5Title": "Warum konvertierte PNG-Dateien so groß werden",
       "s5Body": "HEIC ist \"hocheffiziente verlustbehaftete Kompression\", während PNG \"verlustfrei, aber schwach komprimiert\" ist. Ein iPhone-Foto ist im Grunde HEVC-kodiert, was sanfte Verläufe und feines Rauschen extrem gut komprimiert; PNGs DEFLATE-Algorithmus bringt bei echten Fotos kaum etwas (er glänzt bei Screenshots und Grafiken, nicht bei Fotos). Die Rechnung macht es deutlich: Ein 12-MP-iPhone-Foto (4032×3024) entspricht etwa 48,8 MB unkomprimierten RGBA-Daten. Nach der PNG-Kompression landet es meist bei 15–30 MB — exakt bei den gemessenen 15,5 MB / 30,1 MB. Das ist also keine abnorme Aufblähung, sondern PNGs normale Größe. Ein Nebenfaktor: Unsere Konvertierungs-Pipeline behält den Alpha-(Transparenz-)Kanal auch bei undurchsichtigen Fotos, was etwa 25 % mehr Volumen bedeutet als reines RGB. Im Vergleich zu PNGs eigener Expansion ist das aber gering. Für Fotos ist PNG schlicht nicht nötig. Mit JPG oder WebP schrumpft die Datei auf fast die Original-HEIC-Größe zurück, ohne sichtbaren Unterschied: Das gleiche 12-MP-Foto ist als JPG (Qualität 90) etwa 24 MB und als WebP (Qualität 90) etwa 1,53 MB groß. Genau deshalb stellen die meisten HEIC-Konverter JPG als Standard ein.",
+      "s6Title": "Specs im Überblick",
+      "s6Body": "So stellen sich die beiden Formate bei den Zahlen, die für Alltagsfotos zählen.",
+      "comparison": {
+        "caption": "HEIC vs JPEG",
+        "headers": ["", "HEIC", "JPEG"],
+        "rows": [
+          ["Kompression", "Verlustbehaftet (HEVC)", "Verlustbehaftet (DCT)"],
+          ["Dateigröße (12 MP)", "1–3 MB", "2–5 MB"],
+          ["Max. Qualität", "Sehr hoch", "Hoch"],
+          ["Transparenz", "Unterstützt", "Nein"],
+          ["Überall öffnen", "Nein (Codec nötig)", "Ja"],
+          ["Am besten für", "iPhone-Speicher", "Überall teilen"]
+        ]
+      },
+      "s7Title": "Was sollten Sie auf dem Handy behalten?",
+      "s7Body": "Lassen Sie die Kamera auf HEIC. Es packt mehr Fotos in denselben Speicher und bewahrt Details für spätere Bearbeitung. Sie verlieren nichts durch HEIC-Speicherung — konvertiert wird erst im Moment des Teilens. Denken Sie an HEIC als Ihr Archivformat und an JPEG als Ihr Reiseformat.",
+      "s8Title": "Mit einem Klick, privat konvertieren",
+      "s8Body": "Wenn Sie doch JPEG brauchen, brauchen Sie keine App oder ein Konto. HEIC-Datei oben in den Konverter ziehen, JPG wählen, herunterladen — der ganze Job läuft im Browser per WebAssembly, sodass selbst private Fotos keinen Server berühren.",
       "conclusion": "Behalten Sie HEIC auf dem iPhone für den Speicher, konvertieren Sie aber in JPEG, sobald eine Datei unterwegs sein muss. So haben Sie das Beste aus beiden Welten.",
       "faq": [
         {
@@ -212,6 +250,14 @@
       "s3Body": "Desktop-Apps wie IrfanView oder XnView können HEIC öffnen, sobald die passenden Codecs vorhanden sind. Sie eignen sich zum Stöbern in großen Mengen, erfordern aber eine Installation.",
       "s4Title": "Was sollten Sie wählen?",
       "s4Body": "Nur gelegentlich ein oder zwei Fotos ansehen? Die HEIF-Erweiterung genügt. Teilen, Drucken oder viele Dateien verarbeiten? Die Umwandlung in JPG/PNG mit dem obigen Werkzeug ist schneller and funktioniert überall.",
+      "s5Title": "Schritt für Schritt: HEIF-Erweiterung installieren",
+      "s5Body": "Öffnen Sie den Microsoft Store, suchen Sie nach „HEIF Image Extensions“ und klicken Sie auf Installieren. Auf manchen PCs ist zusätzlich „HEVC Video Extensions“ nötig (in vielen Regionen kostenlos, in anderen eine kleine einmalige Gebühr). Danach öffnet ein Doppelklick auf eine HEIC-Datei im Explorer sie in Fotos. Das ist die leichteste Option, wenn Sie nur gelegentlich ansehen.",
+      "s6Title": "Fehlerbehebung: HEIC öffnet weiter nicht",
+      "s6Body": "Wenn Fotos nach der Installation ein leeres Symbol zeigt, fehlt wahrscheinlich der HEVC-Codec — holen Sie ihn aus dem Store. Prüfen Sie auch, dass die Datei wirklich auf .heic endet; eine umbenannte Datei, die eigentlich ein ZIP ist, lässt sich nicht öffnen. Schlägt alles fehl, liest der Browser-Konverter oben HEIC direkt und braucht gar keine System-Codecs.",
+      "s7Title": "Einen ganzen Ordner auf einmal konvertieren",
+      "s7Body": "Brauchen Sie Dutzende Fotos als JPG? Wählen Sie sie im Konverter oben alle aus und konvertieren Sie in einem Batch; laden Sie jede Datei einzeln oder als ZIP herunter. Das ist schneller als sie einzeln in einem Bildbetrachter zu öffnen und der schnellste Weg, wenn Sie einen Kamera-Roll auf einen Windows-PC übertragen.",
+      "s8Title": "Warum die In-Browser-Konvertierung die sichere Wahl ist",
+      "s8Body": "Cloud-Konverter laden Ihre Fotos auf einen Server hoch, den Sie nicht kontrollieren. Das Werkzeug oben läuft vollständig auf Ihrem PC über WebAssembly — es wird nichts irgendwohin gesendet. Bei privaten, geschäftlichen oder sensiblen Bildern ist dieser rein lokale Weg der Unterschied zwischen „konvertiert“ und „mit einem Fremden geteilt“.",
       "conclusion": "Ob Sie einen Codec installieren oder im Browser konvertieren — HEIC unter Windows zu öffnen dauert nur Minuten, and beim Konvertieren erhalten Sie Dateien, die auf jedem Gerät funktionieren.",
       "faq": [
         {
@@ -241,6 +287,16 @@
       "s2Body": "Fotos importiert HEIC automatisch und zeigt es in Ihrer Mediathek. Für eine teilbare Kopie wählen Sie das Foto aus, klicken auf „Datei → Exportieren → N Fotos exportieren“ und wählen JPG oder PNG in der gewünschten Größe.",
       "s3Title": "HEIC konvertieren, wenn Sie außerhalb von Apple teilen",
       "s3Body": "Vorschau und Fotos funktionieren auf dem Mac hervorragend, aber Dateien, die Sie an Windows-Nutzer, Android-Handys oder die meisten Websites senden, brauchen weiterhin JPG, PNG oder PDF. Nutzen Sie den kostenlosen Konverter oben, um HEIC in diesen Formaten direkt im Browser zu konvertieren — ohne Upload, vollständig privat.",
+      "s4Title": "HEIC in der Vorschau stapelweise zu JPG konvertieren",
+      "s4Body": "Öffnen Sie die Vorschau, wählen Sie Datei → Exportieren und picken Sie JPEG oder PNG — für viele Dateien auf einmal markieren Sie sie im Finder, klicken rechts und wählen „Schnellaktionen → Bild konvertieren“ (oder öffnen Sie sie gemeinsam in der Vorschau und nutzen Datei → Alle exportieren). Sie erhalten JPG/PNG-Kopien, ohne macOS zu verlassen.",
+      "s5Title": "Automatisieren mit einem Kurzbefehl",
+      "s5Body": "macOS-Kurzbefehle können einen Ordner überwachen oder abgelegte HEIC-Dateien annehmen und automatisch als JPG exportieren. Bauen Sie einen „HEIC konvertieren“-Kurzbefehl und nutzen ihn aus der Menüleiste oder als Ablegeziel — praktisch, wenn Sie regelmäßig Fotos vom iPhone auf einen Mac bringen.",
+      "s6Title": "Fehlerbehebung: HEIC auf älterem macOS",
+      "s6Body": "HEIC-Unterstützung kam mit macOS High Sierra (2017). Wenn die Vorschau eine Datei nicht öffnet, ist das System vermutlich älter oder das Foto nutzt ein neueres HEIF-Profil. Aktualisieren Sie macOS, wenn möglich; sonst verarbeitet der Browser-Konverter oben jedes HEIC auf jedem Mac, ohne System-Update.",
+      "s7Title": "HEIC teilen, ohne Qualität zu verlieren",
+      "s7Body": "AirDrop und iMessage bewahren HEIC zwischen Apple-Geräten intakt, sodass nichts verloren geht. Sobald eine Datei aber an E-Mail, WhatsApp oder einen PC geht, konvertieren Sie zuerst — diese Kanäle komprimieren HEIC oft neu oder lehnen es ab. Ein schneller JPG-Export hält Ihr Foto scharf und überall öffenbar.",
+      "s8Title": "Wann der Browser-Konverter zum Zug kommt",
+      "s8Body": "Vorschau und Kurzbefehle sind großartig, bis eine Datei die Apple-Welt verlässt. Bei einmaligem Teilen, Windows-Empfängern oder Fotos für eine Website verwandelt der Konverter oben HEIC in Sekunden in JPG, PNG, WebP oder PDF — keine Installation, voll privat.",
       "conclusion": "Auf dem Mac benötigt HEIC keine spezielle App zum Ansehen. Konvertieren Sie nur, wenn eine Datei das Apple-Ökosystem verlassen muss; der Browser-Konverter oben erledigt das in Sekunden.",
       "faq": [
         { "q": "Kann der Mac HEIC-Dateien nativ öffnen?", "a": "Ja. macOS Vorschau und Fotos öffnen HEIC ohne Zusatz seit macOS High Sierra. Drücken Sie im Finder die Leertaste für eine Schnellansicht oder öffnen Sie die Datei in der Vorschau." },
@@ -261,6 +317,14 @@
       "s2Body": "Legen Sie eine einzelne HEIC oder einen ganzen Stapel in den Konverter oben und wählen Sie PDF. Mehrere Fotos werden in der Reihenfolge, in der Sie sie hinzugefügt haben, zu einer mehrseitigen PDF zusammengeführt — praktisch für Berichte oder geteilte Alben.",
       "s3Title": "Private Konvertierung im Browser",
       "s3Body": "Der gesamte Vorgang läuft lokal über WebAssembly. Ihre Fotos werden nie auf einen Server hochgeladen, sodass auch persönliche oder sensible Bilder auf Ihrem Gerät bleiben. Laden Sie das fertige PDF herunter, fertig.",
+      "s4Title": "Schritt für Schritt: Ein PDF aus HEIC erstellen",
+      "s4Body": "Öffnen Sie den Konverter oben, ziehen Sie eine oder mehrere HEIC-Fotos hinein und wählen Sie PDF. Das Werkzeug rendert jedes Bild auf eine eigene Seite, in der Reihenfolge, in der Sie die Dateien hinzugefügt haben. Auf Konvertieren klicken, PDF herunterladen, und Sie haben ein einzelnes Dokument zum Anhang oder Drucken — keine zusätzliche Software.",
+      "s5Title": "Tipps für saubere, druckfertige PDFs",
+      "s5Body": "Fügen Sie Fotos in der Reihenfolge hinzu, in der sie erscheinen sollen, da die Seitenreihenfolge der Auswahl folgt. Halten Sie jedes Bild aufrecht; der Konverter bewahrt die Ausrichtung. Zum Drucken reicht die originale HEIC-Auflösung für scharfe A4- oder Letter-Seiten völlig aus — skalieren Sie vorher also nicht herunter.",
+      "s6Title": "PDF gegen einen Ordner voller JPGs beim Teilen",
+      "s6Body": "Ein Ordner voller JPGs zwingt den Empfänger, Dateien einzeln zu öffnen, und die Reihenfolge geht leicht verloren. Ein PDF hält alles in einer aufgeräumten, geordneten Datei, die auf jedem Handy, Computer oder Drucker öffnet. Für Einreichungen, Portfolios oder Reisealben ist PDF fast immer die sauberere Lieferung.",
+      "s7Title": "Von Natur aus privat",
+      "s7Body": "Das PDF wird auf Ihrem Gerät mit WebAssembly erstellt — Ihre HEIC-Fotos verlassen den Browser nie. Das zählt für Ausweise, Belege oder persönliche Alben, die Sie nicht auf einem fremden Server liegen haben wollen. Herunterladen, fertig; es wird nichts hochgeladen.",
       "conclusion": "HEIC in PDF zu verwandeln dauert Sekunden und braucht keine Software. Zum Teilen oder Drucken von Fotos als eine Datei ist PDF oft die sauberere Wahl als ein Ordner voller JPGs.",
       "faq": [
         { "q": "Kann ich HEIC kostenlos in PDF umwandeln?", "a": "Ja. Der Konverter oben verwandelt ein oder mehrere HEIC-Fotos ganz im Browser in ein PDF — kostenlos, ohne Konto und ohne Upload." },
