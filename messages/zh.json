@@ -105,8 +105,16 @@
     "q5": "为什么在 Windows 上无法打开 HEIC 文件？",
     "a5": "Windows 不支持原生打开 HEIC 格式，需要安装额外的编解码器。虽然 Windows 10/11 可以从 Microsoft Store 安装 HEIF 扩展，但许多应用程序仍然无法读取 HEIC 文件。将其转为 PNG 或 JPG 可确保在所有平台和应用中通用兼容。"
   },
+  "blog": {
+    "metaTitle": "HEIC 使用指南与解答 — 转换、打开并读懂 HEIC 照片",
+    "metaDescription": "实用的 HEIC 指南：HEIC 是什么、与 JPEG/PNG/WebP 的对比，以及如何在 Windows、Mac、Android 和浏览器中打开或转换 HEIC。",
+    "hubTitle": "HEIC 使用指南与解答",
+    "intro": "一步步教你打开、理解并转换 HEIC 照片——为真实使用场景而写，而不只是堆关键词。",
+    "allGuides": "查看全部 HEIC 指南"
+  },
   "footer": {
     "tools": "转换工具",
+    "company": "公司",
     "otherFormats": "转换为其他格式",
     "home": "HEIC 转换器",
     "heicToJpg": "HEIC 转 JPG",
@@ -253,6 +261,98 @@
         { "q": "能免费把 HEIC 转成 PDF 吗？", "a": "可以。上方的转换器完全在浏览器里把一张或多张 HEIC 照片合成 PDF，免费、无需账号、无需上传。" },
         { "q": "多张 HEIC 照片能合成一个 PDF 吗？", "a": "可以。添加多张 HEIC 并选择 PDF，它们会按你选择的顺序合并成一个多页 PDF。" },
         { "q": "HEIC 转 PDF 安全吗？", "a": "安全。转换通过 WebAssembly 在本地运行，文件不会被发送到服务器，所以私人照片始终留在你的设备上。" }
+      ]
+    },
+    "heicVsPng": {
+      "metaTitle": "HEIC vs PNG — 该用哪个？画质、体积与何时转换",
+      "metaDescription": "HEIC vs PNG 对比：文件体积、画质与透明度。了解 PNG 的无损格式何时胜过 HEIC，以及如何在浏览器里把 HEIC 转成 PNG。",
+      "cardTitle": "HEIC vs PNG",
+      "cardDesc": "无损 PNG 与高效 HEIC — 以及何时需要转换。",
+      "h1": "HEIC vs PNG：你该用哪种格式？",
+      "intro": "两者都用来存图片，但目标恰恰相反。下面介绍各自的强项，以及如何在它们之间转换。",
+      "s1Title": "压缩：有损 vs 无损",
+      "s1Body": "HEIC 采用高效的有损压缩：在画质几乎不打折的前提下大幅缩小文件。PNG 是无损的，能逐像素精确保留原图 — 但代价是文件大得多，尤其是照片。",
+      "s2Title": "文件体积：HEIC 小得多",
+      "s2Body": "一张典型的 iPhone 照片，HEIC 体积大约是 PNG 的一半。同一张 1200 万像素的照片，HEIC 可能只有 1〜3MB，PNG 却在 15〜30MB。如果你存着几百张照片，差距极其可观。",
+      "s3Title": "透明度：PNG 的强项",
+      "s3Body": "PNG 支持真正的 alpha（透明）通道，HEIC 也支持，但能处理它的工具很少。如果你需要透明背景 — logo、图形、抠图后的截图 — PNG 是唯一被普遍支持的安全选择。",
+      "s4Title": "画质：PNG 像素级完美",
+      "s4Body": "因为 PNG 是无损的，所以特别适合会被反复编辑、裁剪或多次导出的图片，每次保存都不会新增压缩噪点。对于只需观看的成片，HEIC 的画质肉眼几乎分辨不出差别。",
+      "s5Title": "何时把 HEIC 转成 PNG",
+      "s5Body": "当你需要透明度，或某个应用／印刷流程明确要求无损格式时，就转成 PNG。用上方的转换器即可在浏览器里把 HEIC 变成 PNG — 无需上传，完全私密。",
+      "conclusion": "存储和分享照片用 HEIC；需要无损画质或透明度时选 PNG。无论哪种情况，上方的浏览器转换器几秒就能完成切换。",
+      "faq": [
+        { "q": "PNG 画质比 HEIC 更好吗？", "a": "PNG 是无损的，能逐像素精确保留，最适合编辑或透明需求。对于普通照片，HEIC 在文件体积只有几分之一的情况下，肉眼画质几乎一样。" },
+        { "q": "为什么我的 HEIC 比 PNG 版小那么多？", "a": "HEIC 使用专为照片调校的高效有损压缩，而 PNG 的无损压缩几乎压不动真实照片。一张 1200 万像素照片未压缩约 48.8MB，PNG 通常 15〜30MB，HEIC 仅 1〜3MB。" },
+        { "q": "能不上传就把 HEIC 转成 PNG 吗？", "a": "可以。上方的转换器完全通过 WebAssembly 在浏览器内运行，文件从不会被发送到服务器。" }
+      ],
+      "comparison": {
+        "caption": "HEIC vs PNG 一图速览",
+        "headers": ["", "HEIC", "PNG"],
+        "rows": [
+          ["压缩方式", "有损、高效", "无损"],
+          ["文件体积（1200万像素）", "1〜3MB", "15〜30MB"],
+          ["透明度", "支持，但工具稀少", "支持，通用"],
+          ["适用场景", "照片存储", "编辑与透明"]
+        ]
+      }
+    },
+    "heicVsWebp": {
+      "metaTitle": "HEIC vs WebP — 文件体积、画质与如何选择",
+      "metaDescription": "HEIC vs WebP 对比：两者都能压缩照片，但 WebP 是为 Web 而生的。了解 WebP 何时胜过 HEIC，以及如何在浏览器里把 HEIC 转成 WebP。",
+      "cardTitle": "HEIC vs WebP",
+      "cardDesc": "两种现代压缩格式对比 — 以及 WebP 胜出的场景。",
+      "h1": "HEIC vs WebP：哪种现代格式更好？",
+      "intro": "HEIC 和 WebP 都旨在用更小的文件取代 JPEG。区别在于它们各自的主场。下面是实用对比。",
+      "s1Title": "两种格式的归属",
+      "s1Body": "HEIC 是 Apple 的拍照格式，内置于 iPhone 和 macOS。WebP 是 Google 的 Web 格式，为网站而生，所有现代浏览器都支持。HEIC 属于你的相册，WebP 属于 Web。",
+      "s2Title": "文件体积：两者都很小",
+      "s2Body": "在同等画质下，WebP 通常比 JPEG 小 25〜35%，HEIC 也差不多。把 HEIC 转成 WebP，文件大小通常只差几个百分点 — 所以搬到 Web 上并不会丢掉体积优势。",
+      "s3Title": "Web 兼容性：WebP 胜出",
+      "s3Body": "所有现代浏览器（Chrome、Edge、Firefox、Safari）都原生显示 WebP，多数 CMS 平台和社交网站也接受它。相比之下，HEIC 在 Web 上以及 Android、Windows 上仍时好时坏，需要额外编解码器。",
+      "s4Title": "画质：不相上下",
+      "s4Body": "两者都用智能压缩很好地保留细节。对于照片，高质量 HEIC 与高质量 WebP 的肉眼差别微乎其微。WebP 还支持透明度和动画，而 HEIC 不支持。",
+      "s5Title": "何时把 HEIC 转成 WebP",
+      "s5Body": "当你要把照片放到网站、博客或网店上时，就转成 WebP — 它加载更快、更省带宽。用上方的转换器即可在浏览器里把 HEIC 改成 WebP，无需上传、无需账号。",
+      "conclusion": "iPhone 上用 HEIC，网站上用 WebP。上方的转换器让两者之间的切换成为一步、完全私密的操作。",
+      "faq": [
+        { "q": "WebP 比 HEIC 更好吗？", "a": "在 Web 上，是的 — 所有现代浏览器都原生显示 WebP，而 HEIC 的兼容性参差不齐。在 iPhone 存储上，HEIC 是默认且同样高效的选择。" },
+        { "q": "把 HEIC 转成 WebP 会掉画质吗？", "a": "在画质设置一致时，肉眼差别微乎其微，且 WebP 文件大小仍落在 HEIC 的几个百分点之内，因此能保住压缩优势。" },
+        { "q": "能私密地把 HEIC 做成 WebP 吗？", "a": "可以。上方的工具完全通过 WebAssembly 在浏览器内把 HEIC 转成 WebP，任何文件都不会上传到服务器。" }
+      ],
+      "comparison": {
+        "caption": "HEIC vs WebP 一图速览",
+        "headers": ["", "HEIC", "WebP"],
+        "rows": [
+          ["设计目标", "iPhone 相册", "Web"],
+          ["浏览器支持", "参差不齐", "所有现代浏览器"],
+          ["文件体积", "非常小", "非常小"],
+          ["透明／动画", "不支持", "支持"]
+        ]
+      }
+    },
+    "openHeicAndroid": {
+      "metaTitle": "如何在 Android 上打开 HEIC — 查看并转换 HEIC 照片",
+      "metaDescription": "Android 默认无法打开 HEIC。了解如何在 Android 上查看 HEIC 照片，并在浏览器里把 HEIC 转为 JPG/PNG — 无需 App，无需上传。",
+      "cardTitle": "在 Android 上打开 HEIC",
+      "cardDesc": "Android 无法原生打开 HEIC — 查看与转换方法在这里。",
+      "h1": "如何在 Android 上打开 HEIC 文件",
+      "intro": "与 iPhone 不同，多数 Android 手机默认无法预览 HEIC 照片。下面介绍几种可靠的查看或转换方法。",
+      "s1Title": "Android 为何对 HEIC 犯难",
+      "s1Body": "HEIC 是 Apple 的格式。虽然较新的 Android（Android 9 以上）加入了对 HEIF 的部分支持，但许多图库和通讯应用仍无法稳定显示 HEIC，因此来自 iPhone 的照片常显示为空白缩略图。",
+      "s2Title": "方式一：在浏览器里转换",
+      "s2Body": "最简单的办法不需要 App。在手机浏览器里打开上方的转换器，把 HEIC 文件拖入，下载 JPG 或 PNG 版本即可。一切都在浏览器本地运行，照片始终私密。",
+      "s3Title": "方式二：使用文件转换 App",
+      "s3Body": "Google 相册（在对应设置下）或第三方转换器之类的 App，可以在设备上把 HEIC 改成 JPG。如果你经常转换会很方便，但需要安装并授权。",
+      "s4Title": "方式三：改 iPhone 的相机格式",
+      "s4Body": "如果这些 HEIC 文件来自你自己的 iPhone，可在「设置 → 相机 → 格式」里把相机切换为「兼容性最佳」（JPEG）。以后的照片在任何地方（包括 Android）都能打开，无需转换。",
+      "s5Title": "该选哪种？",
+      "s5Body": "现在只想看一两张？在浏览器里转换 — 不用安装。经常从 iPhone 收到 HEIC？让发送方改用「兼容性最佳」，或常备一个转换 App。",
+      "conclusion": "Android 或许无法原生打开 HEIC，但用浏览器快速转换，几秒就能得到任何手机都能用的 JPG 或 PNG。无需软件。",
+      "faq": [
+        { "q": "Android 能打开 HEIC 吗？", "a": "默认情况下并不可靠。Android 9 以上加入了对 HEIF 的部分支持，但许多图库和通讯 App 仍把 HEIC 显示为空白。转成 JPG/PNG 才稳妥。" },
+        { "q": "不想装 App 怎么在 Android 上看 HEIC？", "a": "用上方的转换器：在浏览器打开页面，把 HEIC 文件拖入即可本地预览或转成 JPG/PNG，无需安装。" },
+        { "q": "在 Android 上转换 HEIC 安全吗？", "a": "安全。浏览器转换器完全通过 WebAssembly 在设备上运行，文件从不会被上传到服务器。" }
       ]
     }
   }

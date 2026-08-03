@@ -13,6 +13,10 @@ const SITE_URL = (process.env.SITE_URL || 'https://heic2any.online').replace(/\/
 const guidesSrc = readFileSync(join(__dirname, '..', 'src', 'lib', 'guides.ts'), 'utf8');
 const BLOG_SLUGS = [...guidesSrc.matchAll(/slug:\s*'([^']+)'/g)].map((m) => m[1]);
 
+// Derive legal/trust-page routes from src/lib/legal-content.ts (LEGAL_PAGES).
+const legalSrc = readFileSync(join(__dirname, '..', 'src', 'lib', 'legal-content.ts'), 'utf8');
+const LEGAL_SLUGS = [...legalSrc.matchAll(/slug:\s*'([^']+)'/g)].map((m) => m[1]);
+
 // English (default locale) is served at the root — no locale prefix.
 const EN_ROUTES = [
   '',
@@ -20,7 +24,9 @@ const EN_ROUTES = [
   'heic-to-png',
   'heic-to-webp',
   'heic-to-pdf',
+  'blog',
   ...BLOG_SLUGS.map((s) => `blog/${s}`),
+  ...LEGAL_SLUGS,
 ];
 const LOCALES = ['de', 'ja', 'zh'];
 

@@ -1488,6 +1488,141 @@ html {
   transform: translateY(-1px);
 }
 
+/* ── Comparison table (inside guide articles) ── */
+.guide-table-wrap {
+  margin: var(--space-lg, 24px) 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.guide-table-caption {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary, #4b5563);
+  margin: 0 0 var(--space-sm, 12px);
+}
+
+.guide-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  line-height: 1.5;
+  background: var(--bg-primary, #fff);
+  border: 1px solid var(--border-color-strong, #e3e3e8);
+  border-radius: var(--radius-md, 12px);
+  overflow: hidden;
+}
+
+.guide-table th,
+.guide-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color-strong, #e3e3e8);
+  border-right: 1px solid var(--border-color-strong, #e3e3e8);
+  color: var(--text-secondary, #4b5563);
+  vertical-align: top;
+}
+
+.guide-table th:last-child,
+.guide-table td:last-child {
+  border-right: none;
+}
+
+.guide-table tr:last-child td {
+  border-bottom: none;
+}
+
+.guide-table thead th {
+  background: var(--accent-soft, #f0eeff);
+  color: var(--text-primary, #1a1a2e);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.guide-table-feature {
+  font-weight: 600;
+  color: var(--text-primary, #1a1a2e);
+}
+
+/* ── Blog hub index page ── */
+.blog-hub {
+  max-width: 960px;
+}
+
+.blog-hub-title {
+  font-size: clamp(30px, 5vw, 44px);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  margin: 0 0 var(--space-md, 16px);
+  color: var(--text-primary, #1a1a2e);
+}
+
+.blog-hub-intro {
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--text-secondary, #4b5563);
+  margin: 0 0 var(--space-xl, 40px);
+  max-width: 640px;
+}
+
+.blog-hub-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md, 16px);
+}
+
+.blog-hub-item {
+  margin: 0;
+}
+
+.blog-hub-link {
+  display: block;
+  height: 100%;
+  padding: var(--space-lg, 24px);
+  background: var(--bg-secondary, #f5f5f8);
+  border: 1px solid var(--border-color-strong, #e3e3e8);
+  border-radius: var(--radius-lg, 16px);
+  text-decoration: none;
+  color: inherit;
+  transition: transform var(--duration-fast, 0.18s) var(--ease-smooth, ease),
+    box-shadow var(--duration-fast, 0.18s) var(--ease-smooth, ease),
+    border-color var(--duration-fast, 0.18s) var(--ease-smooth, ease);
+}
+
+.blog-hub-link:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent, #6d5efc);
+  box-shadow: 0 10px 24px rgba(109, 94, 252, 0.12);
+}
+
+.blog-hub-card-title {
+  font-size: 19px;
+  font-weight: 700;
+  margin: 0 0 var(--space-xs, 6px);
+  color: var(--text-primary, #1a1a2e);
+}
+
+.blog-hub-link:hover .blog-hub-card-title {
+  color: var(--accent, #6d5efc);
+}
+
+.blog-hub-card-desc {
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 0;
+  color: var(--text-secondary, #4b5563);
+}
+
+@media (max-width: 640px) {
+  .blog-hub-list {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ── Format cross-links (on converter/tool pages) ── */
 .format-links {
   margin-top: var(--space-xl, 40px);
@@ -1566,6 +1701,29 @@ html {
   background: var(--accent-hover, #0077ed);
   color: var(--text-inverse, #fff);
   text-decoration: none;
+}
+
+/* ── Legal / trust pages ── */
+.legal-contact {
+  margin-top: var(--space-xl, 40px);
+  padding: var(--space-lg, 24px);
+  background: var(--accent-light, rgba(0, 113, 227, 0.08));
+  border: 1px solid var(--border-color, rgba(0, 0, 0, 0.06));
+  border-radius: var(--radius-lg, 16px);
+  text-align: center;
+}
+
+.legal-email {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent, #0071e3);
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.legal-email:hover {
+  text-decoration: underline;
 }
 
 /* ── Guide link cards (homepage / tool pages) ── */

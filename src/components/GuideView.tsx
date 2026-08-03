@@ -3,9 +3,40 @@ import { Link } from '@/i18n/navigation';
 import { GUIDES, buildGuideAlternates } from '@/lib/guides';
 import { TOOL_LINKS } from '@/lib/nav';
 
+// Optional comparison table embedded in a guide's message data:
+// { caption?: string; headers: string[]; rows: string[][] }
+function ComparisonTable({ data }: { data: { caption?: string; headers: string[]; rows: string[][] } }) {
+  return (
+    <div className="guide-table-wrap">
+      {data.caption && <p className="guide-table-caption">{data.caption}</p>}
+      <table className="guide-table">
+        <thead>
+          <tr>
+            {data.headers.map((h, i) => (
+              <th key={i}>{h}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {data.rows.map((row, ri) => (
+            <tr key={ri}>
+              {row.map((cell, ci) => (
+                <td key={ci} className={ci === 0 ? 'guide-table-feature' : ''}>
+                  {cell}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
 // Renders a blog article page: keyword-rich h1, a short intro, the article
-// body (text + images), and internal links to sibling articles. No converter
-// or other interactive widgets — pure editorial content.
+// body (multi-paragraph text + optional comparison table), and internal links
+// to sibling articles. No converter or other interactive widgets — pure
+// editorial content.
 export default async function GuideView({
   locale,
   slug,
@@ -79,9 +110,15 @@ export default async function GuideView({
         {sections.map((s, i) => (
           <section key={i} className="guide-section">
             <h2>{s.title}</h2>
-            <p>{s.body}</p>
+            {s.body
+              .split('\n')
+              .filter((p: string) => p.trim().length > 0)
+              .map((p: string, j: number) => (
+                <p key={j}>{p}</p>
+              ))}
           </section>
         ))}
+        {g.comparison && <ComparisonTable data={g.comparison} />}
         {g.conclusion && <p className="guide-conclusion">{g.conclusion}</p>}
       </div>
 

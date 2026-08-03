@@ -4,8 +4,11 @@
 export const GUIDES = [
   { slug: 'what-is-heic', key: 'whatIsHeic', cta: '/heic-to-jpg' },
   { slug: 'heic-vs-jpeg', key: 'heicVsJpeg', cta: '/heic-to-jpg' },
+  { slug: 'heic-vs-png', key: 'heicVsPng', cta: '/heic-to-png' },
+  { slug: 'heic-vs-webp', key: 'heicVsWebp', cta: '/heic-to-webp' },
   { slug: 'open-heic-on-windows', key: 'openHeicWindows', cta: '/heic-to-jpg' },
   { slug: 'open-heic-on-mac', key: 'openHeicMac', cta: '/heic-to-jpg' },
+  { slug: 'open-heic-on-android', key: 'openHeicAndroid', cta: '/heic-to-jpg' },
   { slug: 'heic-to-pdf', key: 'heicToPdf', cta: '/heic-to-pdf' },
 ] as const;
 
@@ -35,6 +38,18 @@ export function buildGuideAlternates(locale: string, slug: string) {
   }
   return {
     canonical: locale === 'en' ? `/blog/${slug}/` : `/${locale}/blog/${slug}/`,
+    languages,
+  };
+}
+
+// Build canonical + hreflang alternates for the /blog hub index page.
+export function buildBlogHubAlternates(locale: string) {
+  const languages: Record<string, string> = {};
+  for (const loc of GUIDE_LOCALES) {
+    languages[loc] = loc === 'en' ? '/blog/' : `/${loc}/blog/`;
+  }
+  return {
+    canonical: locale === 'en' ? '/blog/' : `/${locale}/blog/`,
     languages,
   };
 }

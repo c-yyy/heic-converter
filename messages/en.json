@@ -105,8 +105,16 @@
     "q5": "Why can't I open HEIC files on Windows?",
     "a5": "Windows doesn't natively support HEIC format without additional codecs. While Windows 10/11 can install HEIF extensions from the Microsoft Store, many applications still can't read HEIC files. Converting to PNG or JPG ensures universal compatibility across all platforms."
   },
+  "blog": {
+    "metaTitle": "HEIC Guides & Answers — Convert, Open & Understand HEIC Photos",
+    "metaDescription": "Practical HEIC guides: what HEIC is, how it compares to JPEG/PNG/WebP, and how to open or convert HEIC on Windows, Mac, Android, and in your browser.",
+    "hubTitle": "HEIC Guides & Answers",
+    "intro": "Step-by-step guides to opening, understanding, and converting HEIC photos — written for real workflows, not just keywords.",
+    "allGuides": "All HEIC guides"
+  },
   "footer": {
     "tools": "Convert Tools",
+    "company": "Company",
     "otherFormats": "Convert to other formats",
     "home": "HEIC Converter",
     "heicToJpg": "HEIC to JPG",
@@ -253,6 +261,98 @@
         { "q": "Can I convert HEIC to PDF for free?", "a": "Yes. The converter above turns one or more HEIC photos into a PDF entirely in your browser, with no cost, account, or upload." },
         { "q": "Can multiple HEIC photos become one PDF?", "a": "Yes. Add several HEIC files and choose PDF; they are combined into a single multi-page PDF in the order you selected." },
         { "q": "Is converting HEIC to PDF safe?", "a": "Yes. Conversion runs locally via WebAssembly and your files are never sent to a server, so private photos stay on your device." }
+      ]
+    },
+    "heicVsPng": {
+      "metaTitle": "HEIC vs PNG — Which Should You Use? Quality, Size & When to Convert",
+      "metaDescription": "HEIC vs PNG: compare file size, quality, and transparency. Learn when PNG’s lossless format beats HEIC, and how to convert HEIC to PNG in your browser.",
+      "cardTitle": "HEIC vs PNG",
+      "cardDesc": "Lossless PNG vs efficient HEIC — and when to convert.",
+      "h1": "HEIC vs PNG: Which Format Should You Use?",
+      "intro": "Both store images, but they are built for opposite goals. Here is when each wins — and how to move between them.",
+      "s1Title": "Compression: Lossy vs Lossless",
+      "s1Body": "HEIC uses efficient lossy compression: it shrinks files dramatically while keeping quality close to the original. PNG is lossless, so it preserves every pixel exactly — but the trade-off is much larger files, especially for photos.",
+      "s2Title": "File Size: HEIC Is Far Smaller",
+      "s2Body": "A typical iPhone photo is about half the size as HEIC compared with PNG. For the same 12MP shot, HEIC might be 1–3 MB while PNG lands at 15–30 MB. If you store hundreds of photos, that difference is enormous.",
+      "s3Title": "Transparency: PNG’s Strength",
+      "s3Body": "PNG supports a true alpha (transparency) channel, which HEIC also supports but fewer tools handle. If you need a transparent background — logos, graphics, screenshots with cut-outs — PNG is the safe, universally supported choice.",
+      "s4Title": "Quality: PNG Is Pixel-Perfect",
+      "s4Body": "Because PNG is lossless, it is ideal for images that will be edited, cropped, or re-exported many times, since each save adds no new compression artifacts. For finished photos meant to be viewed, HEIC’s quality is virtually indistinguishable.",
+      "s5Title": "When to Convert HEIC to PNG",
+      "s5Body": "Convert to PNG when you need transparency, or when an app or print workflow specifically requires a lossless format. Use the converter above to turn HEIC into PNG entirely in your browser — no upload, fully private.",
+      "conclusion": "Keep HEIC for storage and sharing photos; reach for PNG when you need lossless quality or transparency. Either way, the browser converter above handles the switch in seconds.",
+      "faq": [
+        { "q": "Is PNG better quality than HEIC?", "a": "PNG is lossless, so it preserves every pixel exactly and is best for editing or transparency. For ordinary photos, HEIC looks the same to the eye at a fraction of the file size." },
+        { "q": "Why is my HEIC so much smaller than the PNG version?", "a": "HEIC uses efficient lossy compression tuned for photos, while PNG’s lossless compression barely shrinks real photos. A 12MP photo is about 48.8MB uncompressed; PNG usually lands at 15–30MB, HEIC at 1–3MB." },
+        { "q": "Can I convert HEIC to PNG without uploading?", "a": "Yes. The converter above runs entirely in your browser via WebAssembly — your files are never sent to a server." }
+      ],
+      "comparison": {
+        "caption": "HEIC vs PNG at a glance",
+        "headers": ["", "HEIC", "PNG"],
+        "rows": [
+          ["Compression", "Lossy, efficient", "Lossless"],
+          ["File size (12MP photo)", "1–3 MB", "15–30 MB"],
+          ["Transparency", "Supported, rare support", "Yes, universal"],
+          ["Best for", "Photo storage", "Editing & transparency"]
+        ]
+      }
+    },
+    "heicVsWebp": {
+      "metaTitle": "HEIC vs WebP — File Size, Quality & Which to Choose",
+      "metaDescription": "HEIC vs WebP compared: both shrink photos, but WebP is web-native. Learn when WebP beats HEIC and how to convert HEIC to WebP in your browser.",
+      "cardTitle": "HEIC vs WebP",
+      "cardDesc": "Two modern compressors compared — and when WebP wins.",
+      "h1": "HEIC vs WebP: Which Modern Format Wins?",
+      "intro": "HEIC and WebP are both designed to replace JPEG with smaller files. The difference is where each one lives. Here is the practical breakdown.",
+      "s1Title": "Where Each Format Belongs",
+      "s1Body": "HEIC is Apple’s photo format, baked into iPhone and macOS. WebP is Google’s web format, built for websites and supported by every modern browser. HEIC is for your camera roll; WebP is for the web.",
+      "s2Title": "File Size: Both Are Small",
+      "s2Body": "At the same quality, WebP is typically 25–35% smaller than JPEG, and HEIC is similar. Converting HEIC to WebP usually keeps the file within a few percent — so you don’t lose the size advantage when moving to the web.",
+      "s3Title": "Web Compatibility: WebP Wins",
+      "s3Body": "Every modern browser (Chrome, Edge, Firefox, Safari) displays WebP natively, and most CMS platforms and social sites accept it. HEIC, by contrast, is still hit-or-miss on the web and on Android or Windows without extra codecs.",
+      "s4Title": "Quality: Comparable",
+      "s4Body": "Both use smart compression that preserves detail well. For photos, the visible difference between a high-quality HEIC and a high-quality WebP is negligible. WebP also supports transparency and animation, which HEIC does not.",
+      "s5Title": "When to Convert HEIC to WebP",
+      "s5Body": "Convert to WebP when you’re putting photos on a website, blog, or online store — it loads faster and saves bandwidth. Use the converter above to change HEIC to WebP in your browser, with no upload and no account.",
+      "conclusion": "Use HEIC on your iPhone, use WebP on your website. The converter above makes moving between them a one-click, fully private step.",
+      "faq": [
+        { "q": "Is WebP better than HEIC?", "a": "For the web, yes — every modern browser shows WebP natively, while HEIC support is inconsistent. For iPhone storage, HEIC is the default and just as efficient." },
+        { "q": "Does converting HEIC to WebP lose quality?", "a": "At matched quality settings the visible difference is negligible, and WebP files stay within a few percent of HEIC’s size — so you keep the compression benefit." },
+        { "q": "Can I make WebP from HEIC privately?", "a": "Yes. The tool above converts HEIC to WebP entirely in your browser via WebAssembly; nothing is uploaded to a server." }
+      ],
+      "comparison": {
+        "caption": "HEIC vs WebP at a glance",
+        "headers": ["", "HEIC", "WebP"],
+        "rows": [
+          ["Designed for", "iPhone camera roll", "The web"],
+          ["Browser support", "Inconsistent", "All modern browsers"],
+          ["File size", "Very small", "Very small"],
+          ["Transparency / animation", "No", "Yes"]
+        ]
+      }
+    },
+    "openHeicAndroid": {
+      "metaTitle": "How to Open HEIC on Android — View & Convert HEIC Photos",
+      "metaDescription": "Android can’t open HEIC by default. Learn how to view HEIC photos on Android and convert HEIC to JPG/PNG in your browser — no app, no upload.",
+      "cardTitle": "Open HEIC on Android",
+      "cardDesc": "Android doesn’t open HEIC natively — here’s how to view or convert it.",
+      "h1": "How to Open HEIC Files on Android",
+      "intro": "Unlike iPhones, most Android phones can’t preview HEIC photos out of the box. Here are the reliable ways to view or convert them.",
+      "s1Title": "Why Android Struggles With HEIC",
+      "s1Body": "HEIC is Apple’s format. While newer Android versions (Android 9+) added some HEIF support, many gallery apps and messaging tools still can’t display HEIC reliably, so photos from an iPhone often show up as blank thumbnails.",
+      "s2Title": "Option 1: Convert in Your Browser",
+      "s2Body": "The simplest fix needs no app. Open the converter above in your phone’s browser, drop in the HEIC files, and download JPG or PNG versions. Everything runs locally in the browser, so your photos stay private.",
+      "s3Title": "Option 2: Use a File Converter App",
+      "s3Body": "Apps such as Google Photos (with the right setting) or third-party converters can change HEIC to JPG on-device. They’re handy if you convert often, but require installation and permissions.",
+      "s4Title": "Option 3: Change the iPhone’s Camera Format",
+      "s4Body": "If the HEIC files come from your own iPhone, switch the camera to shoot ‘Most Compatible’ (JPEG) in Settings → Camera → Formats. Future photos will open everywhere, including Android, with no conversion.",
+      "s5Title": "Which Should You Pick?",
+      "s5Body": "Got one or two photos to view now? Convert in the browser — no install. Receiving HEIC from an iPhone regularly? Ask the sender to use ‘Most Compatible’, or keep a converter app handy.",
+      "conclusion": "Android may not open HEIC natively, but a quick browser conversion gives you JPG or PNG files that work on any phone. It takes seconds and needs no software.",
+      "faq": [
+        { "q": "Can Android open HEIC files?", "a": "Not reliably by default. Android 9+ added partial HEIF support, but many gallery and messaging apps still show HEIC as blank. Converting to JPG/PNG is the dependable fix." },
+        { "q": "How do I view HEIC on Android without an app?", "a": "Open the converter above in your browser, drop in the HEIC files, and preview or convert them to JPG/PNG locally — no installation needed." },
+        { "q": "Is it safe to convert HEIC on Android?", "a": "Yes. The browser converter runs entirely on your device via WebAssembly; your files are never uploaded to a server." }
       ]
     }
   }
