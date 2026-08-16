@@ -106,6 +106,8 @@ export default function Dropzone({ onFilesAdded, disabled }: DropzoneProps) {
           type="file"
           accept=".heic,.HEIC,.heif,.HEIF"
           multiple
+          tabIndex={-1}
+          aria-hidden="true"
           onChange={handleChange}
         />
       </div>

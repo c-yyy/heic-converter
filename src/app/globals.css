@@ -424,6 +424,20 @@ body {
   margin: 0 auto var(--space-2xl);
 }
 
+/* Hide native file input — the dropzone itself acts as the clickable button */
+.dropzone input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .dropzone {
   border: var(--border-width-thick) solid var(--border-color);
   background: var(--bg-dropzone);
