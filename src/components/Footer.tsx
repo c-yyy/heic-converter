@@ -18,7 +18,9 @@ export default function Footer() {
         <div className="footer-inner">
           <div className="footer-brand">
             <div className="footer-brand-name">HEIC Converter</div>
-            <p className="footer-brand-desc">{t('privacy')}</p>
+            <p className="footer-brand-desc">
+              HEIC (High Efficiency Image Container) is Apple’s default photo format, but it doesn’t open everywhere. This free converter turns HEIC into JPG, PNG, WebP, or PDF right in your browser — no upload, no account, and no visible quality loss. Everything runs locally on your device, so private photos never leave it.
+            </p>
           </div>
           <div className="footer-links-section">
             <h4>{t('tools')}</h4>
@@ -57,9 +59,6 @@ export default function Footer() {
         </div>
         <div className="footer-bottom">
           <span className="footer-copyright">{t('copyright', { year: new Date().getFullYear() })}</span>
-          <a href="https://buymeacoffee.com" target="_blank" rel="noopener noreferrer" className="coffee-btn">
-            ☕ {t('buyMeCoffee')}
-          </a>
         </div>
       </div>
     </footer>
