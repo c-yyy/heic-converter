@@ -1648,6 +1648,7 @@ body {
 /* Related articles nav */
 .guide-related {
   margin-top: var(--space-2xl);
+  margin-bottom: var(--space-2xl);
   border-top: var(--border-width-thick) solid var(--border-color);
   padding-top: var(--space-xl);
 }
