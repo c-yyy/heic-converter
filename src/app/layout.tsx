@@ -2,8 +2,22 @@ import './globals.css';
 import type {Metadata} from 'next';
 
 export const metadata: Metadata = {
-  title: 'HEIC Converter',
-  description: 'Convert HEIC to PNG, JPG, and WebP online — free, private, in your browser.',
+  metadataBase: new URL('https://heic2any.online'),
+  title: {
+    default: 'HEIC Converter',
+    template: '%s | HEIC Converter',
+  },
+  description:
+    'Convert HEIC to PNG, JPG, and WebP online — free, private, in your browser.',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/manifest.webmanifest',
+  twitter: {
+    card: 'summary_large_image',
+  },
 };
 
 // Root layout: owns <html>/<body>. The per-locale <html lang> is synced

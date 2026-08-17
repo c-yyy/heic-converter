@@ -17,10 +17,31 @@ export async function generateMetadata() {
       },
     },
     openGraph: {
+
       title: t('titlePdf'),
       description: t('descriptionPdf'),
       type: 'website',
       siteName: 'HEIC Converter',
+      images: [
+        {
+          url: 'https://heic2any.online/opengraph-image.png',
+          width: 1200,
+          height: 630,
+          alt: 'HEIC Converter',
+        },
+      ],
+
+    },
+    twitter: {
+      card: 'summary_large_image',
+      images: [
+        {
+          url: 'https://heic2any.online/opengraph-image.png',
+          width: 1200,
+          height: 630,
+          alt: 'HEIC Converter',
+        },
+      ],
     },
   };
 }

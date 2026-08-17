@@ -23,10 +23,31 @@ export async function generateMetadata({
     description: meta?.description,
     alternates: {canonical, languages},
     openGraph: {
+
       title: meta?.title,
       description: meta?.description,
       type: 'article',
       siteName: 'HEIC Converter',
+      images: [
+        {
+          url: 'https://heic2any.online/opengraph-image.png',
+          width: 1200,
+          height: 630,
+          alt: 'HEIC Converter',
+        },
+      ],
+
+    },
+    twitter: {
+      card: 'summary_large_image',
+      images: [
+        {
+          url: 'https://heic2any.online/opengraph-image.png',
+          width: 1200,
+          height: 630,
+          alt: 'HEIC Converter',
+        },
+      ],
     },
   };
 }
