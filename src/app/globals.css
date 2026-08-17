@@ -321,7 +321,7 @@ body {
 
 /* ── Main Layout ── */
 .main {
-  padding-top: var(--space-2xl);
+  padding-top: var(--space-lg);
   min-height: 100vh;
 }
 
@@ -334,11 +334,11 @@ body {
 /* ── Ultra-Detailed Hero Section ── */
 .hero {
   text-align: left;
-  padding: var(--space-3xl) var(--space-xl) var(--space-3xl);
+  padding: var(--space-xl) var(--space-lg) var(--space-lg);
   background: #ffffff;
   border: var(--border-width-thick) solid var(--border-color);
   box-shadow: var(--shadow-lg);
-  margin-bottom: var(--space-2xl);
+  margin-bottom: var(--space-lg);
   position: relative;
   overflow: hidden;
 }
@@ -370,10 +370,10 @@ body {
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: clamp(42px, 7.5vw, 72px);
+  font-size: clamp(34px, 5.5vw, 56px);
   font-weight: 900;
   letter-spacing: -0.04em;
-  line-height: 0.9;
+  line-height: 0.95;
   color: var(--text-primary);
   text-transform: uppercase;
 }
@@ -384,12 +384,12 @@ body {
   -webkit-text-fill-color: initial !important;
   -webkit-background-clip: initial !important;
   background-clip: initial !important;
-  padding: 8px 18px;
+  padding: 6px 14px;
   display: inline-block;
   border: var(--border-width-thick) solid var(--border-color);
   transform: rotate(-1.5deg) translate(-2px, -2px);
   box-shadow: var(--shadow-sm);
-  margin-top: 14px;
+  margin-top: 10px;
   position: relative;
 }
 
@@ -408,11 +408,11 @@ body {
 }
 
 .hero-subtitle {
-  font-size: clamp(17px, 2.8vw, 23px);
+  font-size: clamp(15px, 2.2vw, 19px);
   color: var(--text-secondary);
   max-width: 800px;
-  margin: var(--space-xl) 0 0;
-  line-height: 1.6;
+  margin: var(--space-md) 0 0;
+  line-height: 1.5;
   font-weight: 700;
   border-left: var(--border-width-thick) solid var(--border-color);
   padding-left: var(--space-md);
