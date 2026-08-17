@@ -188,11 +188,11 @@
       "h1": "HEIC vs JPEG: The In-Depth Format Comparison",
       "intro": "HEIC and JPEG both store photographs, but they were built three decades apart using fundamentally different compression strategies. Understanding the differences helps you make the right decision for storage, sharing, and archiving — and know exactly when a conversion is worth it.",
       "s1Title": "1. File Size — Real-World Test Data",
-      "s1Body": "To move beyond theoretical claims, we converted 100 iPhone 15 Pro photographs captured in RAW+HEIC mode and re-exported them as maximum-compatibility JPEG at 95% quality using Apple's built-in exporter.\n\nResults:\n• Average HEIC size: 1.47 MB\n• Average JPEG size: 3.21 MB\n• Storage savings: 54.2%\n• Scenes with the largest gap: flat-color backgrounds (sky, walls) — HEIC up to 65% smaller\n• Scenes with the smallest gap: high-frequency detail (foliage, crowd shots) — HEIC ~35% smaller\n\nFor a user who shoots 5,000 photos per year (roughly 14 per day — not unusual for parents or travelers), that gap translates to approximately 8.7 GB saved annually on HEIC vs JPEG. On a 128 GB iPhone, that difference compounds to years of additional shooting before hitting a storage ceiling.",
+      "s1Body": "To move beyond theoretical claims, we converted 100 iPhone 15 Pro photographs captured in RAW+HEIC mode and re-exported them as maximum-compatibility JPEG at 95% quality using Apple's built-in exporter.\n\nResults:\n• Average HEIC size: 1.47 MB\n• Average JPEG size: 3.21 MB\n• Storage savings: 54.2%\n• Scenes with the largest gap: flat-color backgrounds (sky, walls) — HEIC up to 65% smaller\n• Scenes with the smallest gap: high-frequency detail (foliage, crowd shots) — HEIC ~35% smaller\n\nFor a user who shoots 5,000 photos per year (roughly 14 per day — not unusual for parents or travelers), that gap translates to approximately 8.7 GB saved annually on HEIC vs JPEG. On a 128 GB iPhone, that difference compounds to years of additional shooting before hitting a storage ceiling.\n\nThese savings are not theoretical. Cloud backup services bill by storage tier, so a household syncing an iPhone library to a 2 TB plan reaches that ceiling roughly twice as fast on JPEG as on HEIC. The same logic applies when sending photos over mobile data: a 54% smaller HEIC transfers in half the time and uses half the data allowance, which is a real difference on capped or roaming connections.",
       "s2Title": "2. Image Quality — 8-Bit JPEG vs 10-Bit HEIC",
-      "s2Body": "JPEG is architecturally capped at 8 bits per color channel, allowing 256 tonal steps per channel and a maximum of 16.7 million distinct colors. This is perfectly adequate for most scenes, but high-contrast lighting — the golden hour, neon-lit cityscapes, HDR skies — can expose banding artifacts where smooth gradients abruptly step between the 256 available values.\n\nHEIC captures at 10-bit depth on iPhone 12 and later (and stores up to 16-bit internally), providing 1,024 tonal steps per channel and over 1 billion addressable colors. The practical benefit is smoother gradients, better shadow recovery in editing, and future-proofing for HDR displays.\n\nBeyond bit depth, HEIC's HEVC codec preserves finer micro-detail in hair, fabric, and foliage than JPEG's older DCT algorithm, which produces characteristic mosquito noise halos around high-frequency edges at comparable file sizes.",
+      "s2Body": "JPEG is architecturally capped at 8 bits per color channel, allowing 256 tonal steps per channel and a maximum of 16.7 million distinct colors. This is perfectly adequate for most scenes, but high-contrast lighting — the golden hour, neon-lit cityscapes, HDR skies — can expose banding artifacts where smooth gradients abruptly step between the 256 available values.\n\nHEIC captures at 10-bit depth on iPhone 12 and later (and stores up to 16-bit internally), providing 1,024 tonal steps per channel and over 1 billion addressable colors. The practical benefit is smoother gradients, better shadow recovery in editing, and future-proofing for HDR displays.\n\nBeyond bit depth, HEIC's HEVC codec preserves finer micro-detail in hair, fabric, and foliage than JPEG's older DCT algorithm, which produces characteristic mosquito noise halos around high-frequency edges at comparable file sizes.\n\nHEIC also carries Apple’s Display P3 wide-color gamut. Colors that fall outside the traditional sRGB range — saturated sunsets, tropical foliage, neon signage — are recorded with noticeably more richness on capable displays. A JPEG can technically embed wide-gamut data, but in practice almost every JPEG pipeline collapses back to sRGB, quietly discarding that extra color.",
       "s3Title": "3. Compatibility — Where Each Format Stands Today",
-      "s3Body": "JPEG compatibility is effectively universal. Since its ISO standardization in 1994, support has been built into every major operating system, browser, photo editing application, social media platform, and printer firmware. There is no scenario in which a JPEG fails to open because of format incompatibility.\n\nHEIC is natively supported on Apple platforms (iOS 11+, macOS High Sierra+, iPadOS) and Google's Android 12+ on devices with HEVC hardware decoders. The significant gap is Windows: Microsoft's base OS omits HEVC decoders due to licensing costs, leaving .heic files unreadable to most Windows users until they manually install store extensions. Legacy Chromebooks, many Linux distributions, and corporate security environments that restrict codec installation are similarly affected.\n\nFor any file that needs to be opened by a diverse audience — a photo attached to an email, an image uploaded to a shared document, a picture submitted to a web form — JPEG (or WebP for web contexts) is the safe choice.",
+      "s3Body": "JPEG compatibility is effectively universal. Since its ISO standardization in 1994, support has been built into every major operating system, browser, photo editing application, social media platform, and printer firmware. There is no scenario in which a JPEG fails to open because of format incompatibility.\n\nHEIC is natively supported on Apple platforms (iOS 11+, macOS High Sierra+, iPadOS) and Google's Android 12+ on devices with HEVC hardware decoders. The significant gap is Windows: Microsoft's base OS omits HEVC decoders due to licensing costs, leaving .heic files unreadable to most Windows users until they manually install store extensions. Legacy Chromebooks, many Linux distributions, and corporate security environments that restrict codec installation are similarly affected.\n\nFor any file that needs to be opened by a diverse audience — a photo attached to an email, an image uploaded to a shared document, a picture submitted to a web form — JPEG (or WebP for web contexts) is the safe choice.\n\nEven inside Apple’s ecosystem, edge cases remain: older Safari builds and some embedded web views still stumble on HEIC, and a number of enterprise mail gateways strip unknown image types before delivery. JPEG’s three-decade head start makes it the one format you can send into almost any system and trust to arrive readable.",
       "s4Title": "4. When to Convert HEIC to JPEG — Decision Framework",
       "s4Body": "You should NOT convert just because a file is HEIC. Conversion adds a re-encoding step and grows the file. Convert only when:\n\n• Sharing with Windows or Android users who lack HEVC decoders\n• Uploading to web services, CMS platforms, or forms that reject .heic extensions\n• Sending to print labs that require JPEG or TIFF input\n• Attaching to emails for non-Apple recipients\n• Importing into legacy software (older Lightroom, Photoshop CS5–CS6, some video editors)\n\nKeep original HEICs for:\n• Long-term personal archiving\n• iCloud Photo Library storage\n• Editing on Apple platforms (Final Cut, Pixelmator, newer Adobe apps)\n• Sharing within Apple's ecosystem via AirDrop or iMessage",
       "s5Title": "5. Why PNG Conversions Balloon to 15–30 MB",
@@ -201,17 +201,77 @@
       "s6Body": "Here is how all four formats compare across the dimensions that matter in real workflows:",
       "comparison": {
         "caption": "Format comparison across key dimensions",
-        "headers": ["", "HEIC", "JPEG", "WebP", "PNG"],
+        "headers": [
+          "",
+          "HEIC",
+          "JPEG",
+          "WebP",
+          "PNG"
+        ],
         "rows": [
-          ["Compression type", "Lossy (HEVC)", "Lossy (DCT)", "Lossy or Lossless", "Lossless"],
-          ["Typical 12MP file size", "1–3 MB", "2–5 MB", "1–3 MB", "15–30 MB"],
-          ["Color depth", "10–16 bit", "8 bit", "8–10 bit", "8–16 bit"],
-          ["Transparency", "Yes", "No", "Yes", "Yes"],
-          ["Opens on iOS/macOS", "Native", "Native", "Native", "Native"],
-          ["Opens on Windows 11", "Needs codec", "Native", "Native", "Native"],
-          ["Opens on Android 12+", "Most devices", "Native", "Native", "Native"],
-          ["Browser support", "Limited", "Universal", "Universal (modern)", "Universal"],
-          ["Best for", "iPhone storage", "Universal sharing", "Web delivery", "Graphics/editing"]
+          [
+            "Compression type",
+            "Lossy (HEVC)",
+            "Lossy (DCT)",
+            "Lossy or Lossless",
+            "Lossless"
+          ],
+          [
+            "Typical 12MP file size",
+            "1–3 MB",
+            "2–5 MB",
+            "1–3 MB",
+            "15–30 MB"
+          ],
+          [
+            "Color depth",
+            "10–16 bit",
+            "8 bit",
+            "8–10 bit",
+            "8–16 bit"
+          ],
+          [
+            "Transparency",
+            "Yes",
+            "No",
+            "Yes",
+            "Yes"
+          ],
+          [
+            "Opens on iOS/macOS",
+            "Native",
+            "Native",
+            "Native",
+            "Native"
+          ],
+          [
+            "Opens on Windows 11",
+            "Needs codec",
+            "Native",
+            "Native",
+            "Native"
+          ],
+          [
+            "Opens on Android 12+",
+            "Most devices",
+            "Native",
+            "Native",
+            "Native"
+          ],
+          [
+            "Browser support",
+            "Limited",
+            "Universal",
+            "Universal (modern)",
+            "Universal"
+          ],
+          [
+            "Best for",
+            "iPhone storage",
+            "Universal sharing",
+            "Web delivery",
+            "Graphics/editing"
+          ]
         ]
       },
       "s7Title": "7. Quality After Conversion — What the Numbers Mean",
@@ -302,9 +362,18 @@
       "s8Body": "Preview and Shortcuts are great until a file leaves Apple's world. For one-off shares, Windows recipients, or photos bound for a website, the converter above turns HEIC into JPG, PNG, WebP, or PDF in seconds — no install, fully private.",
       "conclusion": "On a Mac, HEIC needs no special app to view. Convert only when a file has to leave the Apple ecosystem, and the browser converter above handles it in seconds.",
       "faq": [
-        { "q": "Can Mac open HEIC files natively?", "a": "Yes. macOS Preview and Photos open HEIC without any add-on since macOS High Sierra. Press Space in Finder for a Quick Look preview, or open the file in Preview." },
-        { "q": "How do I convert HEIC to JPG on Mac?", "a": "Open the HEIC in Preview, then File → Export and choose JPEG. Or use the free browser converter above to change HEIC to JPG, PNG, or PDF without installing anything." },
-        { "q": "Why convert HEIC if Mac already opens it?", "a": "macOS opens HEIC fine, but Windows PCs, Android phones, and many websites cannot. Converting to JPG/PNG/PDF makes the file usable for anyone you share it with." }
+        {
+          "q": "Can Mac open HEIC files natively?",
+          "a": "Yes. macOS Preview and Photos open HEIC without any add-on since macOS High Sierra. Press Space in Finder for a Quick Look preview, or open the file in Preview."
+        },
+        {
+          "q": "How do I convert HEIC to JPG on Mac?",
+          "a": "Open the HEIC in Preview, then File → Export and choose JPEG. Or use the free browser converter above to change HEIC to JPG, PNG, or PDF without installing anything."
+        },
+        {
+          "q": "Why convert HEIC if Mac already opens it?",
+          "a": "macOS opens HEIC fine, but Windows PCs, Android phones, and many websites cannot. Converting to JPG/PNG/PDF makes the file usable for anyone you share it with."
+        }
       ]
     },
     "heicToPdf": {
@@ -330,9 +399,18 @@
       "s7Body": "The PDF is built on your device with WebAssembly — your HEIC photos never leave the browser. That matters for IDs, receipts, or personal albums you wouldn't want sitting on someone else's server. Download and you're done; nothing is uploaded.",
       "conclusion": "Turning HEIC into PDF takes seconds and needs no software. For sharing or printing photos as a single file, PDF is often the cleaner choice than a folder of JPGs.",
       "faq": [
-        { "q": "Can I convert HEIC to PDF for free?", "a": "Yes. The converter above turns one or more HEIC photos into a PDF entirely in your browser, with no cost, account, or upload." },
-        { "q": "Can multiple HEIC photos become one PDF?", "a": "Yes. Add several HEIC files and choose PDF; they are combined into a single multi-page PDF in the order you selected." },
-        { "q": "Is converting HEIC to PDF safe?", "a": "Yes. Conversion runs locally via WebAssembly and your files are never sent to a server, so private photos stay on your device." }
+        {
+          "q": "Can I convert HEIC to PDF for free?",
+          "a": "Yes. The converter above turns one or more HEIC photos into a PDF entirely in your browser, with no cost, account, or upload."
+        },
+        {
+          "q": "Can multiple HEIC photos become one PDF?",
+          "a": "Yes. Add several HEIC files and choose PDF; they are combined into a single multi-page PDF in the order you selected."
+        },
+        {
+          "q": "Is converting HEIC to PDF safe?",
+          "a": "Yes. Conversion runs locally via WebAssembly and your files are never sent to a server, so private photos stay on your device."
+        }
       ]
     },
     "heicVsPng": {
@@ -354,18 +432,47 @@
       "s5Body": "Convert to PNG when you need transparency, or when an app or print workflow specifically requires a lossless format. Use the converter above to turn HEIC into PNG entirely in your browser — no upload, fully private.",
       "conclusion": "Keep HEIC for storage and sharing photos; reach for PNG when you need lossless quality or transparency. Either way, the browser converter above handles the switch in seconds.",
       "faq": [
-        { "q": "Is PNG better quality than HEIC?", "a": "PNG is lossless, so it preserves every pixel exactly and is best for editing or transparency. For ordinary photos, HEIC looks the same to the eye at a fraction of the file size." },
-        { "q": "Why is my HEIC so much smaller than the PNG version?", "a": "HEIC uses efficient lossy compression tuned for photos, while PNG's lossless compression barely shrinks real photos. A 12MP photo is about 48.8MB uncompressed; PNG usually lands at 15–30MB, HEIC at 1–3MB." },
-        { "q": "Can I convert HEIC to PNG without uploading?", "a": "Yes. The converter above runs entirely in your browser via WebAssembly — your files are never sent to a server." }
+        {
+          "q": "Is PNG better quality than HEIC?",
+          "a": "PNG is lossless, so it preserves every pixel exactly and is best for editing or transparency. For ordinary photos, HEIC looks the same to the eye at a fraction of the file size."
+        },
+        {
+          "q": "Why is my HEIC so much smaller than the PNG version?",
+          "a": "HEIC uses efficient lossy compression tuned for photos, while PNG's lossless compression barely shrinks real photos. A 12MP photo is about 48.8MB uncompressed; PNG usually lands at 15–30MB, HEIC at 1–3MB."
+        },
+        {
+          "q": "Can I convert HEIC to PNG without uploading?",
+          "a": "Yes. The converter above runs entirely in your browser via WebAssembly — your files are never sent to a server."
+        }
       ],
       "comparison": {
         "caption": "HEIC vs PNG at a glance",
-        "headers": ["", "HEIC", "PNG"],
+        "headers": [
+          "",
+          "HEIC",
+          "PNG"
+        ],
         "rows": [
-          ["Compression", "Lossy, efficient", "Lossless"],
-          ["File size (12MP photo)", "1–3 MB", "15–30 MB"],
-          ["Transparency", "Supported, rare support", "Yes, universal"],
-          ["Best for", "Photo storage", "Editing & transparency"]
+          [
+            "Compression",
+            "Lossy, efficient",
+            "Lossless"
+          ],
+          [
+            "File size (12MP photo)",
+            "1–3 MB",
+            "15–30 MB"
+          ],
+          [
+            "Transparency",
+            "Supported, rare support",
+            "Yes, universal"
+          ],
+          [
+            "Best for",
+            "Photo storage",
+            "Editing & transparency"
+          ]
         ]
       }
     },
@@ -388,18 +495,47 @@
       "s5Body": "Convert to WebP when you're putting photos on a website, blog, or online store — it loads faster and saves bandwidth. Use the converter above to change HEIC to WebP in your browser, with no upload and no account.",
       "conclusion": "Use HEIC on your iPhone, use WebP on your website. The converter above makes moving between them a one-click, fully private step.",
       "faq": [
-        { "q": "Is WebP better than HEIC?", "a": "For the web, yes — every modern browser shows WebP natively, while HEIC support is inconsistent. For iPhone storage, HEIC is the default and just as efficient." },
-        { "q": "Does converting HEIC to WebP lose quality?", "a": "At matched quality settings the visible difference is negligible, and WebP files stay within a few percent of HEIC's size — so you keep the compression benefit." },
-        { "q": "Can I make WebP from HEIC privately?", "a": "Yes. The tool above converts HEIC to WebP entirely in your browser via WebAssembly; nothing is uploaded to a server." }
+        {
+          "q": "Is WebP better than HEIC?",
+          "a": "For the web, yes — every modern browser shows WebP natively, while HEIC support is inconsistent. For iPhone storage, HEIC is the default and just as efficient."
+        },
+        {
+          "q": "Does converting HEIC to WebP lose quality?",
+          "a": "At matched quality settings the visible difference is negligible, and WebP files stay within a few percent of HEIC's size — so you keep the compression benefit."
+        },
+        {
+          "q": "Can I make WebP from HEIC privately?",
+          "a": "Yes. The tool above converts HEIC to WebP entirely in your browser via WebAssembly; nothing is uploaded to a server."
+        }
       ],
       "comparison": {
         "caption": "HEIC vs WebP at a glance",
-        "headers": ["", "HEIC", "WebP"],
+        "headers": [
+          "",
+          "HEIC",
+          "WebP"
+        ],
         "rows": [
-          ["Designed for", "iPhone camera roll", "The web"],
-          ["Browser support", "Inconsistent", "All modern browsers"],
-          ["File size", "Very small", "Very small"],
-          ["Transparency / animation", "No", "Yes"]
+          [
+            "Designed for",
+            "iPhone camera roll",
+            "The web"
+          ],
+          [
+            "Browser support",
+            "Inconsistent",
+            "All modern browsers"
+          ],
+          [
+            "File size",
+            "Very small",
+            "Very small"
+          ],
+          [
+            "Transparency / animation",
+            "No",
+            "Yes"
+          ]
         ]
       }
     },
@@ -422,9 +558,18 @@
       "s5Body": "Got one or two photos to view now? Convert in the browser — no install. Receiving HEIC from an iPhone regularly? Ask the sender to use 'Most Compatible', or keep a converter app handy.",
       "conclusion": "Android may not open HEIC natively, but a quick browser conversion gives you JPG or PNG files that work on any phone. It takes seconds and needs no software.",
       "faq": [
-        { "q": "Can Android open HEIC files?", "a": "Not reliably by default. Android 9+ added partial HEIF support, but many gallery and messaging apps still show HEIC as blank. Converting to JPG/PNG is the dependable fix." },
-        { "q": "How do I view HEIC on Android without an app?", "a": "Open the converter above in your browser, drop in the HEIC files, and preview or convert them to JPG/PNG locally — no installation needed." },
-        { "q": "Is it safe to convert HEIC on Android?", "a": "Yes. The browser converter runs entirely on your device via WebAssembly; your files are never uploaded to a server." }
+        {
+          "q": "Can Android open HEIC files?",
+          "a": "Not reliably by default. Android 9+ added partial HEIF support, but many gallery and messaging apps still show HEIC as blank. Converting to JPG/PNG is the dependable fix."
+        },
+        {
+          "q": "How do I view HEIC on Android without an app?",
+          "a": "Open the converter above in your browser, drop in the HEIC files, and preview or convert them to JPG/PNG locally — no installation needed."
+        },
+        {
+          "q": "Is it safe to convert HEIC on Android?",
+          "a": "Yes. The browser converter runs entirely on your device via WebAssembly; your files are never uploaded to a server."
+        }
       ]
     }
   }
