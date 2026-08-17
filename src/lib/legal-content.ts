@@ -1,13 +1,14 @@
 // Self-contained legal/trust-page content for all four locales.
 // Kept separate from the next-intl message files so these long-form pages
 // don't bloat `messages/*.json` and can use real line breaks via template
-// literals. `GuideView`/`LegalView` split each `body` on `\n` into <p>s.
+// literals. `GuideView`/`LegalView` split each `body` on a real newline
+// (`\n`) into <p>s.
 
 export type Locale = 'en' | 'de' | 'ja' | 'zh';
 
 export interface LegalSection {
   title: string;
-  body: string; // may contain \n for multiple paragraphs
+  body: string; // may span multiple paragraphs (separated by newlines)
 }
 
 export interface LegalDoc {
@@ -68,8 +69,8 @@ export const legalContent: Record<LegalSlug, Record<Locale, LegalDoc>> = {
           body: 'The only data we might retain is anonymous, technical log information (such as browser type and error reports) used to keep the site running smoothly. This never includes your photos.',
         },
         {
-          title: "Children's Privacy",
-          body: 'HEIC Converter does not knowingly collect personal information from children. Because no photos are uploaded in the first place, there is no image data to collect.',
+          title: "Children's Privacy (COPPA Compliance)",
+          body: "HEIC Converter is intended for a general audience and is not directed to children under the age of 13. We do not knowingly collect, solicit, or store any personal information from children under 13. Because our tool operates entirely in the browser via WebAssembly — with zero file uploads — no image data, personal data, or user identifiers are ever transmitted to or stored on our servers, regardless of the user's age. If you believe a child under 13 has submitted personal information through our contact form, please contact us at hello@heic2any.online and we will promptly delete it. For users in the European Economic Area (EEA) or United Kingdom, this site serves a general audience. Interest-based advertising (IBA) through Google AdSense may be displayed; users and their guardians may opt out of personalized ads at any time via Google's Ad Settings at adssettings.google.com.",
         },
       ],
       conclusion:
@@ -108,8 +109,8 @@ export const legalContent: Record<LegalSlug, Record<Locale, LegalDoc>> = {
           body: 'Die einzigen Daten, die wir möglicherweise speichern, sind anonyme technische Protokollinformationen (wie Browsertyp und Fehlerberichte), die den reibungslosen Betrieb sichern. Ihre Fotos gehören nie dazu.',
         },
         {
-          title: 'Privatsphäre von Kindern',
-          body: 'HEIC Converter erfasst wissentlich keine personenbezogenen Daten von Kindern. Da gar keine Fotos hochgeladen werden, gibt es erst recht keine Bilddaten zu erfassen.',
+          title: 'Privatsphäre von Kindern (COPPA & DSGVO-Konformität)',
+          body: 'HEIC Converter richtet sich an eine allgemeine Zielgruppe und ist nicht für Kinder unter 13 Jahren bestimmt. Wir sammeln wissentlich keine personenbezogenen Daten von Kindern unter 13 Jahren, fordern sie an oder speichern sie. Da unser Tool vollständig im Browser via WebAssembly läuft — ohne Datei-Upload — werden keinerlei Bilddaten, personenbezogene Daten oder Nutzer-IDs an unsere Server übertragen oder dort gespeichert, unabhängig vom Alter des Nutzers. Falls Sie der Meinung sind, dass ein Kind unter 13 Jahren über unser Kontaktformular personenbezogene Daten übermittelt hat, wenden Sie sich bitte an hello@heic2any.online — wir löschen diese umgehend. Für Nutzer im Europäischen Wirtschaftsraum (EWR) oder im Vereinigten Königreich: Diese Website richtet sich an ein allgemeines Publikum. Interessenbasierte Werbung (IBA) über Google AdSense kann angezeigt werden; Nutzer und ihre Erziehungsberechtigten können personalisierte Werbung jederzeit über Googles Anzeigeneinstellungen unter adssettings.google.com deaktivieren.',
         },
       ],
       conclusion:
@@ -148,8 +149,8 @@ export const legalContent: Record<LegalSlug, Record<Locale, LegalDoc>> = {
           body: '私たちが保存する可能性があるのは、サイトの円滑な運用のための匿名の技術ログ（ブラウザーの種類やエラー報告など）だけです。写真が含まれることは絶対にありません。',
         },
         {
-          title: 'お子様のプライバシー',
-          body: 'HEIC Converter は、意図的に子供から個人データを収集することはありません。そもそも写真がアップロードされないため、収集する画像データ自体が存在しません。',
+          title: 'お子様のプライバシー（COPPA・GDPR 準拠）',
+          body: 'HEIC Converter は一般ユーザーを対象としており、13歳未満のお子様向けではありません。私たちは13歳未満のお子様から意図的に個人情報を収集・要求・保存することはありません。本ツールはWebAssemblyを使用してブラウザー内のみで動作し、ファイルのアップロードは一切行われないため、ユーザーの年齢に関わらず、画像データ・個人データ・ユーザー識別情報がサーバーへ送信・保存されることはありません。13歳未満のお子様がお問い合わせフォームから個人情報を送信したとお考えの場合は、hello@heic2any.online までご連絡いただければ、速やかに削除いたします。欧州経済領域（EEA）または英国のユーザーへ：本サイトは一般向けです。Google AdSenseによる興味関心に基づく広告（IBA）が表示される場合があります。ユーザーおよび保護者はいつでも adssettings.google.com のGoogle広告設定からパーソナライズド広告をオプトアウトできます。',
         },
       ],
       conclusion:
@@ -188,8 +189,8 @@ export const legalContent: Record<LegalSlug, Record<Locale, LegalDoc>> = {
           body: '我们可能保留的唯一数据，是用于保障站点平稳运行的匿名技术日志（如浏览器类型和错误报告）。其中绝不包含你的照片。',
         },
         {
-          title: '儿童隐私',
-          body: 'HEIC Converter 不会故意收集儿童的个人信息。由于照片从一开始就不会被上传，也就不存在可供收集的图像数据。',
+          title: '儿童隐私保护（COPPA 合规声明）',
+          body: 'HEIC Converter 面向一般用户群体，不面向 13 岁以下儿童。我们不会故意收集、索取或存储 13 岁以下儿童的任何个人信息。由于我们的工具完全在浏览器内通过 WebAssembly 运行，不存在任何文件上传行为，因此无论用户年龄如何，均不会向我们的服务器传输或存储任何图像数据、个人数据或用户标识符。如果您认为 13 岁以下儿童已通过我们的联系表单提交了个人信息，请发送邮件至 hello@heic2any.online，我们将立即予以删除。对于欧洲经济区（EEA）或英国用户：本站面向一般受众。本站可能通过 Google AdSense 展示基于兴趣的广告（IBA）；用户及其监护人可随时通过 adssettings.google.com 的 Google 广告设置退出个性化广告。',
         },
       ],
       conclusion:
@@ -232,7 +233,7 @@ export const legalContent: Record<LegalSlug, Record<Locale, LegalDoc>> = {
         'HEIC Converter ist ein kostenloses, datenschutzorientiertes Werkzeug, das iPhone-HEIC-Fotos in JPG, PNG, WebP oder PDF verwandelt — ganz im Browser.',
       h1: 'Über HEIC Converter',
       intro:
-        'HEIC Converter ist ein kostenloses Online-Werkzeug, das einen Job erledigt: Ihre iPhone-Fotos überall nutzbar zu machen, ohne Ihre Privatsphäre aufzugeben.',
+        'HEIC Converter is ein kostenloses Online-Werkzeug, das einen Job erledigt: Ihre iPhone-Fotos überall nutzbar zu machen, ohne Ihre Privatsphäre aufzugeben.',
       sections: [
         {
           title: 'Warum wir es gebaut haben',
@@ -276,7 +277,7 @@ export const legalContent: Record<LegalSlug, Record<Locale, LegalDoc>> = {
         },
         {
           title: '私たちの約束',
-          body: '私たちはあなたのデータを売りません。そもそも受け取らないからです。中核のツールは無料かつプライベートを維持します。そして皆さんの声をもとに改善し続けます。',
+          body: '私たちはあなたのデータを売りません。そもそも受け取らないからです。中核のツールは無料かつプライベートを維持します。指示されたご要望をもとに改善し続けます。',
         },
       ],
       conclusion:
@@ -374,7 +375,7 @@ export const legalContent: Record<LegalSlug, Record<Locale, LegalDoc>> = {
         },
         {
           title: '不具合の報告',
-          body: '変換に失敗したファイルがあれば、デバイス・ブラウザ・その写真を作ったカメラやアプリをお知らせください。再現と修正の助けになります。',
+          body: '変換に失敗した文件があれば、デバイス・ブラウザ・その写真を作ったカメラやアプリをお知らせください。再現と修正の助けになります。',
         },
       ],
       contactEmail: 'hello@heic2any.online',
@@ -492,7 +493,7 @@ export const legalContent: Record<LegalSlug, Record<Locale, LegalDoc>> = {
         },
         {
           title: 'ファイルはあなたのもの',
-          body: 'ファイルはデバイス上で処理され、アップロードされることはないため、所有権と責任は常にあなたにあります。ツールの利用に伴ういかなる損失や損害についても、当方は責任を負いません。',
+          body: 'ファイルはデバイス上で処理され、アップロードされることはないため、所有権と责任は常にあなたにあります。ツールの利用に伴ういかなる損失や損害についても、当方は責任を負いません。',
         },
         {
           title: '広告について',
@@ -549,11 +550,21 @@ export function getLegalMeta(locale: string, slug: string) {
 
 export function buildLegalAlternates(locale: string, slug: string) {
   const languages: Record<string, string> = {};
-  for (const loc of ['en', 'de', 'ja', 'zh'] as const) {
-    languages[loc] = loc === 'en' ? `/${slug}/` : `/${loc}/${slug}/`;
+  const locales = ['en', 'de', 'ja', 'zh'];
+  for (const loc of locales) {
+    let url: string;
+    if (loc === 'en') {
+      url = '/' + slug + '/';
+    } else {
+      url = '/' + loc + '/' + slug + '/';
+    }
+    languages[loc] = url;
   }
-  return {
-    canonical: locale === 'en' ? `/${slug}/` : `/${locale}/${slug}/`,
-    languages,
-  };
+  let canonical: string;
+  if (locale === 'en') {
+    canonical = '/' + slug + '/';
+  } else {
+    canonical = '/' + locale + '/' + slug + '/';
+  }
+  return { canonical, languages };
 }

@@ -34,22 +34,40 @@ export function guidePath(slug: string) {
 export function buildGuideAlternates(locale: string, slug: string) {
   const languages: Record<string, string> = {};
   for (const loc of GUIDE_LOCALES) {
-    languages[loc] = loc === 'en' ? `/blog/${slug}/` : `/${loc}/blog/${slug}/`;
+    let url: string;
+    if (loc === 'en') {
+      url = '/blog/' + slug + '/';
+    } else {
+      url = '/' + loc + '/blog/' + slug + '/';
+    }
+    languages[loc] = url;
   }
-  return {
-    canonical: locale === 'en' ? `/blog/${slug}/` : `/${locale}/blog/${slug}/`,
-    languages,
-  };
+  let canonical: string;
+  if (locale === 'en') {
+    canonical = '/blog/' + slug + '/';
+  } else {
+    canonical = '/' + locale + '/blog/' + slug + '/';
+  }
+  return { canonical, languages };
 }
 
 // Build canonical + hreflang alternates for the /blog hub index page.
 export function buildBlogHubAlternates(locale: string) {
   const languages: Record<string, string> = {};
   for (const loc of GUIDE_LOCALES) {
-    languages[loc] = loc === 'en' ? '/blog/' : `/${loc}/blog/`;
+    let url: string;
+    if (loc === 'en') {
+      url = '/blog/';
+    } else {
+      url = '/' + loc + '/blog/';
+    }
+    languages[loc] = url;
   }
-  return {
-    canonical: locale === 'en' ? '/blog/' : `/${locale}/blog/`,
-    languages,
-  };
+  let canonical: string;
+  if (locale === 'en') {
+    canonical = '/blog/';
+  } else {
+    canonical = '/' + locale + '/blog/';
+  }
+  return { canonical, languages };
 }
