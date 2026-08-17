@@ -44,12 +44,16 @@ for (const loc of LOCALES) {
 
 const sorted = [...urls].sort();
 
+// lastmod = build date (ISO 8601 date), so Bing/Google see the site as fresh
+// after each deploy.
+const lastmod = new Date().toISOString().slice(0, 10);
+
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${sorted
   .map(
     (u) =>
-      `  <url><loc>${u}</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>`
+      `  <url><loc>${u}</loc><lastmod>${lastmod}</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>`
   )
   .join('\n')}
 </urlset>

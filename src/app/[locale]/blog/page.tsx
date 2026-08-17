@@ -4,12 +4,10 @@ import { getTranslations } from 'next-intl/server';
 import BlogView from '@/components/BlogView';
 import { buildBlogHubAlternates } from '@/lib/guides';
 
-// Localized blog hubs live at `/<locale>/blog/` (English is the unprefixed
-// root `/blog/`, so it is excluded here).
+// Localized blog hubs live at `/<locale>/blog/`; the default locale (English)
+// is additionally generated under `/en/blog/` as a redirect stub to `/blog/`.
 export function generateStaticParams() {
-  return routing.locales
-    .filter((loc) => loc !== routing.defaultLocale)
-    .map((locale) => ({ locale }));
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 export async function generateMetadata({
@@ -39,10 +37,9 @@ export default async function Page({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  if (
-    locale === routing.defaultLocale ||
-    !routing.locales.includes(locale as (typeof routing.locales)[number])
-  ) {
+  // Invalid locales 404; the default locale (English) is fine here — `/en/blog/`
+  // is a redirect stub handled by the layout's EnRedirect.
+  if (!routing.locales.includes(locale as (typeof routing.locales)[number])) {
     notFound();
   }
   return <BlogView locale={locale} />;

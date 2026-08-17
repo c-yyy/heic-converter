@@ -42,6 +42,11 @@ export default function LocaleSwitcher() {
   const switchTo = (next: string) => {
     setOpen(false);
     if (next === locale) return;
+    if (next === routing.defaultLocale) {
+      // Default locale is served at `/` with no prefix; go straight there.
+      router.replace('/', { locale: next });
+      return;
+    }
     router.replace(pathname, { locale: next });
   };
 

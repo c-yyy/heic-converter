@@ -4,12 +4,13 @@ import GuideView from '@/components/GuideView';
 import {getGuideMeta} from '@/lib/guide-meta';
 import {GUIDES, buildGuideAlternates, getGuideBySlug} from '@/lib/guides';
 
-// Localized blog articles live at `/<locale>/blog/<slug>/` (English is the
-// unprefixed root, so it is excluded here).
+// Localized blog articles live at `/<locale>/blog/<slug>/`; the default locale
+// (English) is additionally generated under `/en/blog/<slug>/` as redirect
+// stubs to the unprefixed `/blog/<slug>/`.
 export function generateStaticParams() {
-  return routing.locales
-    .filter((loc) => loc !== routing.defaultLocale)
-    .flatMap((locale) => GUIDES.map((g) => ({locale, slug: g.slug})));
+  return routing.locales.flatMap((locale) =>
+    GUIDES.map((g) => ({locale, slug: g.slug}))
+  );
 }
 
 export async function generateMetadata({

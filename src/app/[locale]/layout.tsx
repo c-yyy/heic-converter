@@ -2,13 +2,13 @@ import {getTranslations} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import Site from '@/components/Site';
+import EnRedirect from '@/components/EnRedirect';
 
-// Only non-default locales live under /[locale]; English is served at the
-// root (no prefix) so `/en` is intentionally not generated.
-const NON_DEFAULT = routing.locales.filter((l) => l !== routing.defaultLocale);
-
+// Default locale (English) is served at the root (no prefix). `/en` is still
+// statically generated so that static hosts don't 404 on it — the layout
+// redirects any `/en/...` request to the unprefixed equivalent.
 export function generateStaticParams() {
-  return NON_DEFAULT.map((locale) => ({locale}));
+  return routing.locales.map((locale) => ({locale}));
 }
 
 export async function generateMetadata({
@@ -50,6 +50,17 @@ export default async function LocaleLayout({
   const {locale} = await params;
   if (!routing.locales.includes(locale as (typeof routing.locales)[number])) {
     notFound();
+  }
+  // English is served unprefixed at `/`; `/en` and any `/en/...` URLs are
+  // still statically generated (so static hosts don't 404) and bounce to the
+  // canonical unprefixed path via EnRedirect.
+  if (locale === routing.defaultLocale) {
+    return (
+      <>
+        <EnRedirect />
+        <Site locale={locale}>{children}</Site>
+      </>
+    );
   }
   return <Site locale={locale}>{children}</Site>;
 }
