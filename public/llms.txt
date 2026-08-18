@@ -1,0 +1,37 @@
+# Free HEIC Converter
+
+> Free online tool to convert HEIC/HEIF images to JPG, PNG, WebP and PDF. No installation, no signup, works entirely in the browser. Files are processed locally on your device, so they never leave your machine.
+
+## Features
+
+- Convert HEIC to JPG, PNG, WebP and PDF
+- Batch conversion: process multiple photos at once
+- Privacy-friendly: all conversion happens in the browser, nothing is uploaded
+- No account, no software, no watermarks
+
+## Docs
+
+- [Homepage](https://heic2any.online/): Main converter tool for HEIC/HEIF images
+- [HEIC to JPG](https://heic2any.online/heic-to-jpg): Convert HEIC photos to JPG/JPEG
+- [HEIC to PNG](https://heic2any.online/heic-to-png): Convert HEIC photos to PNG
+- [HEIC to WebP](https://heic2any.online/heic-to-webp): Convert HEIC photos to WebP
+- [HEIC to PDF](https://heic2any.online/heic-to-pdf): Combine one or more HEIC photos into a single PDF
+- [Blog](https://heic2any.online/blog/): Guides on opening, understanding and converting HEIC files
+
+## Guides
+
+- [What is HEIC?](https://heic2any.online/blog/what-is-heic): Understand the HEIC/HEIF format and when to convert it
+- [HEIC vs JPEG](https://heic2any.online/blog/heic-vs-jpeg): Quality, file size and compatibility compared
+- [HEIC vs PNG](https://heic2any.online/blog/heic-vs-png): Lossless vs HEIC and which to pick
+- [HEIC vs WebP](https://heic2any.online/blog/heic-vs-webp): Modern web format compared to HEIC
+- [Open HEIC on Windows](https://heic2any.online/blog/open-heic-on-windows): View and convert HEIC without a Mac
+- [Open HEIC on Mac](https://heic2any.online/blog/open-heic-on-mac): Preview, batch export and shortcuts
+- [Open HEIC on Android](https://heic2any.online/blog/open-heic-on-android): Convert HEIC received on Android
+- [HEIC to PDF](https://heic2any.online/blog/heic-to-pdf): Turn photos into a single shareable PDF
+
+## Legal
+
+- [About](https://heic2any.online/about): Who runs this tool and why it is free
+- [Privacy](https://heic2any.online/privacy): How the site protects your files and data
+- [Contact](https://heic2any.online/contact): Get in touch
+- [Terms](https://heic2any.online/terms): Terms of use
