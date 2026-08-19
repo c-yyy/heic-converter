@@ -80,7 +80,7 @@
     "qualityDesc": "保留 EXIF 数据和原始分辨率。每次转换都输出专业级品质。"
   },
   "howTo": {
-    "title": "如何在 Windows/Mac 上将 HEIC 转为 PNG",
+    "title": "在浏览器中转换 HEIC 的方法",
     "step1Title": "上传 HEIC 文件",
     "step1Desc": "将 .heic 文件拖放到上方的转换器中，或点击上传区域浏览文件。支持一次选择多个文件。",
     "step2Title": "选择输出格式",

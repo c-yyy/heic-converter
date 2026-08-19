@@ -80,7 +80,7 @@
     "qualityDesc": "Bewahrt EXIF-Daten und die ursprüngliche Auflösung. Professionelle Ausgabe bei jeder Konvertierung."
   },
   "howTo": {
-    "title": "HEIC unter Windows/Mac in PNG konvertieren",
+    "title": "HEIC im Browser konvertieren",
     "step1Title": "Laden Sie Ihre HEIC-Dateien hoch",
     "step1Desc": "Ziehen Sie Ihre .heic-Dateien in den obigen Konverter oder klicken Sie auf den Upload-Bereich, um Dateien auszuwählen. Sie können mehrere Dateien gleichzeitig auswählen.",
     "step2Title": "Wählen Sie Ihr Format",

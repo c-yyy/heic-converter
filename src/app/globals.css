@@ -2461,3 +2461,72 @@ body {
     font-size: 20px;
   }
 }
+
+/* ── How-to steps (directly under the converter) ── */
+.how-to-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md, 16px);
+}
+.how-to-step {
+  display: flex;
+  gap: var(--space-md, 16px);
+  align-items: flex-start;
+}
+.how-to-step-num {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--accent, #6d5efc);
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+.how-to-step-title {
+  margin: 0 0 4px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.how-to-step-desc {
+  margin: 0;
+  color: var(--text-muted, #555);
+  line-height: 1.6;
+}
+
+/* ── Why choose a local converter ── */
+.why-choose-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md, 16px);
+}
+.why-choose-item {
+  background: var(--card-bg, #fff);
+  border: 2px solid var(--ink, #111);
+  border-radius: 12px;
+  padding: var(--space-md, 16px);
+}
+.why-choose-title {
+  margin: 0 0 6px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.why-choose-desc {
+  margin: 0;
+  color: var(--text-muted, #555);
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+@media (max-width: 640px) {
+  .why-choose-list {
+    grid-template-columns: 1fr;
+  }
+}

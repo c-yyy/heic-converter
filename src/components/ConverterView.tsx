@@ -5,6 +5,8 @@ import IconRow from './IconRow';
 import GuideLinks from './GuideLinks';
 import FormatLinks from './FormatLinks';
 import FAQ from './FAQ';
+import HowTo from './HowTo';
+import WhyChoose from './WhyChoose';
 
 type Page = 'home' | 'jpg' | 'webp' | 'png' | 'pdf';
 
@@ -84,6 +86,9 @@ export default async function ConverterView({
       {/* Core Converter */}
       <ConverterApp defaultFormat={FORMAT[page]} />
 
+      {/* How-to instructions — shown right under the tool */}
+      <HowTo />
+
       {/* Feature Icons */}
       <IconRow />
 
@@ -99,6 +104,9 @@ export default async function ConverterView({
 
       {/* Internal links to the other format pages (cluster) */}
       <FormatLinks current={currentHref} />
+
+      {/* Why a local, in-browser converter — privacy & performance */}
+      <WhyChoose />
 
       {/* FAQ */}
       <FAQ />
