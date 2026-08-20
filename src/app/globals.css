@@ -1446,7 +1446,7 @@ body {
   letter-spacing: 0.02em;
   line-height: 1.1;
   color: var(--text-primary);
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-2xl);
 }
 
 /* ── FAQ accordion mechanics (collapse / expand) ── */
