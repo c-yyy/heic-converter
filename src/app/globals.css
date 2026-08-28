@@ -2506,6 +2506,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-md, 16px);
+  margin: var(--space-2xl) 0 0;
 }
 .why-choose-item {
   background: var(--card-bg, #fff);
